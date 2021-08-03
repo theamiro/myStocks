@@ -1,0 +1,79 @@
+// Custom bootstrap variable overrides
+@import "bootstrap_variable_overrides";
+
+// Bootstrap and its default variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// Your style
+@import "variables";
+@import "mixins";
+@import "general";
+@import "layout";
+@import "module";
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.opacity-50 {
+    opacity: .5;
+    transition: opacity 300ms ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+}
+.border-radius {
+    border-radius: 8px;
+}
+.navbar-nav {
+    .nav-item {
+        margin-right: 36px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+table {
+    tbody {
+        tr {
+            td {
+                padding: 1rem;
+                .badge {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    min-width: 80px;
+                }
+            }
+        }
+    }
+}
+.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.img-thumbnail {
+    max-width: 128px;
+    max-height: 128px;
+    height: 128px;
+    width: 128px;
+    border-radius: 0;
+}
+a.card {
+    text-decoration: none;
+    color: inherit;
+}
+.table-hover {
+    tbody {
+        tr {
+            border-radius: 8px;
+            transition: all 300ms ease-in-out;
+            td {
+                vertical-align: middle;
+            }
+        }
+    }
+}
