@@ -1,16 +1,33 @@
 // Bootstrap overrides variables
 $primary: #005AFF;
+$secondary: #b9b9b9;
 $light: #ffffff;
-$danger: #E42226;
+$success: #0ABE82;
+$danger: #E61E23;
+$dark: #191919;
 
+// Fonts 
+$font-weight-light: 300;
+$font-weight-medium: 500;
+
+
+//Borders
+$border-radius: 4px;
 
 // Badges
-
 // scss-docs-start badge-variables
-$badge-font-size:                   .75em !default;
-$badge-font-weight:                 600 !default;
+$badge-font-size:                   1em !default;
+$badge-font-weight:                 500 !default;
 $badge-color:                       $light !default;
 $badge-padding-y:                   .35em !default;
 $badge-padding-x:                   .65em !default;
 $badge-border-radius:               4px !default;
 // scss-docs-end badge-variables
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1800px
+);

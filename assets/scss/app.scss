@@ -12,12 +12,15 @@
 @import "general";
 @import "layout";
 @import "module";
+@import "tables";
 
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
 }
 .opacity-50 {
     opacity: .5;
@@ -54,41 +57,46 @@ a.card {
     .card-body {
         padding-left: 0 !important;
         padding-right: 0 !important;
-    }
-}
-.table-hover {
-    tbody {
-        tr {
-            border-radius: 8px;
-            transition: all 300ms ease-in-out;
-            td {
-                vertical-align: middle;
-            }
+        .card-title{
+            @extend .fs-3;
+            font-weight: $font-weight-light;
         }
     }
 }
 
 .badge {
+    min-width: 80px;
+    &.bg-primary {
+        background-color:transparentize($color: $primary, $amount: .85) !important;
+        color: $primary;
+    }
     &.bg-success {
-        
+        background-color:transparentize($color: $success, $amount: .85) !important;
+        color: $success;
     }
     &.bg-danger {
-        
+        background-color:transparentize($color: $danger, $amount: .85) !important;
+        color: $danger;
     }
     &.bg-warning {
-        
+        background-color:transparentize($color: $warning, $amount: .85) !important;
+        color: $warning;
     }
 }
 nav {
-    &.tabs {
+    .tabs, &.tabs {
         .nav-link {
-            color: #aaa;
+            font-weight: $font-weight-light;
+            color: $secondary;
             transition: color 300ms ease-in-out;
+            &:first-child {
+                padding-left: 0px;
+            }
             &.active {
-                color: #2e2e2e !important;
+                color: $dark;
             }
             &:hover {
-                color: #2e2e2e;
+                color: $dark;
             }
         }
     }
@@ -104,4 +112,49 @@ div.tab-pane {
 .dropdown-toggle::after {
     vertical-align: 0.156em;
     margin-left: 0.3em;
+}
+.text-muted {
+    color: $secondary !important;
+}
+.input-group{
+    &.input-group-dark {
+        .form-control {
+            border:0;
+            &.input-dark {
+                border: transparent;
+            }
+        }
+        .btn {
+            background-color: transparentize($color: $secondary, $amount: 0.7);
+            border: 0;
+            &:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+.form-control {
+    &.input-light {
+        background-color: transparentize($color: $light, $amount: 0.7);
+        border: transparentize($color: $light, $amount: 0.7);
+        color: $light;
+        &::placeholder {
+            color: $light;
+        }
+        @extend .rounded-3
+    }
+    &.input-dark {
+        background-color: transparentize($color: $secondary, $amount: 0.7);
+        border: transparentize($color: $secondary, $amount: 0.7);
+        color: $dark;
+        &::placeholder {
+            color: $dark;
+        }
+        @extend .rounded-3
+    }
+}
+.btn {
+    .btn-alt {
+        border-radius: 8px;
+    }
 }

@@ -11,10 +11,10 @@
 
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
-				<div class="container-fluid">
+			<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light border-bottom">
+				<div class="container">
 					<a class="navbar-brand" href="#">
-						<span class="fw-normal display-5">myStocks</span>
+						<span class="fw-normal display-6">myStocks</span>
 					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -42,11 +42,11 @@
 						</ul>
 						<div class="d-flex me-3 gap-3">
 							<a href="#" class="btn btn-light">Log in</a>
-							<a href="#" class="btn btn-primary">Sign up</a>
+							<a href="#" class="btn btn-primary rounded-3">Sign up</a>
 						</div>
 						<form class="d-flex">
-							<div class="input-group">
-								<input class="form-control border-0" type="search" placeholder="Search" aria-label="Search" />
+							<div class="input-group input-group-dark">
+								<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
 								<button type="submit" class="btn">
 									<i class="bi bi-search"></i>
 								</button>
@@ -56,368 +56,375 @@
 				</div>
 			</nav>
 		</header>
-		<div class="container-fluid mt-5 pt-5">
-			<div class="row">
-				<div class="col-md-12">
-					<p class="text-muted">Market Open — 11:12 AM EAT</p>
-					<p class="display-5 fw-normal">Nairobi Securities Exchange - highlights</p>
+		<section class="py-2">
+			<div class="container mt-5 pt-5">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-muted">Market Open — 11:12 AM EAT</p>
+						<p class="display-5">Nairobi Securities Exchange - highlights</p>
+					</div>
 				</div>
-				<div class="col-lg-4">
-					<table class="table table-responsive">
-						<thead>
-							<tr>
-								<th scope="col">
-									<p class="fw-normal display-5 mb-0">Gainers</p>
-								</th>
-								<th scope="col">
-									<p class="fw-normal mb-0 text-secondary fs-5">Price</p>
-								</th>
-								<th scope="col">
-									<p class="fw-normal mb-0 text-secondary fs-5">Change</p>
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>CGEN</td>
-								<td>24.20</td>
-								<td>
-									<span class="badge bg-success p-2"> +10.00% </span>
-								</td>
-							</tr>
-							<tr>
-								<td>SCOM</td>
-								<td>41.75</td>
-								<td><span class="badge bg-success p-2">+5.70%</span></td>
-							</tr>
-							<tr>
-								<td>HFCK</td>
-								<td>3.97</td>
-								<td><span class="badge bg-success p-2">+4.70%</span></td>
-							</tr>
-							<tr>
-								<td>FTGH</td>
-								<td>1.41</td>
-								<td><span class="badge bg-success p-2">+4.44%</span></td>
-							</tr>
-							<tr>
-								<td>FTGH</td>
-								<td>3.97</td>
-								<td><span class="badge bg-success p-2">+4.44%</span></td>
-							</tr>
-						</tbody>
-					</table>
+				<div class="row gx-5">
+					<div class="col-lg-4">
+						<table class="table table-responsive table-flush">
+							<thead>
+								<tr>
+									<th width="50%" scope="col">
+										<p class="display-6 mb-0">Gainers</p>
+									</th>
+									<th width="25%" scope="col">
+										<p class="mb-0 text-secondary fs-5">Price</p>
+									</th>
+									<th width="5%" scope="col">
+										<p class="mb-0 text-secondary fs-5">Change</p>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CGEN</td>
+									<td>24.20</td>
+									<td>
+										<span class="badge bg-success p-2"> +10.00% </span>
+									</td>
+								</tr>
+								<tr>
+									<td>SCOM</td>
+									<td>41.75</td>
+									<td><span class="badge bg-success p-2">+5.70%</span></td>
+								</tr>
+								<tr>
+									<td>HFCK</td>
+									<td>3.97</td>
+									<td><span class="badge bg-success p-2">+4.70%</span></td>
+								</tr>
+								<tr>
+									<td>FTGH</td>
+									<td>1.41</td>
+									<td><span class="badge bg-success p-2">+4.44%</span></td>
+								</tr>
+								<tr>
+									<td>FTGH</td>
+									<td>3.97</td>
+									<td><span class="badge bg-success p-2">+4.44%</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-lg-4">
+						<table class="table table-responsive table-flush">
+							<thead>
+								<tr>
+									<th width="50%" scope="col">
+										<p class="display-6 mb-0">Losers</p>
+									</th>
+									<th width="25%" scope="col">
+										<p class="mb-0 text-secondary fs-5">Price</p>
+									</th>
+									<th width="5%" scope="col">
+										<p class="mb-0 text-secondary fs-5">Change</p>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CGEN</td>
+									<td>24.20</td>
+									<td>
+										<span class="badge bg-danger p-2"> +10.00% </span>
+									</td>
+								</tr>
+								<tr>
+									<td>SCOM</td>
+									<td>41.75</td>
+									<td><span class="badge bg-danger p-2">+5.70%</span></td>
+								</tr>
+								<tr>
+									<td>HFCK</td>
+									<td>3.97</td>
+									<td><span class="badge bg-danger p-2">+4.70%</span></td>
+								</tr>
+								<tr>
+									<td>FTGH</td>
+									<td>1.41</td>
+									<td><span class="badge bg-danger p-2">+4.44%</span></td>
+								</tr>
+								<tr>
+									<td>FTGH</td>
+									<td>3.97</td>
+									<td><span class="badge bg-danger p-2">+4.44%</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-lg-4">
+						<table class="table table-responsive table-flush">
+							<thead>
+								<tr>
+									<th width="50%" scope="col">
+										<p class="display-6 mb-0">Movers</p>
+									</th>
+									<th width="25%" scope="col">
+										<p class="fw-normal mb-0 text-secondary fs-5">Price</p>
+									</th>
+									<th width="5%" scope="col">
+										<p class="fw-normal mb-0 text-secondary fs-5">Change</p>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CGEN</td>
+									<td>24.20</td>
+									<td>
+										<span class="badge bg-primary py-2"> +10.00% </span>
+									</td>
+								</tr>
+								<tr>
+									<td>SCOM</td>
+									<td>41.75</td>
+									<td><span class="badge bg-primary py-2">+5.70%</span></td>
+								</tr>
+								<tr>
+									<td>HFCK</td>
+									<td>3.97</td>
+									<td><span class="badge bg-primary py-2">+4.70%</span></td>
+								</tr>
+								<tr>
+									<td>FTGH</td>
+									<td>1.41</td>
+									<td><span class="badge bg-primary py-2">+4.44%</span></td>
+								</tr>
+								<tr>
+									<td>FTGH</td>
+									<td>3.97</td>
+									<td><span class="badge bg-primary py-2">+4.44%</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<div class="col-lg-4">
-					<table class="table table-responsive">
-						<thead>
-							<tr>
-								<th scope="col">
-									<p class="fw-normal display-5 mb-0">Losers</p>
-								</th>
-								<th scope="col">
-									<p class="fw-normal mb-0 text-secondary fs-5">Price</p>
-								</th>
-								<th scope="col">
-									<p class="fw-normal mb-0 text-secondary fs-5">Change</p>
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>CGEN</td>
-								<td>24.20</td>
-								<td>
-									<span class="badge bg-danger p-2"> +10.00% </span>
-								</td>
-							</tr>
-							<tr>
-								<td>SCOM</td>
-								<td>41.75</td>
-								<td><span class="badge bg-danger p-2">+5.70%</span></td>
-							</tr>
-							<tr>
-								<td>HFCK</td>
-								<td>3.97</td>
-								<td><span class="badge bg-danger p-2">+4.70%</span></td>
-							</tr>
-							<tr>
-								<td>FTGH</td>
-								<td>1.41</td>
-								<td><span class="badge bg-danger p-2">+4.44%</span></td>
-							</tr>
-							<tr>
-								<td>FTGH</td>
-								<td>3.97</td>
-								<td><span class="badge bg-danger p-2">+4.44%</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="col-lg-4">
-					<table class="table table-responsive">
-						<thead>
-							<tr>
-								<th scope="col">
-									<p class="fw-normal display-5 mb-0">Movers</p>
-								</th>
-								<th scope="col">
-									<p class="fw-normal mb-0 text-secondary fs-5">Price</p>
-								</th>
-								<th scope="col">
-									<p class="fw-normal mb-0 text-secondary fs-5">Change</p>
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>CGEN</td>
-								<td>24.20</td>
-								<td>
-									<span class="badge bg-primary py-2"> +10.00% </span>
-								</td>
-							</tr>
-							<tr>
-								<td>SCOM</td>
-								<td>41.75</td>
-								<td><span class="badge bg-primary py-2">+5.70%</span></td>
-							</tr>
-							<tr>
-								<td>HFCK</td>
-								<td>3.97</td>
-								<td><span class="badge bg-primary py-2">+4.70%</span></td>
-							</tr>
-							<tr>
-								<td>FTGH</td>
-								<td>1.41</td>
-								<td><span class="badge bg-primary py-2">+4.44%</span></td>
-							</tr>
-							<tr>
-								<td>FTGH</td>
-								<td>3.97</td>
-								<td><span class="badge bg-primary py-2">+4.44%</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="col-md-12 d-flex flex-row justify-content-end pt-4">
-					<a href="#" class="btn btn-light">Check all stock changes <i class="bi bi-chevron-right"></i></a>
+				<div class="row">
+					<div class="col-md-12 d-flex flex-row justify-content-end pt-4">
+						<a href="#" class="btn btn-light pe-0">Check all stock changes <i class="bi bi-chevron-right"></i></a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container-fluid mt-5 pt-5">
-			<div class="row">
-				<div class="col-md-12">
-					<p class="text-muted">Nairobi Securities Exchange Plc (NSE)</p>
-				</div>
-				<div class="col-md-8">
-					<nav class="nav">
-						<a class="nav-link active fs-1" aria-current="page" href="#">All Share</a>
-						<a class="nav-link fs-1" href="#">20-Share</a>
-						<a class="nav-link fs-1" href="#">25-Share</a>
-					</nav>
-					<div class="tab-content" id="nav-tabContent">
-						<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-							<div class="d-flex flex-row flex-nowrap align-items-baseline">
-								<p class="display-1 fw-normal mb-0">168.94</p>
-								<span class="badge bg-danger fs-5">3.74(-2.71%)</span>
-							</div>
-							<canvas id="myChart" width="600" height="300"></canvas>
-						</div>
-						<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-							<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+		</section>
+		<section class="py-2">
+			<div class="container">
+				<div class="row py-2">
+					<div class="col-md-8">
+						<p class="text-muted">Nairobi Securities Exchange Plc (NSE)</p>
+						<nav class="mb-2">
+							<div class="nav tabs" id="nav-tab" role="tablist">
+								<a class="nav-link active fs-1" id="nav-all-share-tab" data-toggle="tab" href="#nav-all-share" role="tab" aria-controls="nav-lubricants" aria-selected="true">All Share</a>
+								<a class="nav-link fs-1" id="nav-20-share-tab" data-toggle="tab" href="#nav-20-share" role="tab" aria-controls="nav-fuel" aria-selected="false">20-Share</a>
+								<a class="nav-link fs-1" id="nav-25-share-tab" data-toggle="tab" href="#nav-25-share" role="tab" aria-controls="nav-lpg" aria-selected="false">25-Share</a>
+                            </nav>
+                        </div>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-all-share" role="tabpanel" aria-labelledby="nav-all-share-tab">
 								<div class="d-flex flex-row flex-nowrap align-items-baseline">
-									<p class="display-1 fw-normal mb-0">168.94</p>
+									<p class="display-1 mb-0 me-3">168.94</p>
 									<span class="badge bg-danger fs-5">3.74(-2.71%)</span>
 								</div>
-								<canvas id="myChart" width="600" height="300"></canvas>
+								<canvas id="all-share" width="600" height="300"></canvas>
 							</div>
-						</div>
-						<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-							<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+							<div class="tab-pane fade" id="nav-20-share" role="tabpanel" aria-labelledby="nav-20-share-tab">
 								<div class="d-flex flex-row flex-nowrap align-items-baseline">
-									<p class="display-1 fw-normal mb-0">168.94</p>
+									<p class="display-1 mb-0 me-3">168.94</p>
+									<span class="badge bg-success fs-5">3.74(-2.71%)</span>
+								</div>
+								<canvas id="20-share" width="600" height="300"></canvas>
+							</div>
+							<div class="tab-pane fade" id="nav-25-share" role="tabpanel" aria-labelledby="nav-25-share-tab">
+								<div class="d-flex flex-row flex-nowrap align-items-baseline">
+									<p class="display-1 mb-0 me-3">168.94</p>
 									<span class="badge bg-danger fs-5">3.74(-2.71%)</span>
 								</div>
-								<canvas id="myChart" width="600" height="300"></canvas>
+								<canvas id="25-share" width="600" height="300"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 d-flex flex-column justify-content-between align-items-center">
+						<div class="card border-0 rounded-0">
+							<div class="card-header rounded-0 bg-secondary border-0" style="width: 22rem; height: 24rem"></div>
+							<div class="card-body text-center d-flex flex-column justify-content-center">
+								<p class="card-title fw-normal">Advertisement</p>
+							</div>
+						</div>
+						<a href="#" class="btn btn-light align-self-end mb-4">More about this stock <i class="bi bi-chevron-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 pt-4 pb-5">
+						<p class="text-white opacity-50">Be on top of the game!</p>
+						<p class="text-white display-5 fw-normal mb-5">Access to all the data and all the details. Sign up for a MyStocks Pro account!</p>
+
+						<div class="row mt-auto align-items-center">
+							<div class="col-8">
+								<input type="email" class="form-control input-light form-control-lg" placeholder="Enter your email address" />
+							</div>
+							<div class="col-4">
+								<button type="submit" class="btn btn-light btn-lg text-primary">Sign up Now!</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 background-image" style="background-image: url('./assets/img/appback.png')"></div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 mt-4">
+						<p class="text-muted">Business news powered by Nation & Business Daily</p>
+						<h5 class="display-5 my-4">Featured</h5>
+						<hr />
+					</div>
+				</div>
+				<div class="row pt-5 gx-5">
+					<div class="col-md-4">
+						<a href="#" class="card p-0 border-0">
+							<div class="video-frame">
+								<img src="./assets/img/capiscum.jpg" class="card-img-top" alt="Capiscum" />
+							</div>
+							<div class="card-body px-0">
+								<h5 class="card-title display-4 mb-4">ABC of soil sampling for capsicum planting</h5>
+								<p class="card-text fs-5 pb-3">ABC of soil sampling for capsicum planting A farmer needs to conduct soil testing as this helps in identifying the specific nutrients soil.</p>
+								<div class="d-flex justify-content-between">
+									<p class="text-black mb-0">Yahoo Finance</p>
+									<p class="text-muted text-end mb-0">Yesterday</p>
+								</div>
+								<hr class="mt-1" />
+							</div>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="row row-cols-1 row-cols-md-2 gy-4 gx-5">
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">Chama fights with big boys for flour market</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">The trouble with animal health training</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">Chama fights with big boys for flour market</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">The trouble with animal health training</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">Chama fights with big boys for flour market</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">The trouble with animal health training</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">Chama fights with big boys for flour market</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">The trouble with animal health training</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 d-block">
-					<div class="w-100 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
-					<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 d-flex flex-row justify-content-end pt-4">
-					<a href="#" class="btn btn-light">More about this stock <i class="bi bi-chevron-right"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid mt-5 pt-5">
-			<div class="row">
-				<div class="col-md-6 bg-primary pt-4 pb-5">
-					<p class="text-white opacity-50">Be on top of the game!</p>
-					<p class="text-white display-5 fw-normal mb-5">Access to all the data and all the details. Sign up for a MyStocks Pro account!</p>
-
-					<div class="row mt-auto align-items-center">
-						<div class="col-8">
-							<input type="email" class="form-control form-control-lg" placeholder="Enter your email address" />
-						</div>
-						<div class="col-4">
-							<button type="submit" class="btn btn-light btn-lg text-primary">Sign up Now!</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 background-image" style="background-image: url('./assets/img/appback.png')"></div>
-			</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 mt-4">
-					<p class="text-muted">Business news powered by Nation & Business Daily</p>
-					<h1 class="my-4">Featured</h1>
-					<hr />
-				</div>
-			</div>
-			<div class="row pt-5">
-				<div class="col-md-4">
-					<a href="#" class="card p-0 border-0">
-						<div class="video-frame">
-							<img src="./assets/img/capiscum.jpg" class="card-img-top" alt="Capiscum" />
-						</div>
-						<div class="card-body px-0">
-							<h5 class="card-title display-6 mb-3">ABC of soil sampling for capsicum planting</h5>
-							<p class="card-text fs-5 pb-3">ABC of soil sampling for capsicum planting A farmer needs to conduct soil testing as this helps in identifying the specific nutrients soil.</p>
-							<div class="d-flex justify-content-between">
-								<p class="text-black mb-0">Yahoo Finance</p>
-								<p class="text-muted text-end mb-0">Yesterday</p>
-							</div>
-							<hr class="mt-1" />
-						</div>
-					</a>
-				</div>
-				<div class="col-md-8">
-					<div class="row row-cols-1 row-cols-md-2 gy-4">
-						<div class="col">
-							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
-								<div class="card-body d-flex flex-column justify-content-between py-0">
-									<h5 class="card-title fs-2">Chama fights with big boys for flour market</h5>
-									<div class="d-flex justify-content-between">
-										<p class="text-black mb-0">Yahoo Finance</p>
-										<p class="text-muted text-end mb-0">Yesterday</p>
-									</div>
-								</div>
-								<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
-							</a>
-						</div>
-						<div class="col">
-							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
-								<div class="card-body d-flex flex-column justify-content-between py-0">
-									<h5 class="card-title fs-2">The trouble with animal health training</h5>
-									<div class="d-flex justify-content-between">
-										<p class="text-black mb-0">Yahoo Finance</p>
-										<p class="text-muted text-end mb-0">Yesterday</p>
-									</div>
-								</div>
-								<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
-							</a>
-						</div>
-						<div class="col">
-							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
-								<div class="card-body d-flex flex-column justify-content-between py-0">
-									<h5 class="card-title fs-2">Chama fights with big boys for flour market</h5>
-									<div class="d-flex justify-content-between">
-										<p class="text-black mb-0">Yahoo Finance</p>
-										<p class="text-muted text-end mb-0">Yesterday</p>
-									</div>
-								</div>
-								<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
-							</a>
-						</div>
-						<div class="col">
-							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
-								<div class="card-body d-flex flex-column justify-content-between py-0">
-									<h5 class="card-title fs-2">The trouble with animal health training</h5>
-									<div class="d-flex justify-content-between">
-										<p class="text-black mb-0">Yahoo Finance</p>
-										<p class="text-muted text-end mb-0">Yesterday</p>
-									</div>
-								</div>
-								<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
-							</a>
-						</div>
-						<div class="col">
-							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
-								<div class="card-body d-flex flex-column justify-content-between py-0">
-									<h5 class="card-title fs-2">Chama fights with big boys for flour market</h5>
-									<div class="d-flex justify-content-between">
-										<p class="text-black mb-0">Yahoo Finance</p>
-										<p class="text-muted text-end mb-0">Yesterday</p>
-									</div>
-								</div>
-								<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
-							</a>
-						</div>
-						<div class="col">
-							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
-								<div class="card-body d-flex flex-column justify-content-between py-0">
-									<h5 class="card-title fs-2">The trouble with animal health training</h5>
-									<div class="d-flex justify-content-between">
-										<p class="text-black mb-0">Yahoo Finance</p>
-										<p class="text-muted text-end mb-0">Yesterday</p>
-									</div>
-								</div>
-								<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
-							</a>
-						</div>
-						<div class="col">
-							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
-								<div class="card-body d-flex flex-column justify-content-between py-0">
-									<h5 class="card-title fs-2">Chama fights with big boys for flour market</h5>
-									<div class="d-flex justify-content-between">
-										<p class="text-black mb-0">Yahoo Finance</p>
-										<p class="text-muted text-end mb-0">Yesterday</p>
-									</div>
-								</div>
-								<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
-							</a>
-						</div>
-						<div class="col">
-							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
-								<div class="card-body d-flex flex-column justify-content-between py-0">
-									<h5 class="card-title fs-2">The trouble with animal health training</h5>
-									<div class="d-flex justify-content-between">
-										<p class="text-black mb-0">Yahoo Finance</p>
-										<p class="text-muted text-end mb-0">Yesterday</p>
-									</div>
-								</div>
-								<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
-							</a>
-						</div>
+				<div class="row my-3">
+					<div class="col-md-12 d-flex justify-content-end pt-4">
+						<a href="#"
+							><a href="#" class="btn btn-light">More business news <i class="bi bi-chevron-right"></i></a
+						></a>
 					</div>
 				</div>
 			</div>
-			<div class="row my-3">
-				<div class="col-md-12 d-flex justify-content-end pt-4">
-					<a href="#"
-						><a href="#" class="btn btn-light">More business news <i class="bi bi-chevron-right"></i></a
-					></a>
-				</div>
-			</div>
-		</div>
-
+		</section>
 		<footer class="bg-primary">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row pt-5">
 					<div class="col-md-6 d-flex flex-column justify-content-between">
 						<p class="text-white fw-normal fs-1 mb-5">Get the most out of <br />myStocks by signing up</p>
 						<div class="row mt-5 align-items-center">
-							<div class="col-md-6">
-								<input type="email" class="form-control form-control-lg" placeholder="Enter your email address" />
+							<div class="col-md-6 mb-3">
+								<input type="email" class="form-control input-light form-control-lg" placeholder="Enter your email address" />
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 mb-3">
 								<button type="submit" class="btn btn-light btn-lg text-primary">Sign up Now!</button>
 							</div>
 						</div>
@@ -447,14 +454,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid pt-3 pb-2">
+			<div class="container pt-3 pb-2">
 				<hr class="bg-light border border-1" />
 				<div class="row align-items-center">
 					<div class="col-md-6 d-flex gap-4 align-items-center">
 						<p class="text-white mb-0 fs-3">myStocks</p>
 						<p class="text-white mb-0 opacity-50">&copy; 2007-21 Synergy Systems Ltd</p>
 					</div>
-					<div class="col-md-6 d-flex justify-content-end">
+					<div class="col-md-6 d-flex flex-nowrap justify-content-sm-center justify-content-md-end">
 						<div class="d-flex flex-wrap justify-center gap-3 pb-3">
 							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="/assets/img/googleplay.svg" /></a>
 							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="/assets/img/appstore.svg" /></a>
@@ -468,5 +475,103 @@
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" type="text/javascript"></script>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script src="assets/js/app.js"></script>
+		<script>
+			var allShareIndex = document.getElementById("all-share").getContext("2d")
+			let dangerGradient = allShareIndex.createLinearGradient(0, 0, 0, 400)
+			dangerGradient.addColorStop(0, "rgba(231, 24, 24, 0.5)")
+			dangerGradient.addColorStop(1, "rgba(231, 24, 24, 0.1)")
+			var myChart = new Chart(allShareIndex, {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+					datasets: [
+						{
+							data: [168, 165, 164, 166, 165, 163, 168],
+							fill: true,
+							backgroundColor: dangerGradient,
+							borderColor: "rgb(231, 24, 24)",
+						},
+					],
+				},
+				options: {
+					maintainAspectRatio: true,
+					scales: {
+						x: {
+							grid: {
+								display: false,
+							},
+						},
+						y: {
+							beginAtZero: false,
+							grid: {
+								display: true,
+							},
+							suggestedMin: 156,
+							suggestedMax: 170,
+						},
+					},
+					plugins: {
+						legend: {
+							display: false,
+							labels: {
+								color: "rgb(255, 99, 132)",
+							},
+						},
+						tooltip: {
+							enabled: true,
+						},
+					},
+				},
+			})
+		</script>
+		<script>
+			var twentyShareIndex = document.getElementById("20-share").getContext("2d")
+			let successGradient = twentyShareIndex.createLinearGradient(0, 0, 0, 400)
+			successGradient.addColorStop(0, "rgba(10, 190, 130, 0.5)")
+			successGradient.addColorStop(1, "rgba(10, 190, 130, 0.1)")
+			var myChart = new Chart(twentyShareIndex, {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+					datasets: [
+						{
+							data: [168, 165, 164, 166, 165, 163, 168],
+							fill: true,
+							backgroundColor: successGradient,
+							borderColor: "rgb(10, 190, 130)",
+						},
+					],
+				},
+				options: {
+					maintainAspectRatio: true,
+					scales: {
+						x: {
+							grid: {
+								display: false,
+							},
+						},
+						y: {
+							beginAtZero: false,
+							grid: {
+								display: true,
+							},
+							suggestedMin: 156,
+							suggestedMax: 170,
+						},
+					},
+					plugins: {
+						legend: {
+							display: false,
+							labels: {
+								color: "rgb(255, 99, 132)",
+							},
+						},
+						tooltip: {
+							enabled: true,
+						},
+					},
+				},
+			})
+		</script>
 	</body>
 </html>

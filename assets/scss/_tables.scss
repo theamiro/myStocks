@@ -1,0 +1,52 @@
+table {
+    &.table {
+        :not(:last-child) {
+            :last-child {
+                * {
+                    border-bottom-color: transparentize($color: $dark, $amount: .90);
+                }
+            }
+        }
+        &.table-flush {
+            thead, tbody {
+                tr {
+                    th, td {
+                        &:first-child{
+                            padding-left: 0;   
+                        }
+                        &:last-child {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        thead {
+            border-bottom: $secondary;
+            tr {
+                border-bottom: $secondary;
+                th {
+                    font-weight: 400;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    &.table-hover {
+        tbody {
+            tr {
+                border-radius: 8px;
+                transition: all 300ms ease-in-out;
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
