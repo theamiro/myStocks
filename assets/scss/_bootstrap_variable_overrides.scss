@@ -3,4 +3,14 @@ $primary: #005AFF;
 $light: #ffffff;
 $danger: #E42226;
 
+
 // Badges
+
+// scss-docs-start badge-variables
+$badge-font-size:                   .75em !default;
+$badge-font-weight:                 600 !default;
+$badge-color:                       $light !default;
+$badge-padding-y:                   .35em !default;
+$badge-padding-x:                   .65em !default;
+$badge-border-radius:               4px !default;
+// scss-docs-end badge-variables

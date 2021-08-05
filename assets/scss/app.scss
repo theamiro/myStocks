@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 // Custom bootstrap variable overrides
 @import "bootstrap_variable_overrides";
 
@@ -16,9 +17,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-
 .opacity-50 {
     opacity: .5;
     transition: opacity 300ms ease-in-out;
@@ -37,20 +37,6 @@ body {
         }
     }
 }
-table {
-    tbody {
-        tr {
-            td {
-                padding: 1rem;
-                .badge {
-                    font-size: 1rem;
-                    font-weight: 500;
-                    min-width: 80px;
-                }
-            }
-        }
-    }
-}
 .background-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,6 +51,10 @@ div.img-thumbnail {
 a.card {
     text-decoration: none;
     color: inherit;
+    .card-body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 .table-hover {
     tbody {
@@ -76,4 +66,42 @@ a.card {
             }
         }
     }
+}
+
+.badge {
+    &.bg-success {
+        
+    }
+    &.bg-danger {
+        
+    }
+    &.bg-warning {
+        
+    }
+}
+nav {
+    &.tabs {
+        .nav-link {
+            color: #aaa;
+            transition: color 300ms ease-in-out;
+            &.active {
+                color: #2e2e2e !important;
+            }
+            &:hover {
+                color: #2e2e2e;
+            }
+        }
+    }
+}
+div.tab-pane {
+    a {
+        &.dropdown-toggle {
+            color: $navbar-light-hover-color
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    vertical-align: 0.156em;
+    margin-left: 0.3em;
 }

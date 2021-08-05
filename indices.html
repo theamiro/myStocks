@@ -16,15 +16,7 @@
 					<a class="navbar-brand" href="#">
 						<span class="fw-normal display-5">myStocks</span>
 					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarCollapse"
-						aria-controls="navbarCollapse"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarCollapse">
@@ -32,7 +24,7 @@
 							<li class="nav-item active">
 								<a class="nav-link" aria-current="page" href="index.html">News</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item active">
 								<a class="nav-link" href="indices.html">Indices</a>
 							</li>
 							<li class="nav-item">
@@ -69,9 +61,9 @@
 				<div class="col-md-6">
 					<p class="fs-1">NSE All-Share Index (^NASI)</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="d-flex mb-2">
-						<p class="fs-1 col mb-0">8.20</p>
+						<p class="fs-1 col-3 mb-0">8.20</p>
 						<p class="fs-1 text-danger col mb-0">—0.78 (—8.96%)</p>
 					</div>
 					<p class="fs-3 mb-0">End of Day - May 16 2021</p>
@@ -102,15 +94,141 @@
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-8 mt-4">
-					<nav class="nav gap-5">
+				<div class="col-md-8 my-4">
+					<nav class="nav gap-5 tabs">
 						<a class="nav-link active fs-1 ps-0" aria-current="page" href="#">Charts</a>
 						<a class="nav-link fs-1 ps-0" href="#">Historical Data</a>
 					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 my-4">
 					<div class="tab-content" id="nav-tabContent">
-						<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+						<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+							<div class="row">
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Range</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">1 month</p>
+								</div>
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Frequency</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">1 month</p>
+								</div>
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Type</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">1 month</p>
+								</div>
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Price Volume</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">1 month</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Overlay</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">1 month</p>
+								</div>
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Scale</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">1 month</p>
+								</div>
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Moving averages</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">1 month</p>
+								</div>
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Exponential EMA</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">1 month</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Weighted WMA</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">Select</p>
+								</div>
+								<div class="col-3">
+									<div class="btn-group dropdown mb-2">
+										<a class="dropdown-toggle fs-4 text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">Indicators</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<p class="text-muted fs-5">Select</p>
+								</div>
+							</div>
+							<canvas class="mt-4" id="myChart" width="500" height="200"></canvas>
+						</div>
 						<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
 					</div>
+				</div>
+				<div class="col-md-4 d-block">
+					<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
+					<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
 				</div>
 			</div>
 		</div>
@@ -130,9 +248,7 @@
 						</div>
 						<div class="card-body px-0">
 							<h5 class="card-title display-6 mb-3">ABC of soil sampling for capsicum planting</h5>
-							<p class="card-text fs-5 pb-3">
-								ABC of soil sampling for capsicum planting A farmer needs to conduct soil testing as this helps in identifying the specific nutrients soil.
-							</p>
+							<p class="card-text fs-5 pb-3">ABC of soil sampling for capsicum planting A farmer needs to conduct soil testing as this helps in identifying the specific nutrients soil.</p>
 							<div class="d-flex justify-content-between">
 								<p class="text-black mb-0">Yahoo Finance</p>
 								<p class="text-muted text-end mb-0">Yesterday</p>
@@ -142,7 +258,7 @@
 					</a>
 				</div>
 				<div class="col-md-8">
-					<div class="row row-cols-2 row-cols-md-2 gy-4">
+					<div class="row row-cols-xs-1 row-cols-sm-1 row-cols-lg-2 row-cols-xl-2 gy-4 gx-5">
 						<div class="col">
 							<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
 								<div class="card-body d-flex flex-column justify-content-between py-0">
@@ -306,7 +422,9 @@
 				</div>
 			</div>
 		</footer>
-		<script src="assets/js/vendor/bootstrap.bundle.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" type="text/javascript"></script>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script src="assets/js/app.js"></script>
 	</body>

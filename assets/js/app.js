@@ -1,4 +1,3 @@
-// An object literal
 var app = {
 	init: function () {
 		app.functionOne()
@@ -9,8 +8,6 @@ var app = {
 	},
 }
 ;(function () {
-	// your page initialization code here
-	// the DOM will be available here
 	app.init()
 })()
 
@@ -25,7 +22,7 @@ var myChart = new Chart(ctx, {
 				fill: true,
 				backgroundColor: "rgba(75, 192, 192, 0.2)",
 				borderColor: "rgb(75, 192, 192)",
-				tension: 0.1,
+				tension: 0,
 			},
 		],
 	},
