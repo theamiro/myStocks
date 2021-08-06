@@ -11,17 +11,17 @@
 
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
-				<div class="container-fluid">
+			<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light border-bottom">
+				<div class="container">
 					<a class="navbar-brand" href="#">
-						<span class="fw-normal display-5">myStocks</span>
+						<span class="fw-normal display-6">myStocks</span>
 					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarCollapse">
 						<ul class="navbar-nav ms-5 me-auto mb-2 mb-md-0">
-							<li class="nav-item active">
+							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="index.html">News</a>
 							</li>
 							<li class="nav-item">
@@ -42,11 +42,11 @@
 						</ul>
 						<div class="d-flex me-3 gap-3">
 							<a href="#" class="btn btn-light">Log in</a>
-							<a href="#" class="btn btn-primary">Sign up</a>
+							<a href="#" class="btn btn-primary rounded-3">Sign up</a>
 						</div>
 						<form class="d-flex">
-							<div class="input-group">
-								<input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+							<div class="input-group input-group-dark">
+								<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
 								<button type="submit" class="btn">
 									<i class="bi bi-search"></i>
 								</button>
@@ -62,109 +62,579 @@
 					<p class="text-muted">Share Price Performance Scorecard</p>
 				</div>
 				<div class="col-md-12">
-					<table class="table table-hover table-responsive">
-						<thead class="">
-							<tr>
-								<th scope="col" colspan="3" class="text-uppercase text-muted fw-normal border-bottom-0"></th>
-								<th scope="col" colspan="6" class="text-uppercase text-muted fw-normal border-bottom-0">SHARE PERFORMANCE (% CHANGE)</th>
-								<th scope="col" colspan="7" class="text-uppercase text-muted fw-normal border-bottom-0">FUNDAMENTALS</th>
-							</tr>
-							<tr>
-								<th scope="col px-2">
-									<select class="fw-normal mb-0 fs-6 text-uppercase border-0 text-primary">
-										<option>Stock</option>
-										<option>Sample</option>
-										<option>Sample</option>
-										<option>Sample</option>
-										<option>Sample</option>
-									</select>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">Status</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">Latest</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">1D</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">1W</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">1M</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">3M</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">6M</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">1Y</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">SHARES</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">MCAP</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">EPS</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">DPS</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">PE</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">DIVYLD</p>
-								</th>
-								<th scope="col px-2">
-									<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">BETA</p>
-								</th>
-							</tr>
-						</thead>
-						<tbody class="">
-							<tr>
-								<td class="">ABSA</td>
-								<td class=""></td>
-								<td class="">8.78</td>
-								<td class=""><span class="badge bg-success p-2">+9.70</span></td>
-								<td class=""><span class="badge bg-danger p-2">-6.70</span></td>
-								<td class=""><span class="badge bg-success p-2">+1.70</span></td>
-								<td class=""><span class="badge bg-success p-2">+0.70</span></td>
-								<td class=""><span class="badge bg-success p-2">+6.70</span></td>
-								<td class=""></td>
-								<td class="">5.35B</td>
-								<td class="">47.69B</td>
-								<td class="">1.23</td>
-								<td class="">46.00</td>
-								<td class="">7.80</td>
-								<td class="">5.76</td>
-								<td class="">0.89</td>
-							</tr>
-							<tr>
-								<td class="">BAMB</td>
-								<td class=""></td>
-								<td class="">453.75</td>
-								<td class=""><span class="badge bg-success p-2">+9.70</span></td>
-								<td class=""><span class="badge bg-danger p-2">-6.70</span></td>
-								<td class=""><span class="badge bg-success p-2">+1.70</span></td>
-								<td class=""><span class="badge bg-success p-2">+0.70</span></td>
-								<td class=""><span class="badge bg-success p-2">+6.70</span></td>
-								<td class=""><span class="badge bg-danger p-2">-6.70</span></td>
-								<td class="">364.9M</td>
-								<td class="">14.58B</td>
-								<td class="">10.41</td>
-								<td class="">-</td>
-								<td class="">15.35</td>
-								<td class="">-</td>
-								<td class="">0.56</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead class="">
+								<tr>
+									<th scope="col" colspan="3" class="text-uppercase text-muted fw-normal border-bottom-0"></th>
+									<th scope="col" colspan="6" class="text-uppercase text-muted fw-normal border-bottom-0">SHARE PERFORMANCE (% CHANGE)</th>
+									<th scope="col" colspan="7" class="text-uppercase text-muted fw-normal border-bottom-0">FUNDAMENTALS</th>
+								</tr>
+								<tr>
+									<th scope="col px-2">
+										<select class="fw-normal mb-0 fs-6 text-uppercase border-0 text-primary">
+											<option>Stock</option>
+											<option>Sample</option>
+											<option>Sample</option>
+											<option>Sample</option>
+											<option>Sample</option>
+										</select>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">Status</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">Latest</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">1D</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">1W</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">1M</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">3M</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">6M</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">1Y</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">SHARES</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">MCAP</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">EPS</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">DPS</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">PE</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">DIVYLD</p>
+									</th>
+									<th scope="col px-2">
+										<p class="fw-normal mb-0 text-secondary fs-6 text-uppercase">BETA</p>
+									</th>
+								</tr>
+							</thead>
+							<tbody class="">
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+								<tr>
+									<td class="">ABSA</td>
+									<td class=""></td>
+									<td class="">8.78</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""></td>
+									<td class="">5.35B</td>
+									<td class="">47.69B</td>
+									<td class="">1.23</td>
+									<td class="">46.00</td>
+									<td class="">7.80</td>
+									<td class="">5.76</td>
+									<td class="">0.89</td>
+								</tr>
+								<tr>
+									<td class="">BAMB</td>
+									<td class=""></td>
+									<td class="">453.75</td>
+									<td class=""><span class="badge bg-success">+9.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class=""><span class="badge bg-success">+1.70</span></td>
+									<td class=""><span class="badge bg-success">+0.70</span></td>
+									<td class=""><span class="badge bg-success">+6.70</span></td>
+									<td class=""><span class="badge bg-danger">-6.70</span></td>
+									<td class="">364.9M</td>
+									<td class="">14.58B</td>
+									<td class="">10.41</td>
+									<td class="">-</td>
+									<td class="">15.35</td>
+									<td class="">-</td>
+									<td class="">0.56</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
