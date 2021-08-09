@@ -157,3 +157,6 @@ div.tab-pane {
         border-radius: 8px;
     }
 }
+.advertisement {
+    background-color: transparentize($color: $secondary, $amount: 0.7);
+}
