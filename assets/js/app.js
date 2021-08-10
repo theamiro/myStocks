@@ -1,12 +1,5 @@
-var app = {
-	init: function () {
-		app.functionOne()
-	},
-	functionOne: function () {},
-	scrollTop: function () {
+jQuery(function () {
+	function scrollTop() {
 		window.scrollTo({top: 0, behavior: "smooth"})
-	},
-}
-;(function () {
-	app.init()
-})()
+	}
+})
