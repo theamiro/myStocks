@@ -27,6 +27,7 @@ table {
                 border-bottom: $secondary;
                 th {
                     font-weight: 400;
+                    padding-bottom: 15px;
                 }
             }
             &.bordered {
@@ -38,7 +39,7 @@ table {
                             position: absolute;
                             right: 0;
                             top: 0;
-                            height: 180%;
+                            height: 170%;
                             width: 1.5px;
                             background-color: transparentize($color: #000000, $amount: .9);;
                         }
