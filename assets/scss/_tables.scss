@@ -21,6 +21,30 @@ table {
                 }
             }
         }
+        &.table-space-between {
+            tbody {
+                tr {
+                    td{
+                        &:last-child {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+        &.stepped {
+            tbody {
+                tr {
+                    &.subitem {
+                        td {
+                            &:first-child {
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         thead {
             border-bottom: $secondary;
             tr {
