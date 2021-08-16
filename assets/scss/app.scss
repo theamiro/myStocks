@@ -165,8 +165,16 @@ div.tab-pane {
         border-radius: 8px;
     }
     &.fab {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
+        height: 42px !important;
+        width: 42px !important;
+        line-height: 26px;
+        border-width: 1.5px;
     }
+}
+.canvas-image {
+    width: 67px;
+    height: 32px;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
