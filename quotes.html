@@ -74,9 +74,9 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-danger">
+		<section class="bg-danger py-3">
 			<div class="container">
-				<div class="row py-2">
+				<div class="row g-3">
 					<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
 						<p class="text-light fs-5 mb-0">8.98</p>
 						<p class="text-light fs-5 mb-0">Previous</p>
@@ -110,10 +110,10 @@
 					<div class="col-md-12">
 						<nav class="mb-2">
 							<div class="nav tabs" id="nav-tab" role="tablist">
-								<a class="nav-link fs-2" id="nav-charts-tab" data-toggle="tab" href="#nav-charts" role="tab" aria-controls="nav-charts" aria-selected="true">Charts</a>
+								<a class="nav-link fs-2 active" id="nav-charts-tab" data-toggle="tab" href="#nav-charts" role="tab" aria-controls="nav-charts" aria-selected="true">Charts</a>
 								<a class="nav-link fs-2" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
 								<a class="nav-link fs-2" id="nav-financials-tab" data-toggle="tab" href="#nav-financials" role="tab" aria-controls="nav-financials" aria-selected="false">Financials</a>
-								<a class="nav-link fs-2 active" id="nav-fundamentals-tab" data-toggle="tab" href="#nav-fundamentals" role="tab" aria-controls="nav-fundamentals" aria-selected="false">Fundamentals</a>
+								<a class="nav-link fs-2" id="nav-fundamentals-tab" data-toggle="tab" href="#nav-fundamentals" role="tab" aria-controls="nav-fundamentals" aria-selected="false">Fundamentals</a>
 								<a class="nav-link fs-2" id="nav-corporate-tab" data-toggle="tab" href="#nav-corporate" role="tab" aria-controls="nav-corporate" aria-selected="false">Corporate actions</a>
 								<a class="nav-link fs-2" id="nav-historical-tab" data-toggle="tab" href="#nav-historical" role="tab" aria-controls="nav-historical" aria-selected="false">Historical Prices</a>
 							</div>
@@ -123,7 +123,7 @@
 				<div class="row">
 					<div class="col-md-12 mt-5">
 						<div class="tab-content" id="nav-tabContent">
-							<div class="tab-pane fade" id="nav-charts" role="tabpanel" aria-labelledby="nav-charts-tab">
+							<div class="tab-pane fade show active" id="nav-charts" role="tabpanel" aria-labelledby="nav-charts-tab">
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="selectors mb-4">
@@ -445,9 +445,9 @@
 																<thead>
 																	<tr>
 																		<td width="40%">
-																			<div class="">
-																				<a href="#" class="btn btn-outline-secondary fab"><i class="fas fa-chevron-left"></i></a>
-																				<a href="#" class="btn btn-outline-secondary fab"><i class="fas fa-chevron-right"></i></a>
+																			<div class="d-flex gap-3">
+																				<a href="#" class="btn btn-outline rounded-circle border-secondary text-dark fab"><i class="fas fa-chevron-left"></i></a>
+																				<a href="#" class="btn btn-outline rounded-circle border-secondary text-dark fab"><i class="fas fa-chevron-right"></i></a>
 																			</div>
 																		</td>
 																		<td class="text-muted" width="10%">2016</td>
@@ -466,7 +466,7 @@
 																		<td><span class="badge bg-success">100</span></td>
 																		<td>100</td>
 																		<td>100</td>
-																		<td>canvas</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
 																	</tr>
 																	<tr class="subitem">
 																		<td>Subitem</td>
@@ -475,7 +475,7 @@
 																		<td><span class="badge bg-success">100</span></td>
 																		<td>100</td>
 																		<td>100</td>
-																		<td>canvas</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
 																	</tr>
 																	<tr>
 																		<td>Item 1</td>
@@ -484,7 +484,7 @@
 																		<td><span class="badge bg-success">100</span></td>
 																		<td>100</td>
 																		<td>100</td>
-																		<td>canvas</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
 																	</tr>
 																	<tr class="subitem">
 																		<td>Subitem</td>
@@ -493,7 +493,7 @@
 																		<td><span class="badge bg-success">100</span></td>
 																		<td>100</td>
 																		<td>100</td>
-																		<td>canvas</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
 																	</tr>
 																	<tr>
 																		<td>Item 1</td>
@@ -502,7 +502,7 @@
 																		<td><span class="badge bg-success">100</span></td>
 																		<td>100</td>
 																		<td>100</td>
-																		<td>canvas</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
 																	</tr>
 																	<tr class="subitem">
 																		<td>Subitem</td>
@@ -511,7 +511,7 @@
 																		<td><span class="badge bg-success">100</span></td>
 																		<td>100</td>
 																		<td>100</td>
-																		<td>canvas</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
 																	</tr>
 																</tbody>
 															</table>
@@ -528,7 +528,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane fade show active" id="nav-fundamentals" role="tabpanel" aria-labelledby="nav-fundamentals-tab">
+							<div class="tab-pane fade" id="nav-fundamentals" role="tabpanel" aria-labelledby="nav-fundamentals-tab">
 								<div class="row pb-3 gx-5 position-relative">
 									<div class="col-md-3">
 										<div class="table-responsive">
@@ -729,7 +729,7 @@
 								<div class="row mb-5">
 									<div class="col-md-8">
 										<div class="d-flex flex-row justify-content-between align-items-center mb-3">
-											<p class="fs-5 fw-normal">Dividend Information</p>
+											<p class="fs-5 fw-normal mb-0">Dividend Information</p>
 											<div class="d-flex gap-3">
 												<a class="btn btn-link text-decoration-none fs-5 text-dark" href="#">Past</a>
 												<a class="btn btn-link text-decoration-none fs-5 " href="#">Future</a>
@@ -792,6 +792,10 @@
 												</tbody>
 											</table>
 										</div>
+									</div>
+                                    <div class="col-md-4 d-block">
+										<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
+										<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
 									</div>
 								</div>
 								<div class="row mb-5">
