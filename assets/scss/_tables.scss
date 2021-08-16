@@ -27,6 +27,23 @@ table {
                 border-bottom: $secondary;
                 th {
                     font-weight: 400;
+                    padding-bottom: 15px;
+                }
+            }
+            &.bordered {
+                tr:first-child {
+                    th:first-child, th:nth-child(2) {
+                        position: relative;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            height: 170%;
+                            width: 1.5px;
+                            background-color: transparentize($color: #000000, $amount: .9);;
+                        }
+                    }
                 }
             }
         }
@@ -55,4 +72,12 @@ table {
             }
         }
     }
+    // &.table-freeze-cols {
+    //     th:first-child, td:first-child{
+    //         position: sticky;
+    //         left: 0px;
+    //         z-index: 1;
+    //         background-color: $light;
+    //     }
+    // }
 }
