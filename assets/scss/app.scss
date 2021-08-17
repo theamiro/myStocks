@@ -218,3 +218,6 @@ div.tab-pane {
         }
     }
 }
+.advertisement {
+    background-color: transparentize($color: $secondary, $amount: 0.7);
+}
