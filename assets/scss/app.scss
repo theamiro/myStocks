@@ -221,3 +221,11 @@ div.tab-pane {
 .advertisement {
     background-color: transparentize($color: $secondary, $amount: 0.7);
 }
+.navbar-toggler {
+    background-color: transparentize($color: $dark, $amount: 0.9);
+    @extend .border-0;
+    width: 46px;
+    height: 46px;
+    @extend .p-2;
+    @extend .rounded-2;
+}
