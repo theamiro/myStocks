@@ -39,7 +39,7 @@ body {
     .nav-item {
         margin-right: 36px;
         &:last-child {
-            margin-right: 0px;
+            @extend .me-0;
         }
     }
 }
@@ -63,8 +63,7 @@ a.card {
     text-decoration: none;
     color: inherit;
     .card-body {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        @extend .px-0;
         .card-title{
             @extend .fs-3;
             font-weight: $font-weight-light;
@@ -76,19 +75,19 @@ a.card {
     min-width: 80px;
     &.bg-primary {
         background-color:transparentize($color: $primary, $amount: .85) !important;
-        color: $primary;
+        @extend .text-primary;
     }
     &.bg-success {
         background-color:transparentize($color: $success, $amount: .85) !important;
-        color: $success;
+        @extend .text-success;
     }
     &.bg-danger {
         background-color:transparentize($color: $danger, $amount: .85) !important;
-        color: $danger;
+        @extend .text-danger;
     }
     &.bg-warning {
         background-color:transparentize($color: $warning, $amount: .85) !important;
-        color: $warning;
+        @extend .text-warning;
     }
 }
 nav {
@@ -98,13 +97,13 @@ nav {
             color: $secondary;
             transition: color 300ms ease-in-out;
             &:first-child {
-                padding-left: 0px;
+                @extend .ps-0;
             }
             &.active {
-                color: $dark;
+                @extend .text-dark;
             }
             &:hover {
-                color: $dark;
+                @extend .text-dark;
             }
         }
     }
@@ -183,9 +182,38 @@ div.tab-pane {
         border-radius: 8px;
         li {
             @extend .py-3;
+            @extend .text-secondary;
             border-bottom: 1px solid transparentize($color: $dark, $amount: 0.9);
             &:last-child {
                 border-bottom: none;
+            }
+            &.active {
+                @extend .text-dark;
+                background: transparent;
+            }
+            &:hover {
+                background: transparentize($color: $secondary, $amount: 0.9);
+            }
+        }
+    }
+}
+.filter-nav {
+    .nav-item {
+        @extend .mx-2;
+        &:first-child {
+            @extend .ms-0;
+        }
+        .nav-link {
+            @extend .fs-5;
+            @extend .text-dark;
+            &:first-child {
+                @extend .ps-0;
+            }
+            &:hover {
+                @extend .text-primary;
+            }
+            &.active {
+                @extend .text-primary;
             }
         }
     }

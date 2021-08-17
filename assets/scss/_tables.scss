@@ -115,3 +115,6 @@ table {
         }
     }
 }
+.table > :not(:last-child) > :last-child > * {
+    border-bottom-color: transparentize($color: $dark, $amount: .90);
+}

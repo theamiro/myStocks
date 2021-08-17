@@ -236,6 +236,16 @@
 									<p class="display-1 mb-0 me-3">168.94</p>
 									<span class="badge bg-danger fs-5">3.74(-2.71%)</span>
 								</div>
+								<nav class="nav filter-nav my-5">
+									<li class="nav-item"><a class="nav-link" href="#">1D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">5D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">1M</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">6M</a></li>
+									<li class="nav-item"><a class="nav-link active" href="#">YTD</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">1Y</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">5Y</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Max.</a></li>
+								</nav>
 								<canvas id="all-share" width="600" height="300"></canvas>
 							</div>
 							<div class="tab-pane fade" id="nav-20-share" role="tabpanel" aria-labelledby="nav-20-share-tab">
@@ -243,6 +253,16 @@
 									<p class="display-1 mb-0 me-3">168.94</p>
 									<span class="badge bg-success fs-5">3.74(-2.71%)</span>
 								</div>
+								<nav class="nav filter-nav my-5">
+									<li class="nav-item"><a class="nav-link" href="#">1D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">5D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">1M</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">6M</a></li>
+									<li class="nav-item"><a class="nav-link active" href="#">YTD</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">1Y</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">5Y</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Max.</a></li>
+								</nav>
 								<canvas id="20-share" width="600" height="300"></canvas>
 							</div>
 							<div class="tab-pane fade" id="nav-25-share" role="tabpanel" aria-labelledby="nav-25-share-tab">
@@ -250,6 +270,16 @@
 									<p class="display-1 mb-0 me-3">168.94</p>
 									<span class="badge bg-danger fs-5">3.74(-2.71%)</span>
 								</div>
+								<nav class="nav filter-nav my-5">
+									<li class="nav-item"><a class="nav-link" href="#">1D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">5D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">1M</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">6M</a></li>
+									<li class="nav-item"><a class="nav-link active" href="#">YTD</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">1Y</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">5Y</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Max.</a></li>
+								</nav>
 								<canvas id="25-share" width="600" height="300"></canvas>
 							</div>
 						</div>
@@ -549,6 +579,52 @@
 			successGradient.addColorStop(0, "rgba(10, 190, 130, 0.5)")
 			successGradient.addColorStop(1, "rgba(10, 190, 130, 0)")
 			var myChart = new Chart(twentyShareIndex, {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+					datasets: [
+						{
+							data: [168, 165, 164, 166, 165, 163, 168],
+							fill: true,
+							backgroundColor: successGradient,
+							borderColor: "rgb(10, 190, 130)",
+						},
+					],
+				},
+				options: {
+					maintainAspectRatio: true,
+					scales: {
+						x: {
+							grid: {
+								display: false,
+							},
+						},
+						y: {
+							beginAtZero: false,
+							grid: {
+								display: true,
+							},
+							suggestedMin: 156,
+							suggestedMax: 170,
+						},
+					},
+					plugins: {
+						legend: {
+							display: false,
+							labels: {
+								color: "rgb(255, 99, 132)",
+							},
+						},
+						tooltip: {
+							enabled: true,
+						},
+					},
+				},
+			})
+		</script>
+		<script>
+			var twentyFiveShareIndex = document.getElementById("25-share").getContext("2d")
+			var myChart = new Chart(twentyFiveShareIndex, {
 				type: "line",
 				data: {
 					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
