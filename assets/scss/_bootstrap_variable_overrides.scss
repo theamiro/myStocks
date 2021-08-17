@@ -31,3 +31,6 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1800px
 );
+
+// Tables
+$table-border-color:          transparentize($color: $dark, $amount: .9) !default;

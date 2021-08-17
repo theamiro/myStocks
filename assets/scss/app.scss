@@ -32,12 +32,20 @@ body {
 .border-radius {
     border-radius: 8px;
 }
+.rounded-2 {
+    border-radius: 8px;
+}
 .navbar-nav {
     .nav-item {
         margin-right: 36px;
         &:last-child {
             margin-right: 0px;
         }
+    }
+}
+img {
+    &.border-1{
+        border: 1px solid;
     }
 }
 .background-image {
@@ -153,7 +161,20 @@ div.tab-pane {
     }
 }
 .btn {
-    .btn-alt {
+    &.btn-alt {
         border-radius: 8px;
     }
+    &.fab {
+        height: 42px !important;
+        width: 42px !important;
+        line-height: 26px;
+        border-width: 1.5px;
+    }
+}
+.canvas-image {
+    width: 67px;
+    height: 32px;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }

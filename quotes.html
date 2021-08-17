@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<title>myStocks</title>
+		<link rel="icon" href="assets/img/favicons/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light border-bottom">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<span class="fw-normal display-6">myStocks</span>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav ms-5 me-auto mb-2 mb-md-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html">News</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="indices.html">Indices</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="quotes.html">Quotes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="daily-price-list.html">Daily Price List</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="performance-scorecard.html">Performance Scorecard</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="portfolio.html">Portfolio</a>
+							</li>
+						</ul>
+						<div class="d-flex me-3 gap-3">
+							<a href="#" class="btn btn-light">Log in</a>
+							<a href="#" class="btn btn-primary rounded-3">Sign up</a>
+						</div>
+						<form class="d-flex">
+							<div class="input-group input-group-dark">
+								<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
+								<button type="submit" class="btn">
+									<i class="bi bi-search"></i>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section>
+			<div class="container mt-5 pt-5">
+				<div class="row py-4">
+					<div class="col-md-6">
+						<p class="display-6">Eaagads Ltd (EGAD)</p>
+					</div>
+					<div class="col-md-6">
+						<div class="d-flex mb-2">
+							<p class="display-6 col-3 mb-0">8.20</p>
+							<p class="display-6 text-danger col mb-0">—0.78 (—8.96%)</p>
+						</div>
+						<p class="fs-3 fw-medium mb-0">End of Day - May 16 2021</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-danger py-3">
+			<div class="container">
+				<div class="row g-3">
+					<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+						<p class="text-light fs-5 mb-0">8.98</p>
+						<p class="text-light fs-5 mb-0">Previous</p>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+						<p class="text-light fs-5 mb-0">8.98</p>
+						<p class="text-light fs-5 mb-0">High</p>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+						<p class="text-light fs-5 mb-0">8.98</p>
+						<p class="text-light fs-5 mb-0">Low</p>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+						<p class="text-light fs-5 mb-0">39,500</p>
+						<p class="text-light fs-5 mb-0">Volume</p>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+						<p class="text-light fs-5 mb-0">323,870.00</p>
+						<p class="text-light fs-5 mb-0">Turnover</p>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+						<p class="text-light fs-5 mb-0">6.50–9.74</p>
+						<p class="text-light fs-5 mb-0">52—week Range</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="">
+			<div class="container">
+				<div class="row my-3">
+					<div class="col-md-12">
+						<nav class="mb-2">
+							<div class="nav tabs" id="nav-tab" role="tablist">
+								<a class="nav-link fs-2 active" id="nav-charts-tab" data-bs-toggle="tab" data-bs-target="#nav-charts" type="button" role="tab" aria-controls="nav-charts" aria-selected="true">Charts</a>
+								<a class="nav-link fs-2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+								<a class="nav-link fs-2" id="nav-financials-tab" data-bs-toggle="tab" data-bs-target="#nav-financials" type="button" role="tab" aria-controls="nav-financials" aria-selected="false">Financials</a>
+								<a class="nav-link fs-2" id="nav-fundamentals-tab" data-bs-toggle="tab" data-bs-target="#nav-fundamentals" type="button" role="tab" aria-controls="nav-fundamentals" aria-selected="false">Fundamentals</a>
+								<a class="nav-link fs-2" id="nav-corporate-tab" data-bs-toggle="tab" data-bs-target="#nav-corporate" type="button" role="tab" aria-controls="nav-corporate" aria-selected="false">Corporate actions</a>
+								<a class="nav-link fs-2" id="nav-historical-tab" data-bs-toggle="tab" data-bs-target="#nav-historical" type="button" role="tab" aria-controls="nav-historical" aria-selected="false">Historical Prices</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mt-5">
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-charts" role="tabpanel" aria-labelledby="nav-charts-tab">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="selectors mb-4">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="rangeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Range</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="value text-muted fs-5" id="rangeValue">1 month</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="frequencyDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Frequency</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="frequencyValue">1 month</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="typeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Type</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="typeValue">1 month</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="priceVolumeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Price Volume</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="priceVolumeValue">1 month</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="overlayDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Overlay</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="overlayValue">1 month</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="scaleDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Scale</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="scaleValue">1 month</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="movingAveragesDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Moving Averages</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="movingAveragesValue">1 month</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="exponentialDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Exponential EMA</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="exponentialValue">1 month</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="weightedDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Weighted WMA</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="weightedValue">Select</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="btn-group dropdown mb-2">
+                                                        <button id="indicatorsDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Indicators</button>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-item">1 month</li>
+                                                            <li class="dropdown-item">3 months</li>
+                                                            <li class="dropdown-item">6 months</li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="text-muted fs-5" id="indicatorsValue">Select</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <canvas id="all-share" width="600" height="300"></canvas>
+                                    </div>
+                                    <div class="col-md-4 d-block">
+										<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
+										<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
+									</div>
+                                </div>
+							</div>
+							<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+								<div class="row mb-5">
+									<div class="col-md-8">
+										<div class="row mb-5">
+											<div class="col-md-4">
+												<img class="rounded-2 mb-3 border-1 border-secondary" src="./assets/img/capiscum.jpg" width="123" height="123" />
+												<p class="text-muted mb-2">Industry</p>
+												<p>Food processing</p>
+											</div>
+											<div class="col-md-4">
+												<p class="text-muted mb-2">Executive Leadership</p>
+												<div class="leaders">
+													<div class="leader mb-4">
+														<p class="mb-0">Evans Monari</p>
+														<p class="mb-0">Non-Executive Chairman</p>
+													</div>
+													<div class="leader mb-4">
+														<p class="mb-0">Fabian Philippart</p>
+														<p class="mb-0">General Manager, Director</p>
+													</div>
+													<div class="leader mb-4">
+														<p class="mb-0">Kathryne Maundu</p>
+														<p class="mb-0">Company Secretary</p>
+													</div>
+													<div class="leader mb-4">
+														<p class="mb-0">D. C. A. Harries</p>
+														<p class="mb-0">Director</p>
+													</div>
+													<div class="leader mb-4">
+														<p class="mb-0">George Kapanadze</p>
+														<p class="mb-0">Director</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<p class="text-muted mb-2">Contact</p>
+												<div class="address mb-3">
+													<p class="mb-0">Ngenda House</p>
+													<p class="mb-0">LR NO.110/2</p>
+													<p class="mb-0">P O Box 10</p>
+													<p class="mb-0">00232</p>
+													<p class="mb-0">Kenya</p>
+												</div>
+												<div class="contact">
+													<p class="mb-0"><a class="text-dark text-decoration-none" href="tel:+254208011041">+254.20.8011041</a></p>
+													<p class="mb-0"><a class="text-dark text-decoration-none" href="https://www.eaagads.co.ke/">https://www.eaagads.co.ke/</a></p>
+												</div>
+											</div>
+										</div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <p class="text-muted mb-2">About Eegads Ltd(EGAD)</p>
+                                                <p class="lh-lg mb-5">
+                                                    Eaagads is engaged in growing, blending and selling of coffee products both locally and in the International market. It produces approximately 292 tons of coffee annually. The company sold some of its land to Tatu city, a property development project by
+                                                    Moscow-based Renaissance Partners. Renaissance is the largest shareholder in Eaagads, a stake it acquired after it bought out the majority shareholder Socfinaf.
+                                                </p>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <video class="embed-responsive-item" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" controls poster="./assets/img/poster.jpg">
+                                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4"></source>
+                                                    </video>
+                                                </div>
+                                                <p class="text-muted">Eegads Corporate Video</p>
+                                            </div>
+                                        </div>
+									</div>
+									<div class="col-md-4 d-block">
+										<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
+										<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-financials" role="tabpanel" aria-labelledby="nav-financials-tab">
+								<div class="row gx-5 pb-4">
+									<div class="col-md-3">
+										<div class="table-responsive">
+											<table class="table table-flush table-space-between table-border-bottom-0 table-lg">
+												<tbody>
+													<tr>
+														<td>Income</td>
+														<td>24.20</td>
+													</tr>
+													<tr>
+														<td>Gross Profit</td>
+														<td>41.75</td>
+													</tr>
+													<tr>
+														<td>Net Profit</td>
+														<td>3.97</td>
+													</tr>
+													<tr>
+														<td>Current Ratio</td>
+														<td>1.41</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="table-responsive">
+											<table class="table table-flush table-space-between table-border-bottom-0 table-lg">
+												<tbody>
+													<tr>
+														<td>Income</td>
+														<td>24.20</td>
+													</tr>
+													<tr>
+														<td>Gross Profit</td>
+														<td>41.75</td>
+													</tr>
+													<tr>
+														<td>Net Profit</td>
+														<td>3.97</td>
+													</tr>
+													<tr>
+														<td>Current Ratio</td>
+														<td>1.41</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="table-responsive">
+											<table class="table table-flush table-space-between table-border-bottom-0 table-lg">
+												<tbody>
+													<tr>
+														<td>Income</td>
+														<td>24.20</td>
+													</tr>
+													<tr>
+														<td>Gross Profit</td>
+														<td>41.75</td>
+													</tr>
+													<tr>
+														<td>Net Profit</td>
+														<td>3.97</td>
+													</tr>
+													<tr>
+														<td>Current Ratio</td>
+														<td>1.41</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="table-responsive">
+											<table class="table table-flush table-space-between table-border-bottom-0 table-lg">
+												<tbody>
+													<tr>
+														<td>Income</td>
+														<td>24.20</td>
+													</tr>
+													<tr>
+														<td>Gross Profit</td>
+														<td>41.75</td>
+													</tr>
+													<tr>
+														<td>Net Profit</td>
+														<td>3.97</td>
+													</tr>
+													<tr>
+														<td>Current Ratio</td>
+														<td>1.41</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+                                <hr class="bg-secondary"/>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="text-muted">Statements</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-8">
+										<nav class="mb-2">
+											<div class="nav tabs" id="nav-tab" role="tablist">
+												<a class="nav-link active fs-2" id="nav-income-tab" data-toggle="tab" href="#nav-income" role="tab" aria-controls="nav-income" aria-selected="true">Income Statement</a>
+												<a class="nav-link fs-2" id="nav-balance-tab" data-toggle="tab" href="#nav-balance" role="tab" aria-controls="nav-balance" aria-selected="false">Balance Sheet</a>
+												<a class="nav-link fs-2" id="nav-cash-tab" data-toggle="tab" href="#nav-cash" role="tab" aria-controls="nav-cash" aria-selected="false">Cash Flow</a>
+											</div>
+										</nav>
+										<div class="tab-content" id="nav-tabContent">
+											<div class="tab-pane fade show active" id="nav-charts" role="tabpanel" aria-labelledby="nav-charts-tab">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="table-responsive">
+															<table class="table table-hover stepped">
+																<thead>
+																	<tr>
+																		<td width="40%">
+																			<div class="d-flex gap-3">
+																				<a href="#" class="btn btn-outline rounded-circle border-secondary text-dark fab"><i class="fas fa-chevron-left"></i></a>
+																				<a href="#" class="btn btn-outline rounded-circle border-secondary text-dark fab"><i class="fas fa-chevron-right"></i></a>
+																			</div>
+																		</td>
+																		<td class="text-muted" width="10%">2016</td>
+																		<td class="text-muted" width="10%">2017</td>
+																		<td class="text-muted" width="10%">2018</td>
+																		<td class="text-muted" width="10%">2019</td>
+																		<td class="text-muted" width="10%">2020</td>
+																		<td class="text-muted" width="10%">Trend</td>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>Item 1</td>
+																		<td>90</td>
+																		<td>100</td>
+																		<td><span class="badge bg-success">100</span></td>
+																		<td>100</td>
+																		<td>100</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
+																	</tr>
+																	<tr class="subitem">
+																		<td>Subitem</td>
+																		<td>90</td>
+																		<td>100</td>
+																		<td><span class="badge bg-success">100</span></td>
+																		<td>100</td>
+																		<td>100</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
+																	</tr>
+																	<tr>
+																		<td>Item 1</td>
+																		<td>90</td>
+																		<td>100</td>
+																		<td><span class="badge bg-success">100</span></td>
+																		<td>100</td>
+																		<td>100</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
+																	</tr>
+																	<tr class="subitem">
+																		<td>Subitem</td>
+																		<td>90</td>
+																		<td>100</td>
+																		<td><span class="badge bg-success">100</span></td>
+																		<td>100</td>
+																		<td>100</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
+																	</tr>
+																	<tr>
+																		<td>Item 1</td>
+																		<td>90</td>
+																		<td>100</td>
+																		<td><span class="badge bg-success">100</span></td>
+																		<td>100</td>
+																		<td>100</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
+																	</tr>
+																	<tr class="subitem">
+																		<td>Subitem</td>
+																		<td>90</td>
+																		<td>100</td>
+																		<td><span class="badge bg-success">100</span></td>
+																		<td>100</td>
+																		<td>100</td>
+																		<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></td>
+																	</tr>
+																</tbody>
+															</table>
+															<p class="text-muted mt-5">In Millions of KES (except for per share items)</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 d-block">
+										<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
+										<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-fundamentals" role="tabpanel" aria-labelledby="nav-fundamentals-tab">
+								<div class="row pb-3 gx-5 position-relative">
+									<div class="col-md-3">
+										<div class="table-responsive">
+											<table class="table table-flush table-space-between table-border-bottom-0 table-lg">
+												<tbody>
+													<tr>
+														<td>Shares Issued</td>
+														<td>32.16M</td>
+													</tr>
+													<tr>
+														<td>Price/Earnings</td>
+														<td>179.1667</td>
+													</tr>
+													<tr>
+														<td>Payout Ratio</td>
+														<td>-</td>
+													</tr>
+													<tr>
+														<td>Year End</td>
+														<td>Mar 31</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="table-responsive">
+											<table class="table table-flush table-space-between table-border-bottom-0 table-lg">
+												<tbody>
+													<tr>
+														<td>Free Float</td>
+														<td>430M</td>
+													</tr>
+													<tr>
+														<td>Earnings/Share</td>
+														<td>0.18</td>
+													</tr>
+													<tr>
+														<td>Price to Book Value</td>
+														<td>2.8306</td>
+													</tr>
+													<tr>
+														<td>Average Vol (50 days)</td>
+														<td>554</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="table-responsive">
+											<table class="table table-flush table-space-between table-border-bottom-0 table-lg">
+												<tbody>
+													<tr>
+														<td>Market Capitalization</td>
+														<td>1.04B</td>
+													</tr>
+													<tr>
+														<td>Dividend/Share</td>
+														<td>-</td>
+													</tr>
+													<tr>
+														<td>Current Ratio</td>
+														<td>0.8862</td>
+													</tr>
+													<tr>
+														<td>Average Vol (20 days)</td>
+														<td>145</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="table-responsive">
+											<table class="table table-flush table-space-between table-border-bottom-0 table-lg">
+												<tbody>
+													<tr>
+														<td>Par Value</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td>Dividend Yield</td>
+														<td>-</td>
+													</tr>
+													<tr>
+														<td>BETA(vs. NASI)</td>
+														<td>0.8404</td>
+													</tr>
+													<tr>
+														<td>Average Vol (10 days)</td>
+														<td>180</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+                                     <hr class="my-4 bg-secondary"/>
+								</div>
+								<div class="row pt-3">
+									<div class="col-md-12">
+										<p class="text-muted">Statements</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-8">
+                                        <div class="d-flex justify-content-end my-4">
+                                            <div class="d-flex gap-3">
+												<a class="btn btn-link text-decoration-none fs-5 text-dark" href="#">Annual</a>
+												<a class="btn btn-link text-decoration-none fs-5 " href="#">Quarterly</a>
+											</div>
+                                        </div>
+										<div class="table-responsive">
+											<table class="table table-hover table-flush stepped">
+												<thead>
+													<tr>
+														<td width="40%">
+                                                            <div class="d-flex flex-row gap-2">
+                                                                <a href="#" class="btn btn-outline border-2 border-secondary text-dark rounded-circle fab"><i class="fas fa-chevron-left"></i></a>
+                                                                <a href="#" class="btn btn-outline border-2 border-secondary text-dark rounded-circle fab"><i class="fas fa-chevron-right"></i></a>
+                                                            </div>
+														</td>
+														<td class="text-muted text-uppercase" width="10%">2016</td>
+														<td class="text-muted text-uppercase" width="10%">2017</td>
+														<td class="text-muted text-uppercase" width="10%">2018</td>
+														<td class="text-muted text-uppercase" width="10%">2019</td>
+														<td class="text-muted text-uppercase" width="10%">2020</td>
+														<td class="text-muted text-uppercase" width="10%">Trend</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item 1</td>
+														<td>90</td>
+														<td>100</td>
+														<td><span class="badge bg-success">100</span></td>
+														<td>100</td>
+														<td>100</td>
+														<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></div></td>
+													</tr>
+													<tr class="subitem">
+														<td>Subitem</td>
+														<td>90</td>
+														<td>100</td>
+														<td><span class="badge bg-success">100</span></td>
+														<td>100</td>
+														<td>100</td>
+														<td><div class="canvas-image" style="background-image: url('./assets/img/canvas-02.svg');"></div></td>
+													</tr>
+													<tr>
+														<td>Item 1</td>
+														<td>90</td>
+														<td>100</td>
+														<td><span class="badge bg-success">100</span></td>
+														<td>100</td>
+														<td>100</td>
+														<td><div class="canvas-image" style="background-image: url('./assets/img/canvas-03.svg');"></div></td>
+													</tr>
+													<tr class="subitem">
+														<td>Subitem</td>
+														<td>90</td>
+														<td>100</td>
+														<td><span class="badge bg-success">100</span></td>
+														<td>100</td>
+														<td>100</td>
+														<td><div class="canvas-image" style="background-image: url('./assets/img/canvas-02.svg');"></div></td>
+													</tr>
+													<tr>
+														<td>Item 1</td>
+														<td>90</td>
+														<td>100</td>
+														<td><span class="badge bg-success">100</span></td>
+														<td>100</td>
+														<td>100</td>
+														<td><div class="canvas-image" style="background-image: url('./assets/img/canvas.svg');"></div></td>
+													</tr>
+													<tr class="subitem">
+														<td>Subitem</td>
+														<td>90</td>
+														<td>100</td>
+														<td><span class="badge bg-success">100</span></td>
+														<td>100</td>
+														<td>100</td>
+														<td><div class="canvas-image" style="background-image: url('./assets/img/canvas-03.svg');"></div></td>
+													</tr>
+												</tbody>
+											</table>
+											<p class="text-muted mt-5">In Millions of KES (except for per share items)</p>
+										</div>
+									</div>
+									<div class="col-md-4 d-block">
+										<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
+										<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-corporate" role="tabpanel" aria-labelledby="nav-corporate-tab">
+								<div class="row mb-5">
+									<div class="col-md-8">
+										<div class="d-flex flex-row justify-content-between align-items-center mb-3">
+											<p class="fs-5 fw-normal mb-0">Dividend Information</p>
+											<div class="d-flex gap-3">
+												<a class="btn btn-link text-decoration-none fs-5 text-dark" href="#">Past</a>
+												<a class="btn btn-link text-decoration-none fs-5 " href="#">Future</a>
+											</div>
+										</div>
+										<div class="table-responsive">
+											<table class="table table-flush">
+												<thead class="fs-5">
+													<tr>
+														<td class="text-muted">Dividend</td>
+														<td class="text-muted">Announced</td>
+														<td class="text-muted">Book Closure</td>
+														<td class="text-muted">Payment</td>
+														<td class="text-muted">Amount</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>First And Final Dividend</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>KES 1.25</td>
+													</tr>
+													<tr>
+														<td>First And Final Dividend</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>KES 1.25</td>
+													</tr>
+													<tr>
+														<td>First And Final Dividend</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>KES 1.25</td>
+													</tr>
+													<tr>
+														<td>First And Final Dividend</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>KES 1.25</td>
+													</tr>
+													<tr>
+														<td>First And Final Dividend</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>KES 1.25</td>
+													</tr>
+													<tr>
+														<td>First And Final Dividend</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>KES 1.25</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+                                    <div class="col-md-4 d-block">
+										<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
+										<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
+									</div>
+								</div>
+								<div class="row mb-5">
+									<div class="col-md-8">
+										<p class="fs-5 fw-normal mb-3">Bonus/Split Information</p>
+										<div class="table-responsive">
+											<table class="table table-flush">
+												<thead class="fs-5">
+													<tr>
+														<td class="text-muted"></td>
+														<td class="text-muted">Ratio</td>
+														<td class="text-muted">Announced</td>
+														<td class="text-muted">Book Closure</td>
+														<td class="text-muted">Upload</td>
+														<td class="text-muted">Trading</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Bonus</td>
+														<td>1.1</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+													</tr>
+													<tr>
+														<td>Bonus</td>
+														<td>1.1</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+													</tr>
+													<tr>
+														<td>Bonus</td>
+														<td>1.1</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+													</tr>
+													<tr>
+														<td>Bonus</td>
+														<td>1.1</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+														<td>13 May 2021</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="row mb-5">
+									<div class="col-md-8">
+										<p class="fs-5 fw-normal mb-3">Rights Information</p>
+										<p class="text-muted">No information available</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-historical" role="tabpanel" aria-labelledby="nav-historical-tab">
+								<div class="row mb-5">
+									<div class="col-2">
+										<div class="btn-group dropdown mb-2">
+											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Month</button>
+											<ul class="dropdown-menu">
+												<li class="dropdown-item">1 month</li>
+												<li class="dropdown-item">3 months</li>
+												<li class="dropdown-item">6 months</li>
+											</ul>
+										</div>
+										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+									</div>
+									<div class="col-2">
+										<div class="btn-group dropdown mb-2">
+											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Year</button>
+											<ul class="dropdown-menu">
+												<li class="dropdown-item">1 month</li>
+												<li class="dropdown-item">3 months</li>
+												<li class="dropdown-item">6 months</li>
+											</ul>
+										</div>
+										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+									</div>
+									<div class="col-2">
+										<div class="btn-group dropdown mb-2">
+											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Frequency</button>
+											<ul class="dropdown-menu">
+												<li class="dropdown-item">1 month</li>
+												<li class="dropdown-item">3 months</li>
+												<li class="dropdown-item">6 months</li>
+											</ul>
+										</div>
+										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-8">
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<td class="text-muted">Date</td>
+														<td class="text-muted">Open</td>
+														<td class="text-muted">High</td>
+														<td class="text-muted">Low</td>
+														<td class="text-muted">Close</td>
+														<td class="text-muted">VWAP</td>
+														<td class="text-muted">ADJ VWAP</td>
+														<td class="text-muted">Volume</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-4 d-block">
+										<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
+										<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 mt-4">
+						<p class="text-muted">Realtime Market Data</p>
+					</div>
+				</div>
+                <div class="row">
+                    <div class="d-flex flex-row justify-content-end">
+                        <a href="#" class="btn btn-link text-decoration-none text-dark fs-5">
+                            Normal
+                        </a>
+                        <a href="#" class="btn btn-link text-decoration-none fs-5">
+                            ODD
+                        </a>
+                    </div>
+                </div>
+				<div class="row pt-5 gx-5">
+					<div class="col-md-4">
+                        <div class="table-responsive">
+                            <table class="table table-flush table-border-bottom-0 table-lg">
+                                <thead>
+                                    <tr>
+                                        <th class="display-6 fw-light border-bottom-0">
+                                            Bids
+                                        </th>
+                                        <th class="display-6 fw-light border-bottom-0">
+                                            81,500
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <thead class="text-muted">
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Splits</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>14:45:09</td>
+                                        <td>3</td>
+                                        <td>9300</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:36:13</td>
+                                        <td>4</td>
+                                        <td>9300</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00:00</td>
+                                        <td>3</td>
+                                        <td>2900</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:45:00</td>
+                                        <td>1</td>
+                                        <td>400</td>
+                                        <td>8.87</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="table-responsive">
+                            <table class="table table-flush table-border-bottom-0 table-lg">
+                                <thead>
+                                    <tr>
+                                        <th class="display-6 fw-light border-bottom-0">
+                                            Asks
+                                        </th>
+                                        <th class="display-6 fw-light border-bottom-0">
+                                            135,300
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <thead class="text-muted">
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Splits</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>14:45:09</td>
+                                        <td>3</td>
+                                        <td>9300</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:36:13</td>
+                                        <td>4</td>
+                                        <td>9300</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00:00</td>
+                                        <td>3</td>
+                                        <td>2900</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="table-responsive">
+                            <table class="table table-flush table-border-bottom-0 table-lg">
+                                <thead>
+                                    <tr>
+                                        <th class="display-6 fw-light border-bottom-0">
+                                            Trades
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <thead class="text-muted">
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>14:45:09</td>
+                                        <td>9300</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:36:13</td>
+                                        <td>9300</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00:00</td>
+                                        <td>2900</td>
+                                        <td>8.80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:45:00</td>
+                                        <td>400</td>
+                                        <td>8.87</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 mt-4">
+						<p class="text-muted">Business news powered by Nation & Business Daily</p>
+						<p class="display-6 my-4">Featured</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row pt-5 gx-5">
+					<div class="col-md-4">
+						<a href="#" class="card p-0 border-0">
+							<div class="video-frame">
+								<img src="./assets/img/capiscum.jpg" class="card-img-top" alt="Capiscum" />
+							</div>
+							<div class="card-body px-0">
+								<h5 class="card-title display-4 mb-4">ABC of soil sampling for capsicum planting</h5>
+								<p class="card-text fs-5 pb-3">ABC of soil sampling for capsicum planting A farmer needs to conduct soil testing as this helps in identifying the specific nutrients soil.</p>
+								<div class="d-flex justify-content-between">
+									<p class="text-black mb-0">Yahoo Finance</p>
+									<p class="text-muted text-end mb-0">Yesterday</p>
+								</div>
+								<hr class="mt-1" />
+							</div>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="row row-cols-1 row-cols-md-2 gy-4 gx-5">
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">Chama fights with big boys for flour market</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">The trouble with animal health training</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">Chama fights with big boys for flour market</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">The trouble with animal health training</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">Chama fights with big boys for flour market</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">The trouble with animal health training</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">Chama fights with big boys for flour market</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="#" class="card border-0 px-0 flex-row border border-bottom pb-3">
+									<div class="card-body d-flex flex-column justify-content-between py-0">
+										<h5 class="card-title">The trouble with animal health training</h5>
+										<div class="d-flex justify-content-between">
+											<p class="text-black mb-0">Yahoo Finance</p>
+											<p class="text-muted text-end mb-0">Yesterday</p>
+										</div>
+									</div>
+									<div class="background-image img-thumbnail w-100 p-0 ms-3" style="background-image: url('./assets/img/capiscum.jpg')"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row my-3">
+					<div class="col-md-12 d-flex justify-content-end pt-4">
+						<a href="#"
+							><a href="#" class="btn btn-light">More business news <i class="bi bi-chevron-right"></i></a
+						></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-primary">
+			<div class="container">
+				<div class="row pt-5">
+					<div class="col-md-6 d-flex flex-column justify-content-between">
+						<p class="text-white fw-normal fs-1 mb-5">Get the most out of <br />myStocks by signing up</p>
+						<div class="row mt-5 align-items-center">
+							<div class="col-md-6 mb-3">
+								<input type="email" class="form-control input-light form-control-lg" placeholder="Enter your email address" />
+							</div>
+							<div class="col-md-4 mb-3">
+								<button type="submit" class="btn btn-light btn-lg text-primary">Sign up Now!</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<p class="text-white fs-5">MyStocks</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">About</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<p class="text-white fs-5">Policies</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Terms of Service</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Privacy Policy</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Cookies Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<p class="text-white fs-5">Help</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Video Tutorials</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Account Settings</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Make Payments</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container pt-3 pb-2">
+				<hr class="bg-light border border-1" />
+				<div class="row align-items-center">
+					<div class="col-md-6 d-flex gap-4 align-items-center">
+						<p class="text-white mb-0 fs-3">myStocks</p>
+						<p class="text-white mb-0 opacity-50">&copy; 2007-21 Synergy Systems Ltd</p>
+					</div>
+					<div class="col-md-6 d-flex flex-nowrap justify-content-sm-center justify-content-md-end">
+						<div class="d-flex flex-wrap justify-center gap-3 pb-3">
+							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="/assets/img/googleplay.svg" /></a>
+							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="/assets/img/appstore.svg" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" type="text/javascript"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script>
+			var allShareIndex = document.getElementById("all-share").getContext("2d")
+			let dangerGradient = allShareIndex.createLinearGradient(0, 0, 0, 400)
+			dangerGradient.addColorStop(0, "rgba(231, 24, 24, 0.5)")
+			dangerGradient.addColorStop(1, "rgba(231, 24, 24, 0.1)")
+			var myChart = new Chart(allShareIndex, {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+					datasets: [
+						{
+							data: [168, 165, 164, 166, 165, 163, 168],
+							fill: true,
+							backgroundColor: dangerGradient,
+							borderColor: "rgb(231, 24, 24)",
+						},
+					],
+				},
+				options: {
+					maintainAspectRatio: true,
+					scales: {
+						x: {
+							grid: {
+								display: false,
+							},
+						},
+						y: {
+							beginAtZero: false,
+							grid: {
+								display: true,
+							},
+							suggestedMin: 156,
+							suggestedMax: 170,
+						},
+					},
+					plugins: {
+						legend: {
+							display: false,
+							labels: {
+								color: "rgb(255, 99, 132)",
+							},
+						},
+						tooltip: {
+							enabled: true,
+						},
+					},
+				},
+			})
+		</script>
+		<script>
+			var twentyShareIndex = document.getElementById("20-share").getContext("2d")
+			let successGradient = twentyShareIndex.createLinearGradient(0, 0, 0, 400)
+			successGradient.addColorStop(0, "rgba(10, 190, 130, 0.5)")
+			successGradient.addColorStop(1, "rgba(10, 190, 130, 0.1)")
+			var myChart = new Chart(twentyShareIndex, {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+					datasets: [
+						{
+							data: [168, 165, 164, 166, 165, 163, 168],
+							fill: true,
+							backgroundColor: successGradient,
+							borderColor: "rgb(10, 190, 130)",
+						},
+					],
+				},
+				options: {
+					maintainAspectRatio: true,
+					scales: {
+						x: {
+							grid: {
+								display: false,
+							},
+						},
+						y: {
+							beginAtZero: false,
+							grid: {
+								display: true,
+							},
+							suggestedMin: 156,
+							suggestedMax: 170,
+						},
+					},
+					plugins: {
+						legend: {
+							display: false,
+							labels: {
+								color: "rgb(255, 99, 132)",
+							},
+						},
+						tooltip: {
+							enabled: true,
+						},
+					},
+				},
+			})
+		</script>
+	</body>
+</html>
