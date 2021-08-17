@@ -113,141 +113,290 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-md-12">
 						<div class="tab-content" id="nav-tabContent">
 							<div class="tab-pane fade show active" id="nav-charts" role="tabpanel" aria-labelledby="nav-charts-tab">
-								<div class="selectors mb-4">
-									<div class="row">
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="rangeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Range</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
+								<div class="row">
+									<div class="col-md-8">
+										<div class="selectors mb-4">
+											<div class="row">
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="rangeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Range</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+												</div>
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="frequencyDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Frequency</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="frequencyValue">1 month</p>
+												</div>
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="typeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Type</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="typeValue">1 month</p>
+												</div>
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="priceVolumeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Price Volume</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="priceVolumeValue">1 month</p>
+												</div>
 											</div>
-											<p class="value text-muted fs-5" id="rangeValue">1 month</p>
-										</div>
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="frequencyDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Frequency</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
+											<div class="row">
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="overlayDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Overlay</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="overlayValue">1 month</p>
+												</div>
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="scaleDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Scale</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="scaleValue">1 month</p>
+												</div>
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="movingAveragesDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Moving Averages</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="movingAveragesValue">1 month</p>
+												</div>
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="exponentialDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Exponential EMA</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="exponentialValue">1 month</p>
+												</div>
 											</div>
-											<p class="text-muted fs-5" id="frequencyValue">1 month</p>
-										</div>
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="typeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Type</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
+											<div class="row">
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="weightedDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Weighted WMA</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="weightedValue">Select</p>
+												</div>
+												<div class="col-3">
+													<div class="btn-group dropdown mb-2">
+														<button id="indicatorsDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Indicators</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item">1 month</li>
+															<li class="dropdown-item">3 months</li>
+															<li class="dropdown-item">6 months</li>
+														</ul>
+													</div>
+													<p class="text-muted fs-5" id="indicatorsValue">Select</p>
+												</div>
 											</div>
-											<p class="text-muted fs-5" id="typeValue">1 month</p>
 										</div>
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="priceVolumeDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Price Volume</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
-											</div>
-											<p class="text-muted fs-5" id="priceVolumeValue">1 month</p>
-										</div>
+										<canvas id="all-share" width="600" height="300"></canvas>
 									</div>
-									<div class="row">
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="overlayDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Overlay</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
+									<div class="col-md-4 d-flex flex-column justify-content-between align-items-center">
+										<div class="card border-0 rounded-0">
+											<div class="card-header rounded-0 advertisement border-0" style="width: 22rem; height: 24rem"></div>
+											<div class="card-body text-center d-flex flex-column justify-content-center">
+												<p class="card-title fw-normal">Advertisement</p>
 											</div>
-											<p class="text-muted fs-5" id="overlayValue">1 month</p>
 										</div>
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="scaleDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Scale</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
-											</div>
-											<p class="text-muted fs-5" id="scaleValue">1 month</p>
-										</div>
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="movingAveragesDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Moving Averages</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
-											</div>
-											<p class="text-muted fs-5" id="movingAveragesValue">1 month</p>
-										</div>
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="exponentialDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Exponential EMA</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
-											</div>
-											<p class="text-muted fs-5" id="exponentialValue">1 month</p>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="weightedDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Weighted WMA</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
-											</div>
-											<p class="text-muted fs-5" id="weightedValue">Select</p>
-										</div>
-										<div class="col-3">
-											<div class="btn-group dropdown mb-2">
-												<button id="indicatorsDropdown" class="fs-4 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-toggle="dropdown">Indicators</button>
-												<ul class="dropdown-menu">
-													<li class="dropdown-item">1 month</li>
-													<li class="dropdown-item">3 months</li>
-													<li class="dropdown-item">6 months</li>
-												</ul>
-											</div>
-											<p class="text-muted fs-5" id="indicatorsValue">Select</p>
-										</div>
+										<a href="#" class="btn btn-light align-self-end mb-4">More about this stock <i class="bi bi-chevron-right"></i></a>
 									</div>
 								</div>
-								<canvas id="all-share" width="600" height="300"></canvas>
 							</div>
 							<div class="tab-pane fade" id="nav-historical" role="tabpanel" aria-labelledby="nav-historical-tab">
-								<div class="d-flex flex-row flex-nowrap align-items-baseline">
-									<p class="display-1 mb-0 me-3">168.94</p>
-									<span class="badge bg-success fs-5">3.74(-2.71%)</span>
+								<div class="row">
+									<div class="col-md-8">
+										<div class="row mb-5">
+											<div class="col-2">
+												<div class="btn-group dropdown mb-2">
+													<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Month</button>
+													<ul class="dropdown-menu">
+														<li class="dropdown-item">1 month</li>
+														<li class="dropdown-item">3 months</li>
+														<li class="dropdown-item">6 months</li>
+													</ul>
+												</div>
+												<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+											</div>
+											<div class="col-2">
+												<div class="btn-group dropdown mb-2">
+													<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Year</button>
+													<ul class="dropdown-menu">
+														<li class="dropdown-item">1 month</li>
+														<li class="dropdown-item">3 months</li>
+														<li class="dropdown-item">6 months</li>
+													</ul>
+												</div>
+												<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+											</div>
+											<div class="col-2">
+												<div class="btn-group dropdown mb-2">
+													<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Frequency</button>
+													<ul class="dropdown-menu">
+														<li class="dropdown-item">1 month</li>
+														<li class="dropdown-item">3 months</li>
+														<li class="dropdown-item">6 months</li>
+													</ul>
+												</div>
+												<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+											</div>
+										</div>
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<td class="text-muted">Date</td>
+														<td class="text-muted">Open</td>
+														<td class="text-muted">High</td>
+														<td class="text-muted">Low</td>
+														<td class="text-muted">Close</td>
+														<td class="text-muted">VWAP</td>
+														<td class="text-muted">ADJ VWAP</td>
+														<td class="text-muted">Volume</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+													<tr>
+														<td>13 May 2021</td>
+														<td>165.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+														<td>155.5</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-4 d-flex flex-column justify-content-between align-items-center">
+										<div class="card border-0 rounded-0">
+											<div class="card-header rounded-0 advertisement border-0" style="width: 22rem; height: 24rem"></div>
+											<div class="card-body text-center d-flex flex-column justify-content-center">
+												<p class="card-title fw-normal">Advertisement</p>
+											</div>
+										</div>
+									</div>
 								</div>
-								<canvas id="20-share" width="600" height="300"></canvas>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 d-block">
-						<div class="w-50 h-50 bg-secondary text-center d-flex flex-column justify-content-center mx-auto"></div>
-						<p class="fw-medium text-dark mb-0 text-center">Advertisement</p>
 					</div>
 				</div>
 			</div>

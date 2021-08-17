@@ -178,3 +178,15 @@ div.tab-pane {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.dropdown {
+    .dropdown-menu {
+        border-radius: 8px;
+        li {
+            @extend .py-3;
+            border-bottom: 1px solid transparentize($color: $dark, $amount: 0.9);
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
