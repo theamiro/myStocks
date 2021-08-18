@@ -229,3 +229,6 @@ div.tab-pane {
     @extend .p-2;
     @extend .rounded-2;
 }
+.bg-primary-100 {
+    background-color: transparentize($color: $primary, $amount: 0.98);
+}
