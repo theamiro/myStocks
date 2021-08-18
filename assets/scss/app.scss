@@ -92,10 +92,12 @@ a.card {
 }
 nav {
     .tabs, &.tabs {
+        flex-wrap: nowrap;
         .nav-link {
             font-weight: $font-weight-light;
             color: $secondary;
             transition: color 300ms ease-in-out;
+            white-space: nowrap;
             &:first-child {
                 @extend .ps-0;
             }
@@ -228,4 +230,7 @@ div.tab-pane {
     height: 46px;
     @extend .p-2;
     @extend .rounded-2;
+}
+.responsive {
+    overflow-x: auto;
 }
