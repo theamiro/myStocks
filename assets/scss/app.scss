@@ -22,6 +22,11 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+.square {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
 .opacity-50 {
     opacity: .5;
     transition: opacity 300ms ease-in-out;
@@ -179,6 +184,7 @@ div.tab-pane {
 }
 .dropdown {
     .dropdown-menu {
+        @extend .border-0;
         border-radius: 8px;
         li {
             @extend .py-3;
@@ -228,4 +234,76 @@ div.tab-pane {
     height: 46px;
     @extend .p-2;
     @extend .rounded-2;
+}
+@mixin switch($res: 'sm') {
+    $index: 1rem;
+    $mainVal: 1rem;
+  
+    @if $res == 'md' {
+        $index: 2rem;
+        $mainVal: 1.5rem;
+    } @else if $res == 'lg' {
+        $index: 3rem;
+        $mainVal: 2rem;
+    } @else if $res == 'xl' {
+        $index: 4rem;
+        $mainVal: 2.5rem;
+    }
+
+    margin-bottom: $index / 2; /* JUST FOR STYLING PURPOSE */
+
+    .form-check-input {
+        height: $mainVal;
+        width: calc(#{$index} + 0.75rem);
+        border-radius: $mainVal * 2;
+    }
+}
+
+.form-check-input {
+  clear: left;
+}
+
+// YOU CAN PUT ALL RESOLUTION HERE
+// sm - DEFAULT, md, lg, xl
+
+.form-switch.form-switch-sm {
+    @include switch();
+}
+
+.form-switch.form-switch-md {
+    @include switch('md');
+}
+
+.form-switch.form-switch-lg {
+    @include switch('lg');
+}
+
+.form-switch.form-switch-xl {
+    @include switch('xl');
+}
+.form-check-input {
+    background-color: transparentize($color: $secondary, $amount: 0.6);
+    border: transparent;
+    &:checked {
+        background-color: transparentize($color: $primary, $amount: 0.9);
+        border: transparent;
+    }
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.pagination {
+    .page-link {
+        @extend .text-dark;
+        @extend .rounded-circle;
+        @extend .square;
+        @extend .text-center;
+        @extend .p-0;
+
+        &.active {
+            @extend .text-primary;
+            background-color: transparentize($color: $primary, $amount: 0.9);
+        }
+    }
 }
