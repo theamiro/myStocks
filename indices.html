@@ -646,54 +646,5 @@
 				},
 			})
 		</script>
-		<script>
-			var twentyShareIndex = document.getElementById("20-share").getContext("2d")
-			let successGradient = twentyShareIndex.createLinearGradient(0, 0, 0, 400)
-			successGradient.addColorStop(0, "rgba(10, 190, 130, 0.5)")
-			successGradient.addColorStop(1, "rgba(10, 190, 130, 0.1)")
-			var myChart = new Chart(twentyShareIndex, {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-					datasets: [
-						{
-							data: [168, 165, 164, 166, 165, 163, 168],
-							fill: true,
-							backgroundColor: successGradient,
-							borderColor: "rgb(10, 190, 130)",
-						},
-					],
-				},
-				options: {
-					maintainAspectRatio: true,
-					scales: {
-						x: {
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							grid: {
-								display: true,
-							},
-							suggestedMin: 156,
-							suggestedMax: 170,
-						},
-					},
-					plugins: {
-						legend: {
-							display: false,
-							labels: {
-								color: "rgb(255, 99, 132)",
-							},
-						},
-						tooltip: {
-							enabled: true,
-						},
-					},
-				},
-			})
-		</script>
 	</body>
 </html>
