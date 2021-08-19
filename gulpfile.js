@@ -21,19 +21,13 @@ gulp.task("vendor:js", function () {
 	return gulp.src(["./node_modules/bootstrap/dist/js/*", "./node_modules/@popperjs/core/dist/umd/popper.*"]).pipe(gulp.dest("./assets/js/vendor"))
 })
 
-// Copy bootstrap-icons from node_modules into /fonts
-gulp.task("vendor:fonts", function () {
-	return gulp.src(["./node_modules/bootstrap-icons/**/*", "!./node_modules/bootstrap-icons/package.json", "!./node_modules/bootstrap-icons/README.md"]).pipe(gulp.dest("./assets/fonts/bootstrap-icons"))
-})
-
 // vendor task
-gulp.task("vendor", gulp.parallel("vendor:fonts", "vendor:js"))
+gulp.task("vendor", gulp.parallel("vendor:js"))
 
 // Copy vendor's js to /dist
 gulp.task("vendor:build", function () {
 	var jsStream = gulp.src(["./assets/js/vendor/bootstrap.bundle.min.js", "./assets/js/vendor/popper.min.js"]).pipe(gulp.dest("./dist/assets/js/vendor"))
-	var fontStream = gulp.src(["./assets/fonts/bootstrap-icons/**/*.*"]).pipe(gulp.dest("./dist/assets/fonts/bootstrap-icons"))
-	return merge(jsStream, fontStream)
+	return merge(jsStream)
 })
 
 // Copy Bootstrap SCSS(SASS) from node_modules to /assets/scss/bootstrap
@@ -101,10 +95,6 @@ gulp.task("replaceHtmlBlock", function () {
 			})
 		)
 		.pipe(gulp.dest("dist/"))
-})
-
-gulp.task("copyImages", function () {
-	return gulp.src(["assets/img/*"]).pipe(dest(`dist/assets/images`))
 })
 
 // Configure the browserSync task and watch file path for change
