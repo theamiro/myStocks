@@ -111,7 +111,7 @@ gulp.task("copyImages", function () {
 gulp.task("dev", function browserDev(done) {
 	browserSync.init({
 		server: {
-			baseDir: "./",
+			baseDir: "./dist/",
 		},
 	})
 	gulp.watch(
@@ -136,7 +136,7 @@ gulp.task("dev", function browserDev(done) {
 gulp.task(
 	"build",
 	gulp.series(gulp.parallel("css:minify", "js:minify", "vendor"), "vendor:build", function copyAssets() {
-		return gulp.src(["*.html", "assets/img/**"], {base: "./"}).pipe(gulp.dest("dist"))
+		return gulp.src(["*.html", "assets/img/**"], {base: "./dist/"}).pipe(gulp.dest("dist"))
 	})
 )
 

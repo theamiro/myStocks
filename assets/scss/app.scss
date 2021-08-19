@@ -3,8 +3,7 @@
 @import "bootstrap_variable_overrides";
 
 // Bootstrap and its default variables
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../scss/bootstrap/bootstrap.scss";
 
 // Your style
 @import "variables";
