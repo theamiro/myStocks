@@ -83,6 +83,9 @@ gulp.task("js:minify", function () {
 		.pipe(gulp.dest("./dist/assets/js"))
 		.pipe(browserSync.stream())
 })
+gulp.task("copyImages", function () {
+	return gulp.src([`assets/img/**`]).pipe(gulp.dest(`dist/assets/img`))
+})
 
 // Replace HTML block for Js and Css file to min version upon build and copy to /dist
 gulp.task("replaceHtmlBlock", function () {
@@ -125,7 +128,7 @@ gulp.task("dev", function browserDev(done) {
 // Build task
 gulp.task(
 	"build",
-	gulp.series(gulp.parallel("css:minify", "js:minify", "vendor"), "vendor:build", function copyAssets() {
+	gulp.series(gulp.parallel("css:minify", "js:minify", "vendor", "copyImages"), "vendor:build", function copyAssets() {
 		return gulp.src(["*.html", "assets/img/**"], {base: "./dist/"}).pipe(gulp.dest("dist"))
 	})
 )
