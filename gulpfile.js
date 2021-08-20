@@ -104,7 +104,7 @@ gulp.task("replaceHtmlBlock", function () {
 gulp.task("dev", function browserDev(done) {
 	browserSync.init({
 		server: {
-			baseDir: "./dist/",
+			baseDir: "./",
 		},
 	})
 	gulp.watch(
