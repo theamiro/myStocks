@@ -181,6 +181,9 @@ div.tab-pane {
 .dropdown {
     .dropdown-menu {
         border-radius: 8px;
+        &.megamenu {
+            border-radius: 0 0 8px 8px !important;
+        }
         li {
             @extend .py-3;
             @extend .text-secondary;
@@ -195,6 +198,18 @@ div.tab-pane {
             &:hover {
                 background: transparentize($color: $secondary, $amount: 0.9);
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .megamenu {
+        background-color: transparentize($color: $primary, $amount: 0.9);
+        p {
+            color: $secondary;
+        }
+        .nav-link {
+            color: $dark !important;
         }
     }
 }
@@ -236,5 +251,13 @@ div.tab-pane {
     scrollbar-width: none;
     &::-webkit-scrollbar {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar-nav {
+        .nav-item {
+            margin-right: 18px;
+        }
     }
 }
