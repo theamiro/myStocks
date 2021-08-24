@@ -354,7 +354,7 @@
 							</li>
 						</ul>
 						<div class="d-lg-flex me-3 gap-3 d-grid mb-3 mb-lg-0">
-							<a href="#" class="btn btn-light">Log in</a>
+							<a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
 							<a href="#" class="btn btn-primary rounded-3 px-3">Sign up</a>
 						</div>
 						<form class="d-flex d-none d-xl-block d-xxl-block">
@@ -369,6 +369,32 @@
 				</div>
 			</nav>
 		</header>
+
+		<!-- Login Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="loginModalLabel">Modal title</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="form-floating mb-3">
+							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+							<label for="floatingInput">Email address</label>
+						</div>
+						<div class="form-floating">
+							<input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+							<label for="floatingPassword">Password</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<section class="">
 			<div class="container px-lg-5 mt-5 pt-5 bg-light">
