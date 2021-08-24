@@ -77,3 +77,13 @@ function customTooltipHandler(context) {
 		)
 	})
 })()
+$(document).on("scroll", function () {
+	var section = document.getElementById("sticky-top")
+	var offsetTop = section.offsetTop - 50
+
+	if (offsetTop > 50) {
+		section.classList.add("drop-shadow")
+	} else if (offsetTop < 50) {
+		section.classList.remove("drop-shadow")
+	}
+})
