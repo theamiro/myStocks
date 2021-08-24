@@ -109,6 +109,15 @@ nav {
         }
     }
 }
+header {
+    nav {
+        .nav-item {
+            .nav-link {
+                @extend .small;
+            }
+        }
+    }
+}
 div.tab-pane {
     a {
         &.dropdown-toggle {
@@ -180,11 +189,12 @@ div.tab-pane {
 }
 .dropdown {
     .dropdown-menu {
+        box-shadow: 0 0 20px 0 transparentize($color: $dark, $amount: .9);
         border-radius: 8px;
+        @extend .border-0;
         &.megamenu {
             max-height: 100vh;
             overflow-y: auto;
-
             border-radius: 0 0 8px 8px !important;
         }
         li {
@@ -257,10 +267,10 @@ div.tab-pane {
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .navbar-nav {
-        .nav-item {
-            margin-right: 18px;
-        }
-    }
-}
+// @media only screen and (max-width: 1024px) {
+//     .navbar-nav {
+//         .nav-item {
+//             margin-right: 18px;
+//         }
+//     }
+// }
