@@ -283,7 +283,7 @@ div.tab-pane {
     filter: drop-shadow(0 10px 4px transparentize($color: $dark, $amount: .9));
 }
 .navbar {
-    .btn {
+    input, .btn {
         @extend .small
     }
 }
