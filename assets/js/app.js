@@ -35,6 +35,23 @@ function createDangerGradient(context) {
 	return gradient
 }
 
+// Data Manipulation
+function addData(chart, label, data) {
+	chart.data.labels.push(label)
+	chart.data.datasets.forEach((dataset) => {
+		dataset.data.push(data)
+	})
+	chart.update()
+}
+
+function removeData(chart) {
+	chart.data.labels.pop()
+	chart.data.datasets.forEach((dataset) => {
+		dataset.data.pop()
+	})
+	chart.update()
+}
+
 function customTooltipHandler(context) {
 	// Tooltip Element
 	var tooltipEl = document.getElementById("chartjs-tooltip")
