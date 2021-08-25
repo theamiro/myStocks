@@ -1,3 +1,40 @@
+// CHART JS DEFAULTS — APPLY ACROSS THE ENTIRE SITE
+// Layout
+Chart.defaults.layout.padding = 0
+// Interaction
+Chart.defaults.interaction.intersect = false
+Chart.defaults.interaction.mode = "nearest"
+// Legend
+Chart.defaults.plugins.legend.display = false
+//Tooltip
+Chart.defaults.plugins.tooltip.enabled = false
+Chart.defaults.plugins.tooltip.external = customTooltipHandler
+// Aspect Ratio
+Chart.defaults.maintainAspectRatio = true
+// Points
+Chart.defaults.elements.point.pointRadius = 0
+Chart.defaults.elements.point.pointBackgroundColor = "rgba(0,0,0,1)"
+Chart.defaults.elements.point.pointBorderColor = "rgba(0,0,0,1)"
+Chart.defaults.elements.point.pointBorderWidth = 0
+Chart.defaults.elements.point.pointHitRadius = 5
+
+let success = "rgb(10, 190, 130)"
+let danger = "rgb(231, 24, 24)"
+// function to create a gradient, params 2d context from canvas — returns a gradient
+function createSuccessGradient(context) {
+	var gradient = context.createLinearGradient(0, 0, 0, 500)
+	gradient.addColorStop(0, "rgba(10, 190, 130, 0.5)")
+	gradient.addColorStop(1, "rgba(10, 190, 130, 0)")
+	return gradient
+}
+// function to create a gradient, params 2d context from canvas — returns a gradient
+function createDangerGradient(context) {
+	let gradient = context.createLinearGradient(0, 0, 0, 500)
+	gradient.addColorStop(0, "rgba(231, 24, 24, 0.5)")
+	gradient.addColorStop(1, "rgba(231, 24, 24, 0.0)")
+	return gradient
+}
+
 function customTooltipHandler(context) {
 	// Tooltip Element
 	var tooltipEl = document.getElementById("chartjs-tooltip")
