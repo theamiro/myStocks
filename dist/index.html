@@ -913,9 +913,6 @@
 
 		<script>
 			var allShareIndex = document.getElementById("all-share").getContext("2d")
-			let dangerGradient = allShareIndex.createLinearGradient(0, 0, 0, 500)
-			dangerGradient.addColorStop(0, "rgba(231, 24, 24, 0.5)")
-			dangerGradient.addColorStop(1, "rgba(231, 24, 24, 0.0)")
 			var myChart = new Chart(allShareIndex, {
 				type: "line",
 				data: {
@@ -924,26 +921,12 @@
 						{
 							data: [168, 165, 164, 166, 165, 163, 168],
 							fill: true,
-							backgroundColor: dangerGradient,
-							borderColor: "rgb(231, 24, 24)",
+							backgroundColor: createDangerGradient(allShareIndex),
+							borderColor: danger,
 						},
 					],
 				},
 				options: {
-					interaction: {
-						intersect: false,
-						mode: "index",
-					},
-					elements: {
-						point: {
-							pointRadius: 0,
-							pointBackgroundColor: "rgba(0,0,0,1)",
-							pointBorderColor: "rgba(0,0,0,1)",
-							pointBorderWidth: 0,
-							pointHitRadius: 5,
-						},
-					},
-					maintainAspectRatio: true,
 					scales: {
 						x: {
 							grid: {
@@ -960,23 +943,11 @@
 							suggestedMax: 170,
 						},
 					},
-					plugins: {
-						legend: {
-							display: false,
-						},
-						tooltip: {
-							enabled: false,
-							external: customTooltipHandler,
-						},
-					},
 				},
 			})
 		</script>
 		<script>
 			var twentyShareIndex = document.getElementById("20-share").getContext("2d")
-			let successGradient = twentyShareIndex.createLinearGradient(0, 0, 0, 500)
-			successGradient.addColorStop(0, "rgba(10, 190, 130, 0.5)")
-			successGradient.addColorStop(1, "rgba(10, 190, 130, 0)")
 			var myChart = new Chart(twentyShareIndex, {
 				type: "line",
 				data: {
@@ -985,13 +956,12 @@
 						{
 							data: [168, 165, 164, 166, 165, 163, 168],
 							fill: true,
-							backgroundColor: successGradient,
-							borderColor: "rgb(10, 190, 130)",
+							backgroundColor: createSuccessGradient(twentyShareIndex),
+							borderColor: success,
 						},
 					],
 				},
 				options: {
-					maintainAspectRatio: true,
 					scales: {
 						x: {
 							grid: {
@@ -1005,17 +975,6 @@
 							},
 							suggestedMin: 156,
 							suggestedMax: 170,
-						},
-					},
-					plugins: {
-						legend: {
-							display: false,
-							labels: {
-								color: "rgb(255, 99, 132)",
-							},
-						},
-						tooltip: {
-							enabled: true,
 						},
 					},
 				},
@@ -1031,13 +990,12 @@
 						{
 							data: [168, 165, 164, 166, 165, 163, 168],
 							fill: true,
-							backgroundColor: successGradient,
-							borderColor: "rgb(10, 190, 130)",
+							backgroundColor: createSuccessGradient(twentyFiveShareIndex),
+							borderColor: success,
 						},
 					],
 				},
 				options: {
-					maintainAspectRatio: true,
 					scales: {
 						x: {
 							grid: {
@@ -1051,17 +1009,6 @@
 							},
 							suggestedMin: 156,
 							suggestedMax: 170,
-						},
-					},
-					plugins: {
-						legend: {
-							display: false,
-							labels: {
-								color: "rgb(255, 99, 132)",
-							},
-						},
-						tooltip: {
-							enabled: true,
 						},
 					},
 				},
