@@ -637,7 +637,7 @@
 									<span class="badge bg-danger fs-5">3.74(-2.71%)</span>
 								</div>
 								<nav class="nav filter-nav my-5">
-									<li class="nav-item"><a class="nav-link" href="#">1D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#" id="all-share-1D">1D</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">5D</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">1M</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">6M</a></li>
@@ -945,10 +945,17 @@
 					},
 				},
 			})
+			$(function () {
+				$("#all-share-1D").on("click", function (e) {
+					e.preventDefault()
+					$(this).addClass("active")
+					addData(myChart, "Jul", 145)
+				})
+			})
 		</script>
 		<script>
 			var twentyShareIndex = document.getElementById("20-share").getContext("2d")
-			var myChart = new Chart(twentyShareIndex, {
+			var twentyChart = new Chart(twentyShareIndex, {
 				type: "line",
 				data: {
 					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
@@ -982,7 +989,7 @@
 		</script>
 		<script>
 			var twentyFiveShareIndex = document.getElementById("25-share").getContext("2d")
-			var myChart = new Chart(twentyFiveShareIndex, {
+			var twentyFiveChart = new Chart(twentyFiveShareIndex, {
 				type: "line",
 				data: {
 					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
