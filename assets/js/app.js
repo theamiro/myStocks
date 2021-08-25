@@ -55,7 +55,7 @@ function customTooltipHandler(context) {
 }
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-;(function () {
+$(function () {
 	"use strict"
 
 	// Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -76,14 +76,4 @@ function customTooltipHandler(context) {
 			false
 		)
 	})
-})()
-$(document).on("scroll", function () {
-	var section = document.getElementById("sticky-top")
-	var offsetTop = section.offsetTop - 50
-
-	if (offsetTop > 50) {
-		section.classList.add("drop-shadow")
-	} else if (offsetTop < 50) {
-		section.classList.remove("drop-shadow")
-	}
 })

@@ -18,7 +18,7 @@ gulp.task("clean", function () {
 
 // Copy third party libraries from node_modules into /vendor
 gulp.task("vendor:js", function () {
-	return gulp.src(["./node_modules/bootstrap/dist/js/*", "./node_modules/@popperjs/core/dist/umd/popper.*"]).pipe(gulp.dest("./assets/js/vendor"))
+	return gulp.src(["./node_modules/bootstrap/dist/js/*", "./node_modules/@popperjs/core/dist/umd/popper.*", "./node_modules/chart.js/dist/*.js", "./node_modules/jquery/dist/*"]).pipe(gulp.dest("./assets/js/vendor"))
 })
 
 // vendor task
@@ -26,7 +26,7 @@ gulp.task("vendor", gulp.parallel("vendor:js"))
 
 // Copy vendor's js to /dist
 gulp.task("vendor:build", function () {
-	var jsStream = gulp.src(["./assets/js/vendor/bootstrap.bundle.min.js", "./assets/js/vendor/popper.min.js"]).pipe(gulp.dest("./dist/assets/js/vendor"))
+	var jsStream = gulp.src(["./assets/js/vendor/bootstrap.bundle.min.js", "./assets/js/vendor/popper.min.js", "./assets/js/vendor/jquery.min.js", "./assets/js/vendor/chart.min.js"]).pipe(gulp.dest("./dist/assets/js/vendor"))
 	return merge(jsStream)
 })
 
@@ -93,8 +93,8 @@ gulp.task("replaceHtmlBlock", function () {
 		.src(["*.html"])
 		.pipe(
 			htmlreplace({
-				js: "assets/js/app.min.js",
-				css: "assets/css/app.min.css",
+				js: ["assets/js/vendor/jquery.min.js", "assets/js/vendor/bootstrap.bundle.min.js", "assets/js/vendor/popper.min.js", "assets/js/vendor/chart.min.js", "assets/js/app.min.js"],
+				css: ["assets/css/app.min.css"],
 			})
 		)
 		.pipe(gulp.dest("dist/"))
