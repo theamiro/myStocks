@@ -67,7 +67,8 @@ To customize the color of the graphs, see the Javascript color options below.
 
 The mini graphs that show up on the tables are actually svg representations of the trend. Picked the direction as it is the generally accepted design pattern, considering performance. I sure hope the api can return svgs.
 
-###Javascript Colors
+### Javascript Colors
+
 Some Javascript colors inline with bootstrap
 
 ```
