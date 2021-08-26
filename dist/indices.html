@@ -1006,52 +1006,16 @@
 		<script src="assets/js/vendor/chart.min.js"></script>
 		<script src="assets/js/app.min.js"></script>
 		<script>
-			var allShareIndex = document.getElementById("all-share").getContext("2d")
-			let dangerGradient = allShareIndex.createLinearGradient(0, 0, 0, 400)
-			dangerGradient.addColorStop(0, "rgba(231, 24, 24, 0.5)")
-			dangerGradient.addColorStop(1, "rgba(231, 24, 24, 0.1)")
-			var myChart = new Chart(allShareIndex, {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-					datasets: [
-						{
-							data: [168, 165, 164, 166, 165, 163, 168],
-							fill: true,
-							backgroundColor: dangerGradient,
-							borderColor: "rgb(231, 24, 24)",
-						},
-					],
-				},
-				options: {
-					maintainAspectRatio: true,
-					scales: {
-						x: {
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							grid: {
-								display: true,
-							},
-							suggestedMin: 156,
-							suggestedMax: 170,
-						},
+			$("#all-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+				datasets: [
+					{
+						data: [168, 165, 164, 166, 165, 163, 162],
+						fill: true,
+						backgroundColor: createDangerGradient("all-share"),
+						borderColor: danger,
 					},
-					plugins: {
-						legend: {
-							display: false,
-							labels: {
-								color: "rgb(255, 99, 132)",
-							},
-						},
-						tooltip: {
-							enabled: true,
-						},
-					},
-				},
+				],
 			})
 		</script>
 	</body>

@@ -1,9 +1,23 @@
+//javascript colors inline with bootstrap
+const primary = "rgba(0, 90, 255, 1)"
+const secondary = "rgb(185, 185, 185)"
+const lightGrey = "rgba(185,185,185,0.5)"
+const dark = "rgba(25, 25, 25, 1)"
+const success = "rgb(10, 190, 130)"
+const danger = "rgb(231, 24, 24)"
+
 // CHART JS DEFAULTS — APPLY ACROSS THE ENTIRE SITE
+//Gridlines
+Chart.defaults.borderColor = lightGrey
+//Color
+Chart.defaults.color = dark
+Chart.defaults.font.size = 14
+Chart.defaults.font.family = "'Roboto', 'sans-serif'"
 // Layout
 Chart.defaults.layout.padding = 0
 // Interaction
 Chart.defaults.interaction.intersect = false
-Chart.defaults.interaction.mode = "nearest"
+Chart.defaults.interaction.mode = "index"
 // Legend
 Chart.defaults.plugins.legend.display = false
 //Tooltip
@@ -13,43 +27,50 @@ Chart.defaults.plugins.tooltip.external = customTooltipHandler
 Chart.defaults.maintainAspectRatio = true
 // Points
 Chart.defaults.elements.point.pointRadius = 0
-Chart.defaults.elements.point.pointBackgroundColor = "rgba(0,0,0,1)"
-Chart.defaults.elements.point.pointBorderColor = "rgba(0,0,0,1)"
+Chart.defaults.elements.point.pointBackgroundColor = dark
+Chart.defaults.elements.point.pointBorderColor = dark
 Chart.defaults.elements.point.pointBorderWidth = 0
-Chart.defaults.elements.point.pointHitRadius = 5
+Chart.defaults.elements.point.pointHitRadius = 6
+Chart.defaults.elements.point.pointHoverRadius = 6
+// Options
+Chart.defaults.scale.ticks.beginAtZero = false
 
-let success = "rgb(10, 190, 130)"
-let danger = "rgb(231, 24, 24)"
+//Plugins
+Chart.register({
+	id: "verticalLine",
+	afterDraw: (chart) => {
+		if (chart.tooltip?._active?.length) {
+			let x = chart.tooltip._active[0].element.x
+			let yAxis = chart.scales.y
+			let ctx = chart.ctx
+			ctx.save()
+			ctx.beginPath()
+			ctx.setLineDash([3, 6])
+			ctx.moveTo(x, yAxis.top)
+			ctx.lineTo(x, yAxis.bottom)
+			ctx.lineWidth = 2
+			ctx.strokeStyle = "rgba(0, 0, 0, .8)"
+			ctx.stroke()
+			ctx.restore()
+		}
+	},
+})
+
 // function to create a gradient, params 2d context from canvas — returns a gradient
-function createSuccessGradient(context) {
-	var gradient = context.createLinearGradient(0, 0, 0, 500)
+function createSuccessGradient(canvasID) {
+	let context = document.getElementById(canvasID).getContext("2d")
+	let gradient = context.createLinearGradient(0, 0, 0, 500)
 	gradient.addColorStop(0, "rgba(10, 190, 130, 0.5)")
 	gradient.addColorStop(1, "rgba(10, 190, 130, 0)")
 	return gradient
 }
 // function to create a gradient, params 2d context from canvas — returns a gradient
-function createDangerGradient(context) {
+function createDangerGradient(canvasID) {
+	let context = document.getElementById(canvasID).getContext("2d")
 	let gradient = context.createLinearGradient(0, 0, 0, 500)
 	gradient.addColorStop(0, "rgba(231, 24, 24, 0.5)")
 	gradient.addColorStop(1, "rgba(231, 24, 24, 0.0)")
 	return gradient
-}
-
-// Data Manipulation
-function addData(chart, label, data) {
-	chart.data.labels.push(label)
-	chart.data.datasets.forEach((dataset) => {
-		dataset.data.push(data)
-	})
-	chart.update()
-}
-
-function removeData(chart) {
-	chart.data.labels.pop()
-	chart.data.datasets.forEach((dataset) => {
-		dataset.data.pop()
-	})
-	chart.update()
 }
 
 function customTooltipHandler(context) {
@@ -103,9 +124,42 @@ function customTooltipHandler(context) {
 	tooltipEl.style.position = "absolute"
 	tooltipEl.style.transform = "translateX(-50%)"
 	tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + "px"
-	tooltipEl.style.top = position.top + window.pageYOffset - 100 + tooltipModel.caretY + "px"
+	tooltipEl.style.top = position.top + window.pageYOffset + "px"
 	tooltipEl.style.font = bodyFont.string
 	tooltipEl.style.pointerEvents = "none"
+}
+
+$.fn.createLineChart = function (data) {
+	return new Chart(this[0].getContext("2d"), {
+		type: "line",
+		data: data,
+		options: {
+			scales: {
+				x: {
+					grid: {
+						drawOnChart: false,
+						display: false,
+					},
+				},
+				y: {
+					beginAtZero: false,
+					grid: {
+						display: true,
+						drawBorder: false,
+						drawTicks: false,
+						lineWidth: 1.5,
+					},
+					ticks: {
+						mirror: true,
+						labelOffset: 10,
+						z: 9,
+					},
+					suggestedMin: 156,
+					suggestedMax: 170,
+				},
+			},
+		},
+	})
 }
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
