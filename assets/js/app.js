@@ -16,7 +16,7 @@ Chart.defaults.elements.point.pointRadius = 0
 Chart.defaults.elements.point.pointBackgroundColor = "rgba(0,0,0,1)"
 Chart.defaults.elements.point.pointBorderColor = "rgba(0,0,0,1)"
 Chart.defaults.elements.point.pointBorderWidth = 0
-Chart.defaults.elements.point.pointHitRadius = 5
+Chart.defaults.elements.point.pointHitRadius = 8
 
 let success = "rgb(10, 190, 130)"
 let danger = "rgb(231, 24, 24)"
@@ -49,6 +49,23 @@ function removeData(chart) {
 	chart.data.datasets.forEach((dataset) => {
 		dataset.data.pop()
 	})
+	chart.update()
+}
+
+function filterChart(chart) {
+	const filteredData = chart.data.datasets[0].data.filter((value) => value > 166)
+	const filteredLabels = []
+
+	var i = 0
+	for (i; i < filteredData.length; i++) {
+		const result = chart.data.datasets[0].data.indexOf(filteredData[i])
+		console.log(result)
+		const labelsResult = chart.data.labels[result]
+		console.log(labelsResult)
+		filteredLabels.push(labelsResult)
+	}
+	chart.data.datasets[0].data = filteredData
+	chart.data.labels = filteredLabels
 	chart.update()
 }
 
@@ -106,6 +123,7 @@ function customTooltipHandler(context) {
 	tooltipEl.style.top = position.top + window.pageYOffset - 100 + tooltipModel.caretY + "px"
 	tooltipEl.style.font = bodyFont.string
 	tooltipEl.style.pointerEvents = "none"
+	console.log(context.chart.scales.y.top)
 }
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields

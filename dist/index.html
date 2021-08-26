@@ -637,7 +637,7 @@
 									<span class="badge bg-danger fs-5">3.74(-2.71%)</span>
 								</div>
 								<nav class="nav filter-nav my-5">
-									<li class="nav-item"><a class="nav-link" href="#" id="all-share-1D">1D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#" id="all-share-1D" data-labels="['Jan', 'Feb', 'Mar']" data-values="[123,140, 150]">1D</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">5D</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">1M</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">6M</a></li>
@@ -916,10 +916,10 @@
 			var myChart = new Chart(allShareIndex, {
 				type: "line",
 				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
 					datasets: [
 						{
-							data: [168, 165, 164, 166, 165, 163, 168],
+							data: [168, 165, 164, 166, 165, 163, 162],
 							fill: true,
 							backgroundColor: createDangerGradient(allShareIndex),
 							borderColor: danger,
@@ -944,12 +944,32 @@
 						},
 					},
 				},
+				plugins: [
+					{
+						afterDraw: (chart) => {
+							if (chart.tooltip?._active?.length) {
+								let x = chart.tooltip._active[0].element.x
+								let yAxis = chart.scales.y
+								let ctx = chart.ctx
+								ctx.save()
+								ctx.beginPath()
+								ctx.setLineDash([5, 10])
+								ctx.moveTo(x, yAxis.top)
+								ctx.lineTo(x, yAxis.bottom)
+								ctx.lineWidth = 2
+								ctx.strokeStyle = "rgba(0, 0, 0, 1)"
+								ctx.stroke()
+								ctx.restore()
+							}
+						},
+					},
+				],
 			})
 			$(function () {
 				$("#all-share-1D").on("click", function (e) {
 					e.preventDefault()
 					$(this).addClass("active")
-					addData(myChart, "Jul", 145)
+					filterChart(myChart)
 				})
 			})
 		</script>
