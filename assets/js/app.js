@@ -71,38 +71,6 @@ function createDangerGradient(context) {
 	return gradient
 }
 
-// Data Manipulation
-function addData(chart, label, data) {
-	chart.data.labels.push(label)
-	chart.data.datasets.forEach((dataset) => {
-		dataset.data.push(data)
-	})
-	chart.update()
-}
-
-function removeData(chart) {
-	chart.data.labels.pop()
-	chart.data.datasets.forEach((dataset) => {
-		dataset.data.pop()
-	})
-	chart.update()
-}
-
-function filterChart(chart) {
-	const filteredData = chart.data.datasets[0].data.filter((value) => value > 166)
-	const filteredLabels = []
-
-	var i = 0
-	for (i; i < filteredData.length; i++) {
-		const result = chart.data.datasets[0].data.indexOf(filteredData[i])
-		const labelsResult = chart.data.labels[result]
-		filteredLabels.push(labelsResult)
-	}
-	chart.data.datasets[0].data = filteredData
-	chart.data.labels = filteredLabels
-	chart.update()
-}
-
 function customTooltipHandler(context) {
 	// Tooltip Element
 	var tooltipEl = document.getElementById("chartjs-tooltip")
