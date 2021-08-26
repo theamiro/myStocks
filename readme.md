@@ -1,13 +1,9 @@
 # myStocks
 
-First, this was such a cool project, I loved it!
+First, this was such a cool project, I loved it! myStocks is built on Bootstrap 5. You can use the official documentation as it has only minor edits to make myStocks look the way it does. Here are the significant ones and all the libraries used.
 
-myStocks is built on Bootstrap 5 https://getbootstrap.com/docs/5.0/getting-started/introduction/
-Use the official documentation for Bootstrap 5.
+## Libraries
 
-To make myStocks look the way it does, cutomizations had to be made. Here are the significant ones and all the libraries used.
-
-##Libraries
 Bootstrap 5 — For CSS Styles and Simple JS
 Popper.js — Dependency for some Bootstrap functions like dropdowns
 jQuery 3.3.1 — For cool and simple JS
@@ -19,7 +15,7 @@ Classes `.table-flush` removes padding from the `<td>` to create a table that re
 
 ### Graphs
 
-####Canvas
+#### Canvas
 
 Used to render the graphs and all their elements. It is built off Chart.js https://www.chartjs.org/
 To ease usage, I created a jQuery Plugin that renders a line chart per the specs of the design. The plugin takes data in Chart JS format. See https://www.chartjs.org/docs/latest/general/data-structures.html
@@ -65,7 +61,7 @@ To customize the color of the graphs, see the Javascript color options below.
 
 #### Table Graphs
 
-The mini graphs that show up on the tables are actually svg representations of the trend. Picked the direction as it is the generally accepted design pattern, considering performance. I sure hope the api can return svgs.
+The mini graphs that show up on the tables are actually svg representations of the trend. Picked the direction as it is the generally accepted design pattern, considering performance. I sure hope the api can generate svgs. Here's a link to a site that does that https://coinmarketcap.com/. Inspect element and see the magic.
 
 ### Javascript Colors
 
