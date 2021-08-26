@@ -129,9 +129,8 @@ function customTooltipHandler(context) {
 	tooltipEl.style.pointerEvents = "none"
 }
 
-function createLineChart(canvasID, data) {
-	var context = document.getElementById(canvasID).getContext("2d")
-	return new Chart(context, {
+$.fn.createLineChart = function (data) {
+	return new Chart(this[0].getContext("2d"), {
 		type: "line",
 		data: data,
 		options: {
