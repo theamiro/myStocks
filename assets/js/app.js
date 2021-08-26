@@ -18,6 +18,27 @@ Chart.defaults.elements.point.pointBorderColor = "rgba(0,0,0,1)"
 Chart.defaults.elements.point.pointBorderWidth = 0
 Chart.defaults.elements.point.pointHitRadius = 8
 
+//Plugins
+Chart.register({
+	id: "verticalLine",
+	afterDraw: (chart) => {
+		if (chart.tooltip?._active?.length) {
+			let x = chart.tooltip._active[0].element.x
+			let yAxis = chart.scales.y
+			let ctx = chart.ctx
+			ctx.save()
+			ctx.beginPath()
+			ctx.setLineDash([5, 10])
+			ctx.moveTo(x, yAxis.top)
+			ctx.lineTo(x, yAxis.bottom)
+			ctx.lineWidth = 2
+			ctx.strokeStyle = "rgba(0, 0, 0, 1)"
+			ctx.stroke()
+			ctx.restore()
+		}
+	},
+})
+
 let success = "rgb(10, 190, 130)"
 let danger = "rgb(231, 24, 24)"
 // function to create a gradient, params 2d context from canvas — returns a gradient
