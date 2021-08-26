@@ -57,14 +57,16 @@ Chart.register({
 })
 
 // function to create a gradient, params 2d context from canvas — returns a gradient
-function createSuccessGradient(context) {
-	var gradient = context.createLinearGradient(0, 0, 0, 500)
+function createSuccessGradient(canvasID) {
+	let context = document.getElementById(canvasID).getContext("2d")
+	let gradient = context.createLinearGradient(0, 0, 0, 500)
 	gradient.addColorStop(0, "rgba(10, 190, 130, 0.5)")
 	gradient.addColorStop(1, "rgba(10, 190, 130, 0)")
 	return gradient
 }
 // function to create a gradient, params 2d context from canvas — returns a gradient
-function createDangerGradient(context) {
+function createDangerGradient(canvasID) {
+	let context = document.getElementById(canvasID).getContext("2d")
 	let gradient = context.createLinearGradient(0, 0, 0, 500)
 	gradient.addColorStop(0, "rgba(231, 24, 24, 0.5)")
 	gradient.addColorStop(1, "rgba(231, 24, 24, 0.0)")
@@ -125,6 +127,40 @@ function customTooltipHandler(context) {
 	tooltipEl.style.top = position.top + window.pageYOffset + "px"
 	tooltipEl.style.font = bodyFont.string
 	tooltipEl.style.pointerEvents = "none"
+}
+
+function createLineChart(canvasID, data) {
+	var context = document.getElementById(canvasID).getContext("2d")
+	return new Chart(context, {
+		type: "line",
+		data: data,
+		options: {
+			scales: {
+				x: {
+					grid: {
+						drawOnChart: false,
+						display: false,
+					},
+				},
+				y: {
+					beginAtZero: false,
+					grid: {
+						display: true,
+						drawBorder: false,
+						drawTicks: false,
+						lineWidth: 1.5,
+					},
+					ticks: {
+						mirror: true,
+						labelOffset: 10,
+						z: 9,
+					},
+					suggestedMin: 156,
+					suggestedMax: 170,
+				},
+			},
+		},
+	})
 }
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
