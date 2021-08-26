@@ -1,6 +1,17 @@
 # myStocks
 
-Documentation on myStocks Customizations
+First, this was such a cool project, I loved it!
+
+myStocks is built on Bootstrap 5 https://getbootstrap.com/docs/5.0/getting-started/introduction/
+Use the official documentation for Bootstrap 5.
+
+To make myStocks look the way it does, cutomizations had to be made. Here are the significant ones and all the libraries used.
+
+##Libraries
+Bootstrap 5 — For CSS Styles and Simple JS
+Popper.js — Dependency for some Bootstrap functions like dropdowns
+jQuery 3.3.1 — For cool and simple JS
+Chart.js — For building charts
 
 ### Tables
 
@@ -30,11 +41,12 @@ data = {
 $("#canvas-id").createLineChart(data)
 ```
 
-The background of the line-chart can be set as a single color or a gradient. Set the gradient by using the two functions and pass in the id of the canvas as a param
+The background of the line-chart can be set as a single color ` "rgba(255,0,0,1)"` or a gradient. Set the gradient by using either of the two functions and pass in the id of the canvas as a parameter.
 
 ```
-createSuccessGradient(canvas-id)
-createDangerGradient(canvas-id)
+createSuccessGradient(canvas-id) - green in color
+createDangerGradient(canvas-id) - red in color
+createInfoGradient(canvas-id) - blue in color
 ```
 
 For charts with more than one dataset, it is recommended to set `fill` to false and to remove the background color.
