@@ -1,9 +1,23 @@
+//javascript colors inline with bootstrap
+const primary = "rgba(0, 90, 255, 1)"
+const secondary = "rgb(185, 185, 185)"
+const lightGrey = "rgba(185,185,185,0.5)"
+const dark = "rgba(25, 25, 25, 1)"
+const success = "rgb(10, 190, 130)"
+const danger = "rgb(231, 24, 24)"
+
 // CHART JS DEFAULTS — APPLY ACROSS THE ENTIRE SITE
+//Gridlines
+Chart.defaults.borderColor = lightGrey
+//Color
+Chart.defaults.color = dark
+Chart.defaults.font.size = 14
+Chart.defaults.font.family = "'Roboto', 'sans-serif'"
 // Layout
 Chart.defaults.layout.padding = 0
 // Interaction
 Chart.defaults.interaction.intersect = false
-Chart.defaults.interaction.mode = "nearest"
+Chart.defaults.interaction.mode = "index"
 // Legend
 Chart.defaults.plugins.legend.display = false
 //Tooltip
@@ -13,10 +27,13 @@ Chart.defaults.plugins.tooltip.external = customTooltipHandler
 Chart.defaults.maintainAspectRatio = true
 // Points
 Chart.defaults.elements.point.pointRadius = 0
-Chart.defaults.elements.point.pointBackgroundColor = "rgba(0,0,0,1)"
-Chart.defaults.elements.point.pointBorderColor = "rgba(0,0,0,1)"
+Chart.defaults.elements.point.pointBackgroundColor = dark
+Chart.defaults.elements.point.pointBorderColor = dark
 Chart.defaults.elements.point.pointBorderWidth = 0
-Chart.defaults.elements.point.pointHitRadius = 8
+Chart.defaults.elements.point.pointHitRadius = 6
+Chart.defaults.elements.point.pointHoverRadius = 6
+// Options
+Chart.defaults.scale.ticks.beginAtZero = false
 
 //Plugins
 Chart.register({
@@ -28,19 +45,17 @@ Chart.register({
 			let ctx = chart.ctx
 			ctx.save()
 			ctx.beginPath()
-			ctx.setLineDash([5, 10])
+			ctx.setLineDash([3, 6])
 			ctx.moveTo(x, yAxis.top)
 			ctx.lineTo(x, yAxis.bottom)
 			ctx.lineWidth = 2
-			ctx.strokeStyle = "rgba(0, 0, 0, 1)"
+			ctx.strokeStyle = "rgba(0, 0, 0, .8)"
 			ctx.stroke()
 			ctx.restore()
 		}
 	},
 })
 
-let success = "rgb(10, 190, 130)"
-let danger = "rgb(231, 24, 24)"
 // function to create a gradient, params 2d context from canvas — returns a gradient
 function createSuccessGradient(context) {
 	var gradient = context.createLinearGradient(0, 0, 0, 500)
@@ -80,9 +95,7 @@ function filterChart(chart) {
 	var i = 0
 	for (i; i < filteredData.length; i++) {
 		const result = chart.data.datasets[0].data.indexOf(filteredData[i])
-		console.log(result)
 		const labelsResult = chart.data.labels[result]
-		console.log(labelsResult)
 		filteredLabels.push(labelsResult)
 	}
 	chart.data.datasets[0].data = filteredData
@@ -141,10 +154,9 @@ function customTooltipHandler(context) {
 	tooltipEl.style.position = "absolute"
 	tooltipEl.style.transform = "translateX(-50%)"
 	tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + "px"
-	tooltipEl.style.top = position.top + window.pageYOffset - 100 + tooltipModel.caretY + "px"
+	tooltipEl.style.top = position.top + window.pageYOffset + "px"
 	tooltipEl.style.font = bodyFont.string
 	tooltipEl.style.pointerEvents = "none"
-	console.log(context.chart.scales.y.top)
 }
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields

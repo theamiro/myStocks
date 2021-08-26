@@ -934,6 +934,7 @@
 					scales: {
 						x: {
 							grid: {
+								drawOnChart: false,
 								display: false,
 							},
 						},
@@ -942,6 +943,13 @@
 							grid: {
 								display: true,
 								drawBorder: false,
+								drawTicks: false,
+								lineWidth: 1.5,
+							},
+							ticks: {
+								mirror: true,
+								labelOffset: 10,
+								z: 9,
 							},
 							suggestedMin: 156,
 							suggestedMax: 170,
