@@ -912,133 +912,38 @@
 		<script src="assets/js/app.min.js"></script>
 
 		<script>
-			var allShareIndex = document.getElementById("all-share").getContext("2d")
-			var myChart = new Chart(allShareIndex, {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-					datasets: [
-						{
-							data: [168, 165, 164, 166, 165, 163, 162],
-							fill: true,
-							backgroundColor: createDangerGradient(allShareIndex),
-							borderColor: danger,
-						},
-					],
-				},
-				options: {
-					scales: {
-						x: {
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							grid: {
-								display: true,
-								drawBorder: false,
-							},
-							suggestedMin: 156,
-							suggestedMax: 170,
-						},
-					},
-				},
-				plugins: [
+			$("#all-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+				datasets: [
 					{
-						afterDraw: (chart) => {
-							if (chart.tooltip?._active?.length) {
-								let x = chart.tooltip._active[0].element.x
-								let yAxis = chart.scales.y
-								let ctx = chart.ctx
-								ctx.save()
-								ctx.beginPath()
-								ctx.setLineDash([5, 10])
-								ctx.moveTo(x, yAxis.top)
-								ctx.lineTo(x, yAxis.bottom)
-								ctx.lineWidth = 2
-								ctx.strokeStyle = "rgba(0, 0, 0, 1)"
-								ctx.stroke()
-								ctx.restore()
-							}
-						},
+						data: [168, 165, 164, 166, 165, 163, 162],
+						fill: true,
+						backgroundColor: createDangerGradient("all-share"),
+						borderColor: danger,
 					},
 				],
 			})
-			$(function () {
-				$("#all-share-1D").on("click", function (e) {
-					e.preventDefault()
-					$(this).addClass("active")
-					filterChart(myChart)
-				})
-			})
-		</script>
-		<script>
-			var twentyShareIndex = document.getElementById("20-share").getContext("2d")
-			var twentyChart = new Chart(twentyShareIndex, {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-					datasets: [
-						{
-							data: [168, 165, 164, 166, 165, 163, 168],
-							fill: true,
-							backgroundColor: createSuccessGradient(twentyShareIndex),
-							borderColor: success,
-						},
-					],
-				},
-				options: {
-					scales: {
-						x: {
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							grid: {
-								display: true,
-							},
-							suggestedMin: 156,
-							suggestedMax: 170,
-						},
+			$("#20-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+				datasets: [
+					{
+						data: [168, 165, 164, 166, 165, 163, 168],
+						fill: true,
+						backgroundColor: createSuccessGradient("20-share"),
+						borderColor: success,
 					},
-				},
+				],
 			})
-		</script>
-		<script>
-			var twentyFiveShareIndex = document.getElementById("25-share").getContext("2d")
-			var twentyFiveChart = new Chart(twentyFiveShareIndex, {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-					datasets: [
-						{
-							data: [168, 165, 164, 166, 165, 163, 168],
-							fill: true,
-							backgroundColor: createSuccessGradient(twentyFiveShareIndex),
-							borderColor: success,
-						},
-					],
-				},
-				options: {
-					scales: {
-						x: {
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							grid: {
-								display: true,
-							},
-							suggestedMin: 156,
-							suggestedMax: 170,
-						},
+			$("#25-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+				datasets: [
+					{
+						data: [168, 165, 164, 166, 165, 163, 168],
+						fill: true,
+						backgroundColor: createSuccessGradient("25-share"),
+						borderColor: success,
 					},
-				},
+				],
 			})
 		</script>
 	</body>

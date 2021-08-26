@@ -1791,39 +1791,17 @@
 		<script src="assets/js/vendor/chart.min.js"></script>
 		<script src="assets/js/app.min.js"></script>
 		<script>
-			var allShareIndex = document.getElementById("all-share").getContext("2d")
-			var myChart = new Chart(allShareIndex, {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-					datasets: [
-						{
-							data: [168, 165, 164, 166, 165, 163, 168],
-							fill: true,
-							backgroundColor: createDangerGradient(allShareIndex),
-							borderColor: danger,
-						},
-					],
-				},
-				options: {
-					maintainAspectRatio: true,
-					scales: {
-						x: {
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							grid: {
-								display: true,
-							},
-							suggestedMin: 156,
-							suggestedMax: 170,
-						},
+            $("#all-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+				datasets: [
+					{
+						data: [168, 165, 164, 166, 165, 163, 162],
+						fill: true,
+						backgroundColor: createDangerGradient("all-share"),
+						borderColor: danger,
 					},
-				},
+				],
 			})
-		</script>
+        </script>
 	</body>
 </html>
