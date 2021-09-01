@@ -35,15 +35,17 @@ body {
     border-radius: 8px;
 }
 .navbar-nav {
+    white-space:nowrap;
     .nav-item {
-        margin-right: 36px;
-        &:last-child {
-            @extend .me-0;
-        }
         .dropdown-menu {
             border-top: 1px solid transparentize($color: $secondary, $amount: 0.9) !important;
             @extend .drop-shadow;
         }
+    }
+}
+.navbar {
+    .btn {
+        white-space:nowrap;
     }
 }
 img {
