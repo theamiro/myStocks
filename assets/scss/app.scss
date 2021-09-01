@@ -176,6 +176,7 @@ div.tab-pane {
     }
 }
 .btn {
+    white-space: nowrap;
     &.btn-alt {
         border-radius: 8px;
     }
