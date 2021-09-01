@@ -82,7 +82,7 @@ function customTooltipHandler(context) {
 		tooltipEl = document.createElement("span")
 		tooltipEl.classList.add("badge", "bg-dark", "text-center")
 		tooltipEl.id = "chartjs-tooltip"
-		tooltipEl.innerHTML = "<span class='d-flex flex-row align-items-center py-1 px-2'></span>"
+		tooltipEl.innerHTML = "<span class='d-flex flex-row align-items-center py-1 px-2 gap-2'></span>"
 		document.body.appendChild(tooltipEl)
 	}
 
