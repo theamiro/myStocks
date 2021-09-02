@@ -304,3 +304,10 @@ canvas {
         background-color: transparentize($color: $primary, $amount: 0.8);
     }
 }
+.selector {
+    button {
+        .dropdown-toggle {
+            white-space: inherit !important;
+        }
+    }
+}
