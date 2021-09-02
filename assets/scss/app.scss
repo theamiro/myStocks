@@ -290,3 +290,9 @@ div.tab-pane {
         @extend .small
     }
 }
+.bg-primary-100 {
+    background-color: transparentize($color: $primary, $amount: 0.9);
+    &:hover {
+        background-color: transparentize($color: $primary, $amount: 0.8);
+    }
+}
