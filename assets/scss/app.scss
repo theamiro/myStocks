@@ -35,11 +35,16 @@ body {
     border-radius: 8px;
 }
 .navbar-nav {
-    white-space:nowrap;
     .nav-item {
+        .nav-link {
+            white-space: nowrap;
+        }
         .dropdown-menu {
             border-top: 1px solid transparentize($color: $secondary, $amount: 0.9) !important;
             @extend .drop-shadow;
+            .nav-link {
+                white-space: inherit !important;
+            }
         }
     }
 }
