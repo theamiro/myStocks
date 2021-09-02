@@ -356,18 +356,32 @@
 								<a class="nav-link" href="portfolio.html">Portfolio</a>
 							</li>
 						</ul>
-						<div class="d-lg-flex me-3 gap-3 d-grid mb-3 mb-lg-0">
+						<div class="d-flex me-lg-3 gap-3 d-grid mb-3 mb-lg-0">
 							<a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
 							<a href="#" class="btn btn-primary rounded-3 px-3" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a>
 						</div>
-						<form class="d-flex d-none d-xl-block d-xxl-block">
-							<div class="input-group input-group-dark">
+						<form class="d-flex d-none d-sm-block d-md-none d-xxl-block">
+							<div class="input-group input-group-dark flex-nowrap">
 								<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
 								<button type="submit" class="btn">
 									<i class="fa fa-search"></i>
 								</button>
 							</div>
 						</form>
+						<ul class="navbar-nav d-none d-xl-block d-xxl-none">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-bs-toggle="dropdown"><i class="fa fa-search text-dark"></i></a>
+								<div class="dropdown-menu dropdown-menu-end" id="searchDropdown" style="width: 300px">
+									<div class="container">
+										<div class="row">
+											<div class="col-12">
+												<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</nav>
