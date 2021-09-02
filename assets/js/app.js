@@ -142,6 +142,7 @@ $.fn.createLineChart = function (data) {
 					},
 				},
 				y: {
+					alignToPixels: true,
 					beginAtZero: false,
 					grid: {
 						display: true,
