@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"git": "gulp && git add . && echo \"Build successful.\" && exit 0"
+		"git": "gulp && git add . && echo \"Build successful.\" && exit 0",
+		"commit": "git commit -m --"
 	},
 	"author": "Jayesh Vachhani",
 	"license": "UNLICENSED",
