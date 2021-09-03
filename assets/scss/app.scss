@@ -31,6 +31,9 @@ body {
 .border-radius {
     border-radius: 8px;
 }
+.border-secondary-300 {
+    border-color: transparentize($color: $secondary, $amount: 0.7);
+}
 .rounded-2 {
     border-radius: 8px;
 }
