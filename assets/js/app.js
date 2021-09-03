@@ -186,3 +186,22 @@ $(function () {
 		)
 	})
 })
+
+$(function () {
+	$(window).on("scroll", function () {
+		if ($(".sticky-top").length) {
+			var navbarHeight = $(".header").outerHeight(true)
+			var heightStickyTop = $(".sticky-top").outerHeight(true)
+
+			var offsetTop = $(window).scrollTop()
+			if (offsetTop > 90) {
+				$(".sticky-section").addClass("sticky-top drop-shadow border-top border-secondary")
+				$(".sticky-section").css({
+					top: navbarHeight + heightStickyTop + "px",
+				})
+			} else if (offsetTop < 90) {
+				$(".sticky-section").removeClass("sticky-top drop-shadow border-top border-secondary")
+			}
+		}
+	})
+})

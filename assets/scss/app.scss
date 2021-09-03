@@ -121,6 +121,8 @@ nav {
     }
 }
 header {
+    height: 69px;
+    max-height: 69px;
     nav {
         .nav-item {
             .nav-link {
@@ -310,4 +312,7 @@ canvas {
             white-space: inherit !important;
         }
     }
+}
+.sticky-top {
+    top: 69px;
 }
