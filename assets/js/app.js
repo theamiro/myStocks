@@ -207,19 +207,24 @@ $(function () {
 			}
 		}
 	})
+	configureCollapsibles()
+
 	$(window).on("resize", function () {
-		if ($(window).width() < 767) {
-			$(".selector").each(function () {
-				$(this).addClass("collapse")
-				$(this).addClass("multi-collapse")
-				$(this).addClass("show")
-			})
-		} else if ($(window).width() > 767) {
-			$(".selector").each(function () {
-				$(this).removeClass("collapse")
-				$(this).removeClass("multi-collapse")
-				$(this).removeClass("show")
-			})
-		}
+		configureCollapsibles()
 	})
 })
+function configureCollapsibles() {
+	if ($(window).width() < 767) {
+		$(".selector").each(function () {
+			$(this).addClass("collapse")
+			$(this).addClass("multi-collapse")
+			$(this).addClass("show")
+		})
+	} else if ($(window).width() > 767) {
+		$(".selector").each(function () {
+			$(this).removeClass("collapse")
+			$(this).removeClass("multi-collapse")
+			$(this).removeClass("show")
+		})
+	}
+}

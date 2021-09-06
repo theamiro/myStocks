@@ -359,7 +359,13 @@ a {
         }
     }
 }
-
+@media screen and (max-width: 768px) {
+    .btn {
+        &.dropdown-toggle {
+            font-size: 19px !important;
+        }
+    }
+}
 @media screen and (max-width: 425px) {
     .btn {
         &.dropdown-toggle {

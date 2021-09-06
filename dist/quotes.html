@@ -546,8 +546,8 @@
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="selectors mb-4">
-                                            <div class="row">
-                                                <div class="col-3">
+                                            <div class="row gx-1">
+                                                <div class="col-md-3 col-lg-3 col-5">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Range</button>
                                                         <ul class="dropdown-menu">
@@ -558,7 +558,7 @@
                                                     </div>
                                                     <p class="value text-muted fs-5" id="rangeValue">1 month</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-lg-3 col-6">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="frequencyDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Frequency</button>
                                                         <ul class="dropdown-menu">
@@ -569,7 +569,18 @@
                                                     </div>
                                                     <p class="text-muted fs-5" id="frequencyValue">1 month</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-1 d-block d-md-none d-flex align-items-center justify-content-end">
+													<a
+														href="#"
+														class="btn btn-outline fab border-secondary rounded-circle"
+														data-bs-toggle="collapse"
+														data-bs-target=".multi-collapse"
+														aria-expanded="false"
+														aria-controls="multicollapse-1 multicollapse-2 multicollapse-3 multicollapse-4 multicollapse-5 multicollapse-6 multicollapse-7 multicollapse-8"
+														><i class="fas fa-align-justify"></i
+													></a>
+												</div>
+                                                <div class="col-md-3 col-lg-3 col-5 selector" id ="multicollapse-1">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="typeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Type</button>
                                                         <ul class="dropdown-menu">
@@ -580,7 +591,7 @@
                                                     </div>
                                                     <p class="text-muted fs-5" id="typeValue">1 month</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-lg-3 col-6 selector" id ="multicollapse-2">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="priceVolumeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Price Volume</button>
                                                         <ul class="dropdown-menu">
@@ -591,7 +602,7 @@
                                                     </div>
                                                     <p class="text-muted fs-5" id="priceVolumeValue">1 month</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-lg-3 col-5 selector" id ="multicollapse-3">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="overlayDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
                                                         <ul class="dropdown-menu">
@@ -602,7 +613,7 @@
                                                     </div>
                                                     <p class="text-muted fs-5" id="overlayValue">1 month</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-lg-3 col-6 selector" id ="multicollapse-4">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="scaleDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Scale</button>
                                                         <ul class="dropdown-menu">
@@ -613,7 +624,7 @@
                                                     </div>
                                                     <p class="text-muted fs-5" id="scaleValue">1 month</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-lg-3 col-5 selector" id ="multicollapse-5">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="movingAveragesDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Moving Averages</button>
                                                         <ul class="dropdown-menu">
@@ -624,7 +635,7 @@
                                                     </div>
                                                     <p class="text-muted fs-5" id="movingAveragesValue">1 month</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-lg-3 col-6 selector" id ="multicollapse-6">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="exponentialDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Exponential EMA</button>
                                                         <ul class="dropdown-menu">
@@ -635,7 +646,7 @@
                                                     </div>
                                                     <p class="text-muted fs-5" id="exponentialValue">1 month</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-lg-3 col-5 selector" id ="multicollapse-7">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="weightedDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Weighted WMA</button>
                                                         <ul class="dropdown-menu">
@@ -646,7 +657,7 @@
                                                     </div>
                                                     <p class="text-muted fs-5" id="weightedValue">Select</p>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-md-3 col-lg-3 col-6 selector" id ="multicollapse-8">
                                                     <div class="btn-group dropdown mb-2">
                                                         <button id="indicatorsDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Indicators</button>
                                                         <ul class="dropdown-menu">
@@ -1298,39 +1309,49 @@
 								<div class="row mb-5">
 									<div class="col-lg-8">
                                         <div class="row">
-                                            <div class="col-3">
-										<div class="btn-group dropdown mb-2">
-											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Month</button>
-											<ul class="dropdown-menu">
-												<li class="dropdown-item">1 month</li>
-												<li class="dropdown-item">3 months</li>
-												<li class="dropdown-item">6 months</li>
-											</ul>
-										</div>
-										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
-									</div>
-									<div class="col-3">
-										<div class="btn-group dropdown mb-2">
-											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Year</button>
-											<ul class="dropdown-menu">
-												<li class="dropdown-item">1 month</li>
-												<li class="dropdown-item">3 months</li>
-												<li class="dropdown-item">6 months</li>
-											</ul>
-										</div>
-										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
-									</div>
-									<div class="col-3">
-										<div class="btn-group dropdown mb-2">
-											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Frequency</button>
-											<ul class="dropdown-menu">
-												<li class="dropdown-item">1 month</li>
-												<li class="dropdown-item">3 months</li>
-												<li class="dropdown-item">6 months</li>
-											</ul>
-										</div>
-										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
-									</div>
+                                            <div class="col-md-3 col-lg-3 col-5">
+                                                <div class="btn-group dropdown mb-2">
+                                                    <button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Month</button>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">1 month</li>
+                                                        <li class="dropdown-item">3 months</li>
+                                                        <li class="dropdown-item">6 months</li>
+                                                    </ul>
+                                                </div>
+                                                <p class="value text-muted fs-5" id="rangeValue">1 month</p>
+									    </div>
+                                        <div class="col-md-3 col-lg-3 col-6">
+                                            <div class="btn-group dropdown mb-2">
+                                                <button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Year</button>
+                                                <ul class="dropdown-menu">
+                                                    <li class="dropdown-item">1 month</li>
+                                                    <li class="dropdown-item">3 months</li>
+                                                    <li class="dropdown-item">6 months</li>
+                                                </ul>
+                                            </div>
+                                            <p class="value text-muted fs-5" id="rangeValue">1 month</p>
+                                        </div>
+                                        <div class="col-1 d-block d-md-none d-flex align-items-center justify-content-end">
+                                            <a
+                                                href="#"
+                                                class="btn btn-outline fab border-secondary rounded-circle"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".multi-collapse"
+                                                aria-expanded="false"
+                                                aria-controls="multicollapse-frequency"
+                                                ><i class="fas fa-align-justify"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-5 selector" id="multicollapse-frequency">
+                                            <div class="btn-group dropdown mb-2">
+                                                <button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Frequency</button>
+                                                <ul class="dropdown-menu">
+                                                    <li class="dropdown-item">1 month</li>
+                                                    <li class="dropdown-item">3 months</li>
+                                                    <li class="dropdown-item">6 months</li>
+                                                </ul>
+                                            </div>
+                                            <p class="value text-muted fs-5" id="rangeValue">1 month</p>
                                         </div>
                                     </div>
 								</div>
