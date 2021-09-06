@@ -188,31 +188,42 @@ $(function () {
 })
 
 $(function () {
-	$(window).on("scroll", function () {
-		if ($(".sticky-top").length && $(".sticky-content").length) {
-			var navbarHeight = $(".header").outerHeight(true)
-			var heightStickyTop = $(".sticky-top").outerHeight(true)
-			var stickyContent = $(".sticky-content").outerHeight(true)
-
-			var offsetTop = $(window).scrollTop()
-			if ($(".sticky-section").length) {
-				if (offsetTop > 90) {
-					$(".sticky-section").addClass("sticky-top drop-shadow border-top border-secondary-300")
-					$(".sticky-section").css({
-						top: navbarHeight + heightStickyTop + "px",
-					})
-				} else if (offsetTop < 90) {
-					$(".sticky-section").removeClass("sticky-top drop-shadow border-top border-secondary-300")
-				}
-			}
-		}
-	})
 	configureCollapsibles()
+	configureStickyContent()
+	$(window).on("scroll", function () {
+		configureStickyContent()
+	})
 
 	$(window).on("resize", function () {
 		configureCollapsibles()
 	})
 })
+function configureStickyContent() {
+	if ($(".sticky-top-section").length && $(".sticky-content").length) {
+		var navbarHeight = $(".header").outerHeight(true)
+		var heightStickyTop = $(".sticky-top-section").outerHeight(true)
+		var stickyContentHeight = $(".sticky-content").outerHeight(true)
+
+		var offsetTop = $(window).scrollTop()
+		if (offsetTop > 0 && offsetTop < stickyContentHeight) {
+			$(".sticky-top-section").addClass("sticky-top")
+		} else if (offsetTop > stickyContentHeight) {
+			$(".sticky-top-section").removeClass("sticky-top")
+		} else {
+			$(".sticky-top-section").removeClass("sticky-top")
+		}
+		if ($(".sticky-section").length) {
+			if (offsetTop > 90 && offsetTop < stickyContentHeight) {
+				$(".sticky-section").addClass("sticky-top drop-shadow border-top border-secondary-300")
+				$(".sticky-section").css({
+					top: navbarHeight + heightStickyTop + "px",
+				})
+			} else if (offsetTop < 90 || offsetTop > stickyContentHeight) {
+				$(".sticky-section").removeClass("sticky-top drop-shadow border-top border-secondary-300")
+			}
+		}
+	}
+}
 function configureCollapsibles() {
 	if ($(window).width() < 767) {
 		$(".selector").each(function () {
