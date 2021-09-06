@@ -199,6 +199,10 @@ div.tab-pane {
         line-height: 26px;
         border-width: 1.5px;
     }
+    &.dropdown-toggle {
+        text-align: left;
+        white-space: break-spaces !important;
+    }
 }
 canvas {
     margin-left: -12px;
@@ -312,13 +316,7 @@ canvas {
         background-color: transparentize($color: $primary, $amount: 0.8);
     }
 }
-.selector {
-    button {
-        .dropdown-toggle {
-            white-space: inherit !important;
-        }
-    }
-}
+
 .sticky-top {
     top: 60px;
 }
@@ -352,4 +350,21 @@ a {
             @extend .w-100;
         }
     }
+}
+.selector {
+    button {
+        text-align: left !important;
+        .dropdown-toggle {
+            white-space: break-spaces !important;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .btn {
+        &.dropdown-toggle {
+            font-size: 17px !important;
+        }
+    }
+    
 }
