@@ -310,12 +310,6 @@ canvas {
         @extend .small
     }
 }
-.bg-primary-100 {
-    background-color: transparentize($color: $primary, $amount: 0.9);
-    &:hover, &:focus, &:active {
-        background-color: transparentize($color: $primary, $amount: 0.8);
-    }
-}
 
 .sticky-top {
     top: 60px;
@@ -377,7 +371,11 @@ a {
 .bg-primary-100 {
     background-color: transparentize($color: $primary, $amount: 0.98);
 }
+
 .btn-primary-100 {
     background-color: transparentize($color: $primary, $amount: 0.9);
     @extend .text-primary;
+    &:hover, &:active, &:focus {
+        background-color: transparentize($color: $primary, $amount: 0.8);
+    }
 }
