@@ -194,13 +194,15 @@ $(function () {
 			var heightStickyTop = $(".sticky-top").outerHeight(true)
 
 			var offsetTop = $(window).scrollTop()
-			if (offsetTop > 90) {
-				$(".sticky-section").addClass("sticky-top drop-shadow border-top border-secondary-300")
-				$(".sticky-section").css({
-					top: navbarHeight + heightStickyTop + "px",
-				})
-			} else if (offsetTop < 90) {
-				$(".sticky-section").removeClass("sticky-top drop-shadow border-top border-secondary-300")
+			if ($(".sticky-section").length) {
+				if (offsetTop > 90) {
+					$(".sticky-section").addClass("sticky-top drop-shadow border-top border-secondary-300")
+					$(".sticky-section").css({
+						top: navbarHeight + heightStickyTop + "px",
+					})
+				} else if (offsetTop < 90) {
+					$(".sticky-section").removeClass("sticky-top drop-shadow border-top border-secondary-300")
+				}
 			}
 		}
 	})

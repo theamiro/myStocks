@@ -305,7 +305,7 @@ canvas {
 }
 .bg-primary-100 {
     background-color: transparentize($color: $primary, $amount: 0.9);
-    &:hover {
+    &:hover, &:focus, &:active {
         background-color: transparentize($color: $primary, $amount: 0.8);
     }
 }
@@ -318,4 +318,35 @@ canvas {
 }
 .sticky-top {
     top: 69px;
+}
+a {
+    &.card {
+        &.news {
+            min-height: 150px;
+            height: 150px;
+            max-height: 150px;
+        }
+    }
+}
+
+.video-frame {
+    position: relative;
+    .play-button {
+        @extend .position-absolute;
+        bottom: 22px;
+        right: 22px;
+        @extend .bg-light;
+        height: 40px;
+        width: 40px;
+        @extend .rounded-circle;
+        box-shadow: 0 0 15px 0 #0000001a;
+        i {
+            position: absolute;
+            left: 50%;
+            margin-left: -47%;
+            line-height: 40px;
+            @extend .text-center;
+            @extend .w-100;
+        }
+    }
 }
