@@ -5,14 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
 		<title>myStocks</title>
-		<link rel="icon" href="assets/img/favicon.ico" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- build:css -->
 		<link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+		<!-- endbuild -->
 	</head>
 
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light border-bottom">
+		<header class="header">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
 				<div class="container px-lg-5">
 					<a class="navbar-brand" href="index.html">
 						<span class="fw-normal fs-3">myStocks</span>
@@ -21,44 +22,460 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbar">
-						<ul class="navbar-nav ms-5 me-auto mb-2 mb-md-0">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="index.html">News</a>
+						<ul class="navbar-nav ms-xl-5 me-lg-auto mb-2 mb-md-0 navbar-nav-scroll">
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link active" aria-current="page" href="index.html">News</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="indices.html">Indices</a>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="indices.html" data-bs-toggle="dropdown">Indices</a>
+								<div class="dropdown-menu w-100 border-0 mt-0 megamenu" id="indices-dropdown">
+									<div class="container px-lg-5 pt-3">
+										<div class="row mb-4 gy-4 justify-content-center">
+											<div class="col-lg-8">
+												<div class="row gy-3">
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">FTSE NSE Kenya 15 Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">FTSE NSE Kenya 25 Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE 20-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE 25-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE All-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">Zamara Kenya Equite Index (KES)</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">Zamara Kenya Equite Index (USD)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="quotes.html">Quotes</a>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" data-bs-toggle="dropdown" href="#">Quotes</a>
+								<div class="dropdown-menu w-100 min-vh-100 border-0 mt-0 megamenu" id="quotes-dropdown">
+									<div class="container px-lg-5 pt-3">
+										<div class="row mb-4 gy-4">
+											<div class="col-lg-2">
+												<p class="mb-2">Agricultural</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eegads Ltd.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Limuru Tea</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kakuzi Tea.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kapchorua Tea Kenya Plc.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sasini Tea</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Automobile & Accessor...</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Car & General(K) Ltd.</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Banking</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ABSA Bank Kenya Ltd Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">BK Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Co-operative Bank of Kenya</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Diamond Trust Bank</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Equity Group Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">HF Group Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">I & M Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KCB Group Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Commercial & Services</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eveready East Africa Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Express Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Homeboyz Entertainment…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Airways Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Longhorn Publishers Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nairobi Business Ventures…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nation Media Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sameer Africa Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Standard Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">TPS Eastern Africa (Seren..</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Uchumi Supermarket Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Construction & Allied</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ARM Cement Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Bamburi Cement Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Crown Paints Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">East African Portland Ce...</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Energy & Petroleum</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KenolKobil Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Electricity Generat...</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Total Kenya Ltd</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Agricultural</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eegads Ltd.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Limuru Tea</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kakuzi Tea.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kapchorua Tea Kenya Plc.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sasini Tea</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Automobile & Accessor...</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Car & General(K) Ltd.</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Banking</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ABSA Bank Kenya Ltd Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">BK Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Co-operative Bank of Kenya</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Diamond Trust Bank</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Equity Group Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">HF Group Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">I & M Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KCB Group Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Commercial & Services</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eveready East Africa Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Express Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Homeboyz Entertainment…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Airways Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Longhorn Publishers Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nairobi Business Ventures…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nation Media Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sameer Africa Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Standard Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">TPS Eastern Africa (Seren..</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Uchumi Supermarket Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Construction & Allied</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ARM Cement Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Bamburi Cement Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Crown Paints Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">East African Portland Ce...</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Energy & Petroleum</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KenolKobil Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Electricity Generat...</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Total Kenya Ltd</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item mx-xl-2 mx-1">
 								<a class="nav-link" href="daily-price-list.html">Daily Price List</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item mx-xl-2 mx-1">
 								<a class="nav-link" href="performance-scorecard.html">Performance Scorecard</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item mx-xl-2 mx-1">
 								<a class="nav-link" href="portfolio.html">Portfolio</a>
 							</li>
 						</ul>
-						<div class="d-flex me-3 gap-3">
-							<a href="#" class="btn btn-light text-primary">Peter Koech</a>
+						<div class="d-flex me-lg-3 gap-3 d-grid mb-3 mb-lg-0">
+							<a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
+							<a href="#" class="btn btn-primary rounded-3 px-3" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a>
 						</div>
-						<form class="d-flex">
-							<div class="input-group input-group-dark">
+						<form class="d-flex d-none d-sm-block d-md-none d-xxl-block">
+							<div class="input-group input-group-dark flex-nowrap">
 								<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
 								<button type="submit" class="btn">
-									<i class="bi bi-search"></i>
+									<i class="fa fa-search"></i>
 								</button>
 							</div>
 						</form>
+						<ul class="navbar-nav d-none d-xl-block d-xxl-none">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-bs-toggle="dropdown"><i class="fa fa-search text-dark"></i></a>
+								<div class="dropdown-menu dropdown-menu-end" id="searchDropdown" style="width: 300px">
+									<div class="container">
+										<div class="row">
+											<div class="col-12">
+												<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
-
+		<!-- Login Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered rounded-3 border-0" style="width: 24rem; height: 50vh">
+				<div class="modal-content p-4">
+					<div class="modal-header border-0 pb-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body py-0">
+						<p class="fs-2 fw-bold">Log in</p>
+						<form class="mb-3 needs-validation" novalidate>
+							<div class="mb-3">
+								<label for="loginEmail" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Check on your email again!</div>
+							</div>
+							<div class="mb-3">
+								<label for="loginPassword" class="form-label">Password</label>
+								<input type="password" class="form-control" id="loginPassword" placeholder="Password" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Passwords must have 6 characters or more!</div>
+							</div>
+							<div class="form-check mb-3">
+								<input class="form-check-input" type="checkbox" value="" id="rememberMeCheckbox" />
+								<label class="form-check-label" for="rememberMeCheckbox">Remember me</label>
+							</div>
+							<div class="d-grid mb-3">
+								<!-- Change this to a submit button  -->
+								<a href="profile.html" class="btn btn-primary btn-lg">Log in</a>
+							</div>
+							<div class="d-flex flex-row justify-content-center gap-4 align-items-center mb-3">
+								<hr class="m-0 bg-secondary w-25" />
+								<p class="mb-0">or</p>
+								<hr class="m-0 bg-secondary w-25" />
+							</div>
+							<p class="text-center text-muted">Don't have an account? <a href="#" class="text-decoration-none text-dark fw-normal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Signup Modal -->
+		<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered rounded-3 border-0" style="width: 24rem; height: 50vh">
+				<div class="modal-content p-4">
+					<div class="modal-header border-0 pb-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body py-0">
+						<p class="fs-2 fw-bold">Sign up</p>
+						<form class="mb-3 needs-validation" novalidate>
+							<div class="mb-3">
+								<label for="username" class="form-label">Full Name</label>
+								<input type="name" class="form-control" id="signupUsername" placeholder="John Doe" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Please enter your full name!</div>
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Check on your email again!</div>
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Password</label>
+								<input type="password" class="form-control" id="signupPassword" placeholder="Password" required />
+								<div class="valid-feedback">Password is perfect!</div>
+								<div class="invalid-feedback">Password must contain a capital letter!</div>
+							</div>
+							<div class="mb-3">
+								<label for="confirmPassword" class="form-label">Confirm Password</label>
+								<input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm Password" required />
+								<div class="valid-feedback">Passwords match!</div>
+								<div class="invalid-feedback">Passwords do not match!</div>
+							</div>
+							<div class="d-grid mb-3">
+								<button type="submit" class="btn btn-primary btn-lg">Sign up</button>
+							</div>
+							<div class="d-flex flex-row justify-content-center gap-4 align-items-center mb-3">
+								<hr class="m-0 bg-secondary w-25" />
+								<p class="mb-0">or</p>
+								<hr class="m-0 bg-secondary w-25" />
+							</div>
+							<p class="text-center text-muted">Already have an account? <a href="#" class="text-decoration-none text-dark fw-normal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<section>
-			<div class="container px-lg-5 mt-5 pt-5">
+			<div class="container px-lg-5">
 				<div class="row">
 					<div class="col-md-6">
 						<p class="text-muted">Your Portfolio</p>
@@ -700,27 +1117,27 @@
 			</div>
 		</section>
 		<footer class="bg-primary">
-			<div class="container px-lg-5">
-				<div class="row pt-5">
-					<div class="col-md-6 d-flex flex-column justify-content-between">
+			<div class="container pt-5 px-lg-5">
+				<div class="row g-5">
+					<div class="col-lg-6 col-md-6 d-flex flex-column justify-content-between">
 						<p class="text-white fw-normal fs-1 mb-5">Get the most out of <br />myStocks by signing up</p>
-						<div class="row mt-5 align-items-center">
-							<div class="col-md-6 mb-3">
+						<div class="row mt-5 align-items-center gy-3">
+							<div class="col-md-8 col-lg-6 col-md-12">
 								<input type="email" class="form-control input-light form-control-lg" placeholder="Enter your email address" />
 							</div>
-							<div class="col-md-4 mb-3">
+							<div class="col-md-4 col-lg-3 col-md-12 d-grid">
 								<button type="submit" class="btn btn-light btn-lg text-primary">Sign up Now!</button>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-2">
+					<div class="col-lg-2 col-md-2">
 						<p class="text-white fs-5">MyStocks</p>
 						<ul class="nav flex-column">
 							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">About</a></li>
 							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Contact us</a></li>
 						</ul>
 					</div>
-					<div class="col-md-2">
+					<div class="col-lg-2 col-md-2">
 						<p class="text-white fs-5">Policies</p>
 						<ul class="nav flex-column">
 							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Terms of Service</a></li>
@@ -728,7 +1145,7 @@
 							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Cookies Policy</a></li>
 						</ul>
 					</div>
-					<div class="col-md-2">
+					<div class="col-lg-2 col-md-2">
 						<p class="text-white fs-5">Help</p>
 						<ul class="nav flex-column">
 							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Video Tutorials</a></li>
@@ -740,146 +1157,52 @@
 			</div>
 			<div class="container px-lg-5 pt-3 pb-2">
 				<hr class="bg-light border border-1" />
-				<div class="row align-items-center">
-					<div class="col-md-6 d-flex gap-4 align-items-center">
+				<div class="row align-items-center g-3">
+					<div class="col-md-6 d-flex flex-wrap gap-4 align-items-center">
 						<p class="text-white mb-0 fs-3">myStocks</p>
 						<p class="text-white mb-0 opacity-50">&copy; 2007-21 Synergy Systems Ltd</p>
 					</div>
 					<div class="col-md-6 d-flex flex-nowrap justify-content-sm-center justify-content-md-end">
 						<div class="d-flex flex-wrap justify-center gap-3 pb-3">
-							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="/assets/img/googleplay.svg" /></a>
-							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="/assets/img/appstore.svg" /></a>
+							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="assets/img/googleplay.svg" /></a>
+							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="assets/img/appstore.svg" /></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" type="text/javascript"></script>
-		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<!-- build:js -->
+		<script src="assets/js/vendor/jquery.js" type="text/javascript"></script>
+		<script src="assets/js/vendor/bootstrap.bundle.js"></script>
+		<script src="assets/js/vendor/popper.js" type="text/javascript"></script>
+		<script src="assets/js/vendor/chart.js"></script>
 		<script src="assets/js/app.js"></script>
+		<!-- endbuild -->
+
 		<script>
-			var allShareIndex = document.getElementById("all-share").getContext("2d")
-			let dangerGradient = allShareIndex.createLinearGradient(0, 0, 0, 400)
-			dangerGradient.addColorStop(0, "rgba(231, 24, 24, 0.5)")
-			dangerGradient.addColorStop(1, "rgba(231, 24, 24, 0.1)")
-			var myChart = new Chart(allShareIndex, {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-					datasets: [
-						{
-							data: [168, 165, 164, 166, 165, 163, 168],
-							fill: true,
-							backgroundColor: dangerGradient,
-							borderColor: "rgb(231, 24, 24)",
-						},
-					],
-				},
-				options: {
-					interaction: {
-						intersect: false,
-						mode: "index",
+			$("#all-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+				datasets: [
+					{
+						data: [168, 165, 164, 166, 165, 163, 162],
+						fill: true,
+						backgroundColor: createDangerGradient("all-share"),
+						borderColor: danger,
 					},
-					elements: {
-						point: {
-							pointRadius: 0,
-							pointBackgroundColor: "rgba(0,0,0,1)",
-							pointBorderColor: "rgba(0,0,0,1)",
-							pointBorderWidth: 0,
-							pointHitRadius: 5,
-						},
-					},
-					maintainAspectRatio: true,
-					scales: {
-						x: {
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							grid: {
-								display: true,
-								drawBorder: false,
-							},
-							suggestedMin: 156,
-							suggestedMax: 170,
-						},
-					},
-					plugins: {
-						legend: {
-							display: false,
-						},
-						tooltip: {
-							enabled: false,
-							external: customTooltipHandler,
-						},
-					},
-				},
+				],
 			})
 		</script>
 		<script>
-			var lineShareIndex = document.getElementById("line-share").getContext("2d")
-			var myChart = new Chart(lineShareIndex, {
-				type: "line",
-				data: {
-					labels: ["2021", "Apr", "May", "Jun", "Jul", "", ""],
-					datasets: [
-						{
-							data: [0, 5, 5, 9, 0, 10, 20],
-							fill: false,
-							borderColor: "rgb(10, 190, 130)",
-						},
-						{
-							data: [16, 12, 14, 5, 11, 0, -3],
-							fill: false,
-							borderColor: "rgb(255, 99, 132)",
-						},
-					],
-				},
-				options: {
-					interaction: {
-						intersect: false,
-						mode: "index",
+			$("#line-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+				datasets: [
+					{
+						data: [168, 165, 164, 166, 165, 163, 162],
+						fill: true,
+						backgroundColor: createDangerGradient("all-share"),
+						borderColor: danger,
 					},
-					elements: {
-						point: {
-							pointRadius: 0,
-							pointBackgroundColor: "rgba(0,0,0,1)",
-							pointBorderColor: "rgba(0,0,0,1)",
-							pointBorderWidth: 0,
-							pointHitRadius: 5,
-						},
-					},
-					maintainAspectRatio: true,
-					scales: {
-						x: {
-							grid: {
-								display: false,
-							},
-						},
-						y: {
-							beginAtZero: false,
-							grid: {
-								display: true,
-								drawBorder: false,
-							},
-							suggestedMin: 20,
-							suggestedMax: -10,
-						},
-					},
-					plugins: {
-						legend: {
-							display: false,
-						},
-						tooltip: {
-							enabled: false,
-							external: customTooltipHandler,
-						},
-					},
-				},
+				],
 			})
 		</script>
 	</body>
