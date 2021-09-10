@@ -307,6 +307,23 @@
             }
         }
     }
+    tbody {
+        tr {
+            td {
+                &.in-range {
+                    &:first-child {
+                        border-radius: 4px 0 0 4px;
+                    }
+                    &:last-child {
+                        border-radius: 0 4px 4px 0;
+                        &:hover {
+                            border-radius: 0 4px 4px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
@@ -320,14 +337,7 @@
     font-size: 14px;
     white-space: nowrap;
     cursor: pointer;
-    &.in-range {
-        &:first-child {
-            border-radius: 4px 0 0 4px;
-        }
-        &:last-child {
-            border-radius: 0 4px 4px 0;
-        }
-    }
+    
 }
 
 .daterangepicker td.start-date {

@@ -70,7 +70,7 @@
 			format: moment.localeData().longDateFormat("L"),
 			separator: " - ",
 			applyLabel: "Apply",
-			cancelLabel: "Cancel",
+			cancelLabel: "",
 			weekLabel: "W",
 			customRangeLabel: "Custom Range",
 			daysOfWeek: moment.weekdaysMin(),
@@ -103,7 +103,7 @@
 				'<div class="row">' +
 				'<div class="col">' +
 				'<p class="">From</p>' +
-				'<p class="start-date-marker"></p>' +
+				'<p class="start-date-marker text-primary"></p>' +
 				"</div>" +
 				'<div class="col">' +
 				'<p class="">To</p>' +
