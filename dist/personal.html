@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<title>myStocks</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="assets/css/app.min.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
+				<div class="container px-lg-5">
+					<a class="navbar-brand" href="index.html">
+						<span class="fw-normal fs-3">myStocks</span>
+					</a>
+					<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbar">
+						<ul class="navbar-nav ms-xl-5 me-lg-auto mb-2 mb-md-0 navbar-nav-scroll">
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link active" aria-current="page" href="index.html">News</a>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="indices.html" data-bs-toggle="dropdown">Indices</a>
+								<div class="dropdown-menu w-100 border-0 mt-0 megamenu" id="indices-dropdown">
+									<div class="container px-lg-5 pt-3">
+										<div class="row mb-4 gy-4 justify-content-center">
+											<div class="col-lg-8">
+												<div class="row gy-3">
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">FTSE NSE Kenya 15 Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">FTSE NSE Kenya 25 Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE 20-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE 25-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE All-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">Zamara Kenya Equite Index (KES)</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">Zamara Kenya Equite Index (USD)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" data-bs-toggle="dropdown" href="#">Quotes</a>
+								<div class="dropdown-menu w-100 min-vh-100 border-0 mt-0 megamenu" id="quotes-dropdown">
+									<div class="container px-lg-5 pt-3">
+										<div class="row mb-4 gy-4">
+											<div class="col-lg-2">
+												<p class="mb-2">Agricultural</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eegads Ltd.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Limuru Tea</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kakuzi Tea.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kapchorua Tea Kenya Plc.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sasini Tea</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Automobile & Accessor...</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Car & General(K) Ltd.</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Banking</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ABSA Bank Kenya Ltd Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">BK Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Co-operative Bank of Kenya</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Diamond Trust Bank</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Equity Group Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">HF Group Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">I & M Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KCB Group Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Commercial & Services</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eveready East Africa Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Express Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Homeboyz Entertainment…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Airways Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Longhorn Publishers Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nairobi Business Ventures…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nation Media Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sameer Africa Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Standard Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">TPS Eastern Africa (Seren..</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Uchumi Supermarket Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Construction & Allied</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ARM Cement Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Bamburi Cement Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Crown Paints Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">East African Portland Ce...</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Energy & Petroleum</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KenolKobil Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Electricity Generat...</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Total Kenya Ltd</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Agricultural</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eegads Ltd.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Limuru Tea</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kakuzi Tea.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kapchorua Tea Kenya Plc.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sasini Tea</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Automobile & Accessor...</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Car & General(K) Ltd.</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Banking</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ABSA Bank Kenya Ltd Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">BK Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Co-operative Bank of Kenya</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Diamond Trust Bank</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Equity Group Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">HF Group Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">I & M Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KCB Group Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Commercial & Services</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eveready East Africa Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Express Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Homeboyz Entertainment…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Airways Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Longhorn Publishers Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nairobi Business Ventures…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nation Media Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sameer Africa Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Standard Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">TPS Eastern Africa (Seren..</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Uchumi Supermarket Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Construction & Allied</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ARM Cement Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Bamburi Cement Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Crown Paints Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">East African Portland Ce...</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Energy & Petroleum</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KenolKobil Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Electricity Generat...</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Total Kenya Ltd</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="daily-price-list.html">Daily Price List</a>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="performance-scorecard.html">Performance Scorecard</a>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="portfolio.html">Portfolio</a>
+							</li>
+						</ul>
+						<div class="d-flex me-lg-3 gap-3 d-grid mb-3 mb-lg-0">
+							<a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
+							<a href="#" class="btn btn-primary rounded-3 px-3" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a>
+						</div>
+						<form class="d-flex d-none d-sm-block d-md-none d-xxl-block">
+							<div class="input-group input-group-dark flex-nowrap">
+								<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
+								<button type="submit" class="btn">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</form>
+						<ul class="navbar-nav d-none d-xl-block d-xxl-none">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-bs-toggle="dropdown"><i class="fa fa-search text-dark"></i></a>
+								<div class="dropdown-menu dropdown-menu-end" id="searchDropdown" style="width: 300px">
+									<div class="container">
+										<div class="row">
+											<div class="col-12">
+												<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Login Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered rounded-3 border-0" style="width: 24rem; height: 50vh">
+				<div class="modal-content p-4">
+					<div class="modal-header border-0 pb-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body py-0">
+						<p class="fs-2 fw-bold">Log in</p>
+						<form class="mb-3 needs-validation" novalidate>
+							<div class="mb-3">
+								<label for="loginEmail" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Check on your email again!</div>
+							</div>
+							<div class="mb-3">
+								<label for="loginPassword" class="form-label">Password</label>
+								<input type="password" class="form-control" id="loginPassword" placeholder="Password" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Passwords must have 6 characters or more!</div>
+							</div>
+							<div class="form-check mb-3">
+								<input class="form-check-input" type="checkbox" value="" id="rememberMeCheckbox" />
+								<label class="form-check-label" for="rememberMeCheckbox">Remember me</label>
+							</div>
+							<div class="d-grid mb-3">
+								<!-- Change this to a submit button  -->
+								<a href="profile.html" class="btn btn-primary btn-lg">Log in</a>
+							</div>
+							<div class="d-flex flex-row justify-content-center gap-4 align-items-center mb-3">
+								<hr class="m-0 bg-secondary w-25" />
+								<p class="mb-0">or</p>
+								<hr class="m-0 bg-secondary w-25" />
+							</div>
+							<p class="text-center text-muted">Don't have an account? <a href="#" class="text-decoration-none text-dark fw-normal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Signup Modal -->
+		<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered rounded-3 border-0" style="width: 24rem; height: 50vh">
+				<div class="modal-content p-4">
+					<div class="modal-header border-0 pb-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body py-0">
+						<p class="fs-2 fw-bold">Sign up</p>
+						<form class="mb-3 needs-validation" novalidate>
+							<div class="mb-3">
+								<label for="username" class="form-label">Full Name</label>
+								<input type="name" class="form-control" id="signupUsername" placeholder="John Doe" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Please enter your full name!</div>
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Check on your email again!</div>
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Password</label>
+								<input type="password" class="form-control" id="signupPassword" placeholder="Password" required />
+								<div class="valid-feedback">Password is perfect!</div>
+								<div class="invalid-feedback">Password must contain a capital letter!</div>
+							</div>
+							<div class="mb-3">
+								<label for="confirmPassword" class="form-label">Confirm Password</label>
+								<input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm Password" required />
+								<div class="valid-feedback">Passwords match!</div>
+								<div class="invalid-feedback">Passwords do not match!</div>
+							</div>
+							<div class="d-grid mb-3">
+								<button type="submit" class="btn btn-primary btn-lg">Sign up</button>
+							</div>
+							<div class="d-flex flex-row justify-content-center gap-4 align-items-center mb-3">
+								<hr class="m-0 bg-secondary w-25" />
+								<p class="mb-0">or</p>
+								<hr class="m-0 bg-secondary w-25" />
+							</div>
+							<p class="text-center text-muted">Already have an account? <a href="#" class="text-decoration-none text-dark fw-normal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section>
+			<div class="container px-lg-5">
+				<div class="row">
+					<div class="col-md-6">
+						<p class="text-muted">Your Portfolio</p>
+						<div class="btn-group dropdown mb-2">
+							<button id="rangeDropdown" class="fs-2 fw-light btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Selected Account</button>
+							<ul class="dropdown-menu">
+								<li class="dropdown-item active">1 month</li>
+								<li class="dropdown-item">3 months</li>
+								<li class="dropdown-item">6 months</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex flex-column align-items-end">
+						<p class="text-muted">5:00 PM EAT. Market Closed</p>
+						<div class="d-flex gap-2">
+							<div class="btn-group dropdown mb-2">
+								<button id="rangeDropdown" class="fw-light btn btn-outline fab rounded-circle border-secondary text-decoration-none p-0 text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-cog"></i></button>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li class="dropdown-item active">Link your CDS Account</li>
+									<li class="dropdown-item">Manage Portfolio Users</li>
+									<li class="dropdown-item">Manage CDS Accounts</li>
+									<li class="dropdown-item">Edit Portfolio Options</li>
+									<li class="dropdown-item">Manage Portfolio Alerts</li>
+								</ul>
+							</div>
+							<a href="#" class="btn btn-outline rounded-circle btn-light border-secondary fab">
+								<i class="fas fa-download"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr class="bg-secondary" />
+		<section class="my-2">
+			<div class="container px-lg-5">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="">
+							<div class="nav tabs" id="nav-tab" role="tablist">
+								<a class="nav-link fs-1 active" id="nav-performance-tab" data-bs-toggle="tab" data-bs-target="#nav-performance" type="button" role="tab" aria-controls="nav-performance" aria-selected="true">Performance</a>
+								<a class="nav-link fs-1" id="nav-valuation-tab" data-bs-toggle="tab" data-bs-target="#nav-valuation" type="button" role="tab" aria-controls="nav-valuation" aria-selected="false">Valuation</a>
+								<a class="nav-link fs-1" id="nav-allocation-tab" data-bs-toggle="tab" data-bs-target="#nav-allocation" type="button" role="tab" aria-controls="nav-allocation" aria-selected="false">Allocation</a>
+								<a class="nav-link fs-1" id="nav-transactions-tab" data-bs-toggle="tab" data-bs-target="#nav-transactions" type="button" role="tab" aria-controls="nav-transactions" aria-selected="false">Transactions</a>
+								<a class="nav-link fs-1" id="nav-attribution-tab" data-bs-toggle="tab" data-bs-target="#nav-attribution" type="button" role="tab" aria-controls="nav-attribution" aria-selected="false">Attribution Analysis</a>
+								<a class="nav-link fs-1" id="nav-alerts-tab" data-bs-toggle="tab" data-bs-target="#nav-alerts" type="button" role="tab" aria-controls="nav-alerts" aria-selected="false">Alerts</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="my-4">
+			<div class="tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-performance" role="tabpanel" aria-labelledby="nav-performance-tab">
+					<section class="bg-danger py-3">
+						<div class="container px-lg-5">
+							<div class="row g-3">
+								<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+									<p class="text-light fs-5 mb-0">Current Value</p>
+									<p class="text-light fs-5 mb-0">397,000</p>
+								</div>
+								<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+									<p class="text-light fs-5 mb-0">Return (%)</p>
+									<p class="text-light fs-5 mb-0">0.00</p>
+								</div>
+								<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+									<p class="text-light fs-5 mb-0">Unrealized Loss</p>
+									<p class="text-light fs-5 mb-0">1,289,000</p>
+								</div>
+								<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+									<p class="text-light fs-5 mb-0">Realised Loss</p>
+									<p class="text-light fs-5 mb-0">493,000</p>
+								</div>
+								<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+									<p class="text-light fs-5 mb-0">Loss</p>
+									<p class="text-light fs-5 mb-0">1,781,000</p>
+								</div>
+								<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+									<p class="text-light fs-5 mb-0">Profit</p>
+									<p class="text-light fs-5 mb-0">2,345,390</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="container px-lg-5 mt-5">
+						<div class="row">
+							<div class="col-md-8">
+								<nav class="nav filter-nav mb-5">
+									<li class="nav-item"><a class="nav-link" href="#">1D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">5D</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">1M</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">6M</a></li>
+									<li class="nav-item"><a class="nav-link active" href="#">YTD</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">1Y</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">5Y</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Max.</a></li>
+								</nav>
+								<div class="performance">
+									<p class="fs-2 fw-light">Performance Chart</p>
+									<canvas id="all-share" width="600" height="300"></canvas>
+								</div>
+								<div class="return mt-5 pt-5">
+									<p class="fs-2 fw-light mt-5">Return</p>
+									<canvas id="line-share" width="600" height="300"></canvas>
+								</div>
+							</div>
+							<div class="col-md-4 d-flex flex-column justify-content-between align-items-center">
+								<div class="card border-0 rounded-0">
+									<div class="card-header rounded-0 advertisement border-0" style="width: 22rem; height: 24rem"></div>
+									<div class="card-body text-center d-flex flex-column justify-content-center">
+										<p class="card-title fw-normal">Advertisement</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-valuation" role="tabpanel" aria-labelledby="nav-valuation-tab">
+					<div class="container px-lg-5 mt-3">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="table-responsive">
+									<table class="table table-flush table-lg table-border-bottom-0">
+										<thead class="text-muted">
+											<tr>
+												<th>Security</th>
+												<th>Holdings</th>
+												<th>Balance Fee</th>
+												<th>Avg. Cost</th>
+												<th>Latest Price</th>
+												<th>Investment</th>
+												<th>Market Value</th>
+												<th>Gain/Loss</th>
+												<th>(%)</th>
+												<th>Alloc.(%)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>ARM</td>
+												<td>15,900</td>
+												<td>15,900</td>
+												<td>81.6</td>
+												<td>
+													<div class="btn-group dropdown mb-2">
+														<button id="rangeDropdown" class="btn btn-link text-decoration-none p-0 dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">price</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item active">Link your CDS Account</li>
+															<li class="dropdown-item">Manage Portfolio Users</li>
+															<li class="dropdown-item">Manage CDS Accounts</li>
+															<li class="dropdown-item">Edit Portfolio Options</li>
+															<li class="dropdown-item">Manage Portfolio Alerts</li>
+														</ul>
+													</div>
+												</td>
+												<td>1,282,983</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>ARM</td>
+												<td>15,900</td>
+												<td>15,900</td>
+												<td>81.6</td>
+												<td>
+													<div class="btn-group dropdown mb-2">
+														<button id="rangeDropdown" class="btn btn-link text-decoration-none p-0 dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">price</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item active">Link your CDS Account</li>
+															<li class="dropdown-item">Manage Portfolio Users</li>
+															<li class="dropdown-item">Manage CDS Accounts</li>
+															<li class="dropdown-item">Edit Portfolio Options</li>
+															<li class="dropdown-item">Manage Portfolio Alerts</li>
+														</ul>
+													</div>
+												</td>
+												<td>1,282,983</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>ARM</td>
+												<td>15,900</td>
+												<td>15,900</td>
+												<td>81.6</td>
+												<td>
+													<div class="btn-group dropdown mb-2">
+														<button id="rangeDropdown" class="btn btn-link text-decoration-none p-0 dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">price</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item active">Link your CDS Account</li>
+															<li class="dropdown-item">Manage Portfolio Users</li>
+															<li class="dropdown-item">Manage CDS Accounts</li>
+															<li class="dropdown-item">Edit Portfolio Options</li>
+															<li class="dropdown-item">Manage Portfolio Alerts</li>
+														</ul>
+													</div>
+												</td>
+												<td>1,282,983</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr class="border-bottom-1 border-dark">
+												<td>ARM</td>
+												<td>15,900</td>
+												<td>15,900</td>
+												<td>81.6</td>
+												<td>
+													<div class="btn-group dropdown mb-2">
+														<button id="rangeDropdown" class="btn btn-link text-decoration-none p-0 dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">price</button>
+														<ul class="dropdown-menu">
+															<li class="dropdown-item active">Link your CDS Account</li>
+															<li class="dropdown-item">Manage Portfolio Users</li>
+															<li class="dropdown-item">Manage CDS Accounts</li>
+															<li class="dropdown-item">Edit Portfolio Options</li>
+															<li class="dropdown-item">Manage Portfolio Alerts</li>
+														</ul>
+													</div>
+												</td>
+												<td>1,282,983</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr class="">
+												<td colspan="5">CASH</td>
+												<td>1,282,983</td>
+												<td>387,930</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+											<tr class="">
+												<td colspan="5">TOTAL</td>
+												<td>1,282,983</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-allocation" role="tabpanel" aria-labelledby="nav-allocation-tab">
+					<div class="container px-lg-5 mt-3">
+						<div class="row">
+							<div class="col-md-12">Missing Allocations Tab</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-transactions" role="tabpanel" aria-labelledby="nav-transactions-tab">
+					<div class="container px-lg-5 mt-3">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row mb-5">
+									<div class="col-2">
+										<div class="btn-group dropdown mb-2">
+											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Month</button>
+											<ul class="dropdown-menu">
+												<li class="dropdown-item">1 month</li>
+												<li class="dropdown-item active">3 months</li>
+												<li class="dropdown-item">6 months</li>
+											</ul>
+										</div>
+										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+									</div>
+									<div class="col-2">
+										<div class="btn-group dropdown mb-2">
+											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Year</button>
+											<ul class="dropdown-menu">
+												<li class="dropdown-item active">1 month</li>
+												<li class="dropdown-item">3 months</li>
+												<li class="dropdown-item">6 months</li>
+											</ul>
+										</div>
+										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+									</div>
+									<div class="col-2">
+										<div class="btn-group dropdown mb-2">
+											<button id="rangeDropdown" class="fs-5 btn btn-link text-decoration-none dropdown-toggle p-0 text-dark" type="button" data-bs-toggle="dropdown">Frequency</button>
+											<ul class="dropdown-menu">
+												<li class="dropdown-item active">1 month</li>
+												<li class="dropdown-item">3 months</li>
+												<li class="dropdown-item">6 months</li>
+											</ul>
+										</div>
+										<p class="value text-muted fs-5" id="rangeValue">1 month</p>
+									</div>
+								</div>
+								<div class="table-responsive">
+									<table class="table table-lg" id="attribution-analysis-table">
+										<thead>
+											<tr>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">#</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Security</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Date</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Type</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Shares</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Price</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Cost Basis</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Commission</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Gain/Loss</p>
+												</th>
+											</tr>
+										</thead>
+										<tbody class="">
+											<tr class="main cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#brit" aria-expanded="false" aria-controls="brit" class="accordion-toggle">
+												<td class="dropdown-toggle" width="10%">2</td>
+												<td class="" width="10%">BRIT</td>
+												<td class="" width="10%">25 Jun 2019</td>
+												<td class="" width="10%">Buy</td>
+												<td class="" width="10%">45,900</td>
+												<td class="" width="10%">8.40</td>
+												<td class="" width="10%"><span class="badge bg-danger">378,900</span></td>
+												<td class="" width="10%">7,219</td>
+												<td class="" width="10%">481,195</td>
+											</tr>
+											<tr class="collapse" id="brit">
+												<td colspan="9">
+													<div class="table-responsive">
+														<table class="table table-flush table-borderless">
+															<tbody>
+																<tr>
+																	<td colspan="4" width="40.5%"></td>
+																	<td width="10%"><span class="badge bg-danger">12,600</span></td>
+																	<td width="10%">8.80</td>
+																	<td width="10%">108,800</td>
+																	<td width="10%">2,025</td>
+																	<td width="10%"><span class="badge bg-danger">127,292</span></td>
+																</tr>
+																<tr>
+																	<td colspan="4" width="40.5%"></td>
+																	<td width="10%"><span class="badge bg-danger">12,600</span></td>
+																	<td width="10%">8.80</td>
+																	<td width="10%">108,800</td>
+																	<td width="10%">2,025</td>
+																	<td width="10%"><span class="badge bg-danger">127,292</span></td>
+																</tr>
+																<tr>
+																	<td colspan="4" width="40.5%"></td>
+																	<td width="10%"><span class="badge bg-danger">12,600</span></td>
+																	<td width="10%">8.80</td>
+																	<td width="10%">108,800</td>
+																	<td width="10%">2,025</td>
+																	<td width="10%"><span class="badge bg-danger">127,292</span></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+											<tr class="main cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#nasi" aria-expanded="false" aria-controls="nasi" class="accordion-toggle">
+												<td class="dropdown-toggle" width="10%">3</td>
+												<td class="" width="10%">NASI</td>
+												<td class="" width="10%">5 Sep 2019</td>
+												<td class="" width="10%">Sell</td>
+												<td class="" width="10%">45,900</td>
+												<td class="" width="10%">0.40</td>
+												<td class="" width="10%"><span class="badge bg-success">378,900</span></td>
+												<td class="" width="10%">7,219</td>
+												<td class="" width="10%">-101,195</td>
+											</tr>
+											<tr class="collapse" id="nasi">
+												<td colspan="9">
+													<div class="table-responsive">
+														<table class="table table-flush table-borderless">
+															<tbody>
+																<tr>
+																	<td colspan="4" width="40.5%"></td>
+																	<td width="10%"><span class="badge bg-success">12,600</span></td>
+																	<td width="10%">8.80</td>
+																	<td width="10%">108,800</td>
+																	<td width="10%">2,025</td>
+																	<td width="10%"><span class="badge bg-danger">127,292</span></td>
+																</tr>
+																<tr>
+																	<td colspan="4" width="40.5%"></td>
+																	<td width="10%"><span class="badge bg-success">12,600</span></td>
+																	<td width="10%">8.80</td>
+																	<td width="10%">108,800</td>
+																	<td width="10%">2,025</td>
+																	<td width="10%"><span class="badge bg-danger">127,292</span></td>
+																</tr>
+																<tr>
+																	<td colspan="4" width="40.5%"></td>
+																	<td width="10%"><span class="badge bg-success">12,600</span></td>
+																	<td width="10%">8.80</td>
+																	<td width="10%">108,800</td>
+																	<td width="10%">2,025</td>
+																	<td width="10%"><span class="badge bg-danger">127,292</span></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-md-12">
+								<ul class="pagination align-items-baseline justify-content-center gap-2">
+									<li class="page-item"><a href="#" class="page-link border-0 fs-5 active">1</a></li>
+									<li class="page-item"><a href="#" class="page-link border-0 fs-5">2</a></li>
+									<li class="page-item"><a href="#" class="page-link border-0 fs-5">3</a></li>
+									<li class="page-item disabled"><a href="#" class="page-link border-0 fs-5">...</a></li>
+									<li class="page-item"><a href="#" class="page-link border-0 fs-5">15</a></li>
+									<li class="page-item">
+										<a href="#" class="page-link fs-5"><i class="fas fa-chevron-right"></i></a>
+									</li>
+								</ul>
+								<p class="text-muted text-center mt-4 mb-3">25 entries, 333-357</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-attribution" role="tabpanel" aria-labelledby="nav-attribution-tab">
+					<div class="container px-lg-5 mt-3">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="table-responsive">
+									<table class="table" id="attribution-analysis-table">
+										<thead>
+											<tr>
+												<th scope="col" colspan="3" class="fs-5 text-muted fw-normal border-bottom-0"></th>
+												<th scope="col" colspan="3" class="fs-5 text-muted fw-normal border-bottom-0">Price</th>
+												<th scope="col" colspan="2" class="fs-5 text-muted fw-normal border-bottom-0">Weight</th>
+												<th scope="col" colspan="2" class="fs-5 text-muted fw-normal border-bottom-0">Attribution</th>
+											</tr>
+											<tr>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Security</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Shares Issued</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Market Cap</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">1 Jan 2016</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">31 May 2021</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Change(%)</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Market(%)</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Portfolio(%)</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Market</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Portfolio</p>
+												</th>
+											</tr>
+										</thead>
+										<tbody class="">
+											<tr>
+												<td class="" data-fixed-columns="true">NASI</td>
+												<td class=""></td>
+												<td class=""></td>
+												<td class="">145.7</td>
+												<td class="">172.69</td>
+												<td class=""><span class="badge bg-success">+18.70</span></td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+											</tr>
+											<tr>
+												<td class="" data-fixed-columns="true">MSC</td>
+												<td class=""></td>
+												<td class=""></td>
+												<td class="">1.07</td>
+												<td class="">1.09</td>
+												<td class=""><span class="badge bg-success">+18.70</span></td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+											</tr>
+											<tr>
+												<td class="" data-fixed-columns="true">NASI</td>
+												<td class=""></td>
+												<td class=""></td>
+												<td class="">145.7</td>
+												<td class="">172.69</td>
+												<td class=""><span class="badge bg-success">+18.70</span></td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+											</tr>
+											<tr>
+												<td class="" data-fixed-columns="true">MSC</td>
+												<td class=""></td>
+												<td class=""></td>
+												<td class="">1.07</td>
+												<td class="">1.09</td>
+												<td class=""><span class="badge bg-success">+18.70</span></td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+											</tr>
+											<tr>
+												<td class="" data-fixed-columns="true">NASI</td>
+												<td class=""></td>
+												<td class=""></td>
+												<td class="">145.7</td>
+												<td class="">172.69</td>
+												<td class=""><span class="badge bg-success">+18.70</span></td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+											</tr>
+											<tr>
+												<td class="" data-fixed-columns="true">MSC</td>
+												<td class=""></td>
+												<td class=""></td>
+												<td class="">1.07</td>
+												<td class="">1.09</td>
+												<td class=""><span class="badge bg-success">+18.70</span></td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+												<td class="">-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-alerts" role="tabpanel" aria-labelledby="nav-alerts-tab">
+					<div class="container px-lg-5 mt-3">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="table-responsive">
+									<table class="table" id="attribution-analysis-table">
+										<thead>
+											<tr>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Alert me when...</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Narrative</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Edit</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Disable</p>
+												</th>
+												<th scope="col px-2">
+													<p class="fw-normal mb-0 text-secondary fs-5">Delete</p>
+												</th>
+											</tr>
+										</thead>
+										<tbody class="">
+											<tr>
+												<td class="" data-fixed-columns="true">ARM market rate increases above KES 120.0</td>
+												<td class="">Sell ARM >= 120.0</td>
+												<td class="">
+													<a class="btn btn-link text-decoration-none text-dark" href=""><i class="fas fa-cog"></i></a>
+												</td>
+												<td class="">
+													<div class="form-switch form-switch-md mb-0">
+														<input class="form-check-input mt-0" type="checkbox" id="disabled-01" />
+													</div>
+												</td>
+												<td class="">
+													<a class="btn btn-link text-decoration-none text-dark" href=""><i class="far fa-trash-alt"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<td class="" data-fixed-columns="true">BRIT market price increases above 40.000/-</td>
+												<td class="">Sell BRIT >= 40</td>
+												<td class="">
+													<a class="btn btn-link text-decoration-none text-dark" href=""><i class="fas fa-cog"></i></a>
+												</td>
+												<td class="">
+													<div class="form-switch form-switch-md mb-0">
+														<input class="form-check-input mt-0" type="checkbox" id="disabled-01" checked />
+													</div>
+												</td>
+												<td class="">
+													<a class="btn btn-link text-decoration-none text-dark" href=""><i class="far fa-trash-alt"></i></a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="my-3">
+									<a href="#" class="btn btn-light">+ Add alert</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-primary">
+			<div class="container pt-5 px-lg-5">
+				<div class="row g-5">
+					<div class="col-lg-6 col-md-6 d-flex flex-column justify-content-between">
+						<p class="text-white fw-normal fs-1 mb-5">Get the most out of <br />myStocks by signing up</p>
+						<div class="row mt-5 align-items-center gy-3">
+							<div class="col-md-8 col-lg-6 col-md-12">
+								<input type="email" class="form-control input-light form-control-lg" placeholder="Enter your email address" />
+							</div>
+							<div class="col-md-4 col-lg-3 col-md-12 d-grid">
+								<button type="submit" class="btn btn-light btn-lg text-primary">Sign up Now!</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2">
+						<p class="text-white fs-5">MyStocks</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">About</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2">
+						<p class="text-white fs-5">Policies</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Terms of Service</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Privacy Policy</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Cookies Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2">
+						<p class="text-white fs-5">Help</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Video Tutorials</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Account Settings</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Make Payments</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container px-lg-5 pt-3 pb-2">
+				<hr class="bg-light border border-1" />
+				<div class="row align-items-center g-3">
+					<div class="col-md-6 d-flex flex-wrap gap-4 align-items-center">
+						<p class="text-white mb-0 fs-3">myStocks</p>
+						<p class="text-white mb-0 opacity-50">&copy; 2007-21 Synergy Systems Ltd</p>
+					</div>
+					<div class="col-md-6 d-flex flex-nowrap justify-content-sm-center justify-content-md-end">
+						<div class="d-flex flex-wrap justify-center gap-3 pb-3">
+							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="assets/img/googleplay.svg" /></a>
+							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="assets/img/appstore.svg" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/vendor/jquery.min.js"></script>
+		<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/vendor/popper.min.js"></script>
+		<script src="assets/js/vendor/chart.min.js"></script>
+		<script src="assets/js/app.min.js"></script>
+
+		<script>
+			$("#all-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+				datasets: [
+					{
+						data: [168, 165, 164, 166, 165, 163, 162],
+						fill: true,
+						backgroundColor: createDangerGradient("all-share"),
+						borderColor: danger,
+					},
+				],
+			})
+		</script>
+		<script>
+			$("#line-share").createLineChart({
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+				datasets: [
+					{
+						data: [168, 165, 164, 166, 165, 163, 162],
+						fill: true,
+						backgroundColor: createDangerGradient("all-share"),
+						borderColor: danger,
+					},
+				],
+			})
+		</script>
+	</body>
+</html>

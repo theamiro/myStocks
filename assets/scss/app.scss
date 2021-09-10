@@ -375,6 +375,8 @@ a {
     @extend .text-primary;
     &:hover, &:active, &:focus {
         background-color: transparentize($color: $primary, $amount: 0.8);
+    }
+}
 @mixin switch($res: 'sm') {
     $index: 1rem;
     $mainVal: 1rem;
@@ -402,9 +404,6 @@ a {
 .form-check-input {
   clear: left;
 }
-
-// YOU CAN PUT ALL RESOLUTION HERE
-// sm - DEFAULT, md, lg, xl
 
 .form-switch.form-switch-sm {
     @include switch();
