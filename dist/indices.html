@@ -1007,6 +1007,8 @@
 		<script src="assets/js/vendor/jquery.min.js"></script>
 		<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
 		<script src="assets/js/vendor/popper.min.js"></script>
+		<script src="assets/js/vendor/moment.min.js"></script>
+		<script src="assets/js/jquery.daterangepicker.js"></script>
 		<script src="assets/js/vendor/chart.min.js"></script>
 		<script src="assets/js/app.min.js"></script>
 		<script>
@@ -1020,6 +1022,22 @@
 						borderColor: danger,
 					},
 				],
+			})
+			$(function () {
+				$("#custom").on("click", function (e) {
+					e.stopPropagation()
+				})
+				$("#custom").daterangepicker({
+					linkedCalendars: false,
+					numberOfCalendars: 1,
+					opens: "right",
+					locale: {
+						format: "DD/MM/YYYY",
+						applyLabel: "Apply to chart",
+						daysOfWeek: ["S", "M", "T", "W", "T", "F", "S"],
+						monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+					},
+				})
 			})
 		</script>
 	</body>
