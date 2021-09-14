@@ -201,10 +201,11 @@ div.tab-pane {
         border-radius: 8px;
     }
     &.fab {
-        height: 42px !important;
-        width: 42px !important;
-        line-height: 26px;
+        width: 42px;
+        height: 42px;
+        @extend .p-2;
         border-width: 1.5px;
+        aspect-ratio: 1;
     }
     &.dropdown-toggle {
         text-align: left;
@@ -260,6 +261,29 @@ canvas {
             color: $dark !important;
         }
     }
+    // header {
+    //     .navbar-nav {
+    //         .nav-item {
+    //             &:not(.dropdown) {
+    //                 .nav-link {
+    //                 position: relative;
+    //                 &:after {
+    //                     content: '';
+    //                     position:absolute;
+    //                     width: 14px;
+    //                     height: 14px;
+    //                     top: 50%;
+    //                     right: 0;
+    //                     transform: translateY(-50%);
+    //                     background-position: center center;
+    //                     background-repeat: no-repeat;
+    //                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8.48 4.95'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23191919;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cg id='Group_160' data-name='Group 160'%3E%3Cpath id='Path_15' data-name='Path 15' class='cls-1' d='M.35.35,4.24,4.24,8.13.35'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    //                 }
+    //             }
+    //             }
+    //         }
+    //     }
+    // }
 }
 .filter-nav {
     .nav-item {
@@ -336,8 +360,9 @@ a {
         i {
             position: absolute;
             left: 50%;
-            margin-left: -47%;
-            line-height: 40px;
+            top: 50%;
+            margin-top: -22%;
+            margin-left: -46%;
             @extend .text-center;
             @extend .w-100;
         }
