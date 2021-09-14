@@ -914,7 +914,7 @@
 			if (!this.parentEl.is("body")) {
 				parentOffset = {
 					top: this.parentEl.offset().top - this.parentEl.scrollTop(),
-					left: this.parentEl.offset().left - this.parentEl.scrollLeft(),
+					left: this.parentEl.offset().right - this.parentEl.scrollLeft(),
 				}
 				parentRightEdge = this.parentEl[0].clientWidth + this.parentEl.offset().left
 			}
