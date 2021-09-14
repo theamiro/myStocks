@@ -698,7 +698,7 @@
 											</div>
 										</div>
 										<div class="table-responsive">
-											<table class="table table-flush table-border-bottom-0 table-lg">
+											<table class="table table-flush table-border-bottom-0 table-lg w-100" id="historicalDatatable">
 												<thead>
 													<tr>
 														<td class="text-muted">Date</td>
@@ -1007,6 +1007,7 @@
 		<script src="assets/js/vendor/jquery.min.js"></script>
 		<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
 		<script src="assets/js/vendor/popper.min.js"></script>
+		<script src="assets/js/vendor/jquery.dataTables.min.js"></script>
 		<script src="assets/js/vendor/moment.min.js"></script>
 		<script src="assets/js/jquery.daterangepicker.js"></script>
 		<script src="assets/js/vendor/chart.min.js"></script>
@@ -1045,6 +1046,8 @@
 					}
 				)
 			})
+
+			$("#historicalDatatable").DataTable({})
 		</script>
 	</body>
 </html>
