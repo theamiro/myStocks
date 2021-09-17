@@ -207,10 +207,22 @@ function configureStickyContent() {
 		var offsetTop = $(window).scrollTop()
 		if (offsetTop > 0 && offsetTop < stickyContentHeight) {
 			$(".sticky-top-section").addClass("sticky-top")
+			$(".sticky-top-section p.large-text").removeClass("display-6")
+			$(".sticky-top-section p.small-text").removeClass("fs-3")
+			$(".sticky-top-section .left-indices").removeClass("flex-column").addClass("flex-row")
+			$(".sticky-section .row").removeClass("my-3")
 		} else if (offsetTop > stickyContentHeight) {
 			$(".sticky-top-section").removeClass("sticky-top")
+			$(".sticky-top-section p.large-text").addClass("display-6")
+			$(".sticky-top-section p.small-text").addClass("fs-3")
+			$(".sticky-top-section .left-indices").removeClass("flex-row").addClass("flex-column")
+			$(".sticky-section .row").addClass("my-3")
 		} else {
 			$(".sticky-top-section").removeClass("sticky-top")
+			$(".sticky-top-section p.large-text").addClass("display-6")
+			$(".sticky-top-section p.small-text").addClass("fs-3")
+			$(".sticky-top-section .left-indices").removeClass("flex-row").addClass("flex-column")
+			$(".sticky-section .row").addClass("my-3")
 		}
 		if ($(".sticky-section").length) {
 			if (offsetTop > 90 && offsetTop < stickyContentHeight) {
