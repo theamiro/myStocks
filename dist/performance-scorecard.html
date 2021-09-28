@@ -8,7 +8,6 @@
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="assets/css/app.min.css">
-		<link href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.23/fh-3.1.8/datatables.min.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
@@ -480,8 +479,8 @@
 					<div class="col-md-12">
 						<p class="text-muted">Share Price Performance Scorecard</p>
 					</div>
-					<div class="col-md-12">
-						<div class="table-responsive">
+					<div class="table-responsive">
+						<div class="col-md-12">
 							<table class="table table-hover table-freeze-cols" id="performance-scorecard">
 								<thead class="bordered">
 									<tr>
@@ -1118,6 +1117,7 @@
 		<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
 		<script src="assets/js/vendor/popper.min.js"></script>
 		<script src="assets/js/vendor/jquery.dataTables.min.js"></script>
+		<script src="assets/js/vendor/dataTables.fixedColumns.min.js"></script>
 		<script src="assets/js/vendor/moment.min.js"></script>
 		<script src="assets/js/jquery.daterangepicker.js"></script>
 		<script src="assets/js/vendor/chart.min.js"></script>
@@ -1126,7 +1126,10 @@
 			$(function () {
 				$("#performance-scorecard").DataTable({
 					scrollY: "70vh",
+					scrollX: true,
 					scrollCollapse: true,
+					paging: false,
+					fixedColumns: true,
 				})
 			})
 		</script>
