@@ -10,7 +10,6 @@
 		<!-- build:css -->
 		<link href="assets/css/app.css" rel="stylesheet" type="text/css" />
 		<!-- endbuild -->
-		<link href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.23/fh-3.1.8/datatables.min.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
@@ -482,8 +481,8 @@
 					<div class="col-md-12">
 						<p class="text-muted">Share Price Performance Scorecard</p>
 					</div>
-					<div class="col-md-12">
-						<div class="table-responsive">
+					<div class="table-responsive">
+						<div class="col-md-12">
 							<table class="table table-hover table-freeze-cols" id="performance-scorecard">
 								<thead class="bordered">
 									<tr>
@@ -1128,7 +1127,10 @@
 			$(function () {
 				$("#performance-scorecard").DataTable({
 					scrollY: "70vh",
+					scrollX: true,
 					scrollCollapse: true,
+					paging: false,
+					fixedColumns: true,
 				})
 			})
 		</script>
