@@ -13,20 +13,20 @@
 	<body>
 		<header class="header">
 			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
-				<div class="container px-lg-5">
-					<a class="navbar-brand" href="index.html">
+				<div class="container px-lg-5 px-0">
+					<a class="navbar-brand ms-lg-0 ms-3" href="index.html">
 						<span class="fw-normal fs-3">myStocks</span>
 					</a>
-					<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+					<button class="navbar-toggler me-lg-0 me-3" data-bs-toggle="collapse" data-bs-target="#navbar">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbar">
 						<ul class="navbar-nav ms-xl-5 me-lg-auto mb-2 mb-md-0 navbar-nav-scroll">
-							<li class="nav-item mx-xl-2 mx-1">
-								<a class="nav-link active" aria-current="page" href="index.html">News</a>
+							<li class="nav-item mx-xl-2 mx-0">
+								<a class="nav-link px-lg-2 px-3 active" aria-current="page" href="index.html">News</a>
 							</li>
-							<li class="nav-item mx-xl-2 mx-1">
-								<a class="nav-link" href="indices.html" data-bs-toggle="dropdown">Indices</a>
+							<li class="nav-item mx-xl-2 mx-0">
+								<a class="nav-link px-lg-2 px-3" href="indices.html" data-bs-toggle="dropdown">Indices</a>
 								<div class="dropdown-menu w-100 border-0 mt-0 megamenu" id="indices-dropdown">
 									<div class="container px-lg-5 pt-3">
 										<div class="row mb-4 gy-4 justify-content-center">
@@ -59,8 +59,8 @@
 									</div>
 								</div>
 							</li>
-							<li class="nav-item mx-xl-2 mx-1">
-								<a class="nav-link" data-bs-toggle="dropdown" href="#">Quotes</a>
+							<li class="nav-item mx-xl-2 mx-0">
+								<a class="nav-link px-lg-2 px-3" data-bs-toggle="dropdown" href="#">Quotes</a>
 								<div class="dropdown-menu w-100 min-vh-100 border-0 mt-0 megamenu" id="quotes-dropdown">
 									<div class="container px-lg-5 pt-3">
 										<div class="row mb-4 gy-4">
@@ -344,19 +344,19 @@
 									</div>
 								</div>
 							</li>
-							<li class="nav-item mx-xl-2 mx-1">
-								<a class="nav-link" href="daily-price-list.html">Daily Price List</a>
+							<li class="nav-item mx-xl-2 mx-0">
+								<a class="nav-link px-lg-2 px-3" href="daily-price-list.html">Daily Price List</a>
 							</li>
-							<li class="nav-item mx-xl-2 mx-1">
-								<a class="nav-link" href="performance-scorecard.html">Performance Scorecard</a>
+							<li class="nav-item mx-xl-2 mx-0">
+								<a class="nav-link px-lg-2 px-3" href="performance-scorecard.html">Performance Scorecard</a>
 							</li>
-							<li class="nav-item mx-xl-2 mx-1">
-								<a class="nav-link" href="portfolio.html">Portfolio</a>
+							<li class="nav-item mx-xl-2 mx-0">
+								<a class="nav-link px-lg-2 px-3" href="portfolio.html">Portfolio</a>
 							</li>
 						</ul>
-						<div class="d-flex me-lg-3 gap-3 d-grid mb-3 mb-lg-0">
-							<a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
-							<a href="#" class="btn btn-primary rounded-3 px-3" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a>
+						<div class="auth-buttons d-flex flex-wrap ms-3 ms-lg-0 me-3 gap-3 d-grid mb-3 mb-lg-0">
+							<a href="#" class="btn btn-light flex-grow-1" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
+							<a href="#" class="btn btn-primary rounded-3 px-3 flex-grow-1" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a>
 						</div>
 						<form class="d-flex d-none d-sm-block d-md-none d-xxl-block">
 							<div class="input-group input-group-dark flex-nowrap">
@@ -386,7 +386,7 @@
 		</header>
 		<!-- Login Modal -->
 		<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered rounded-3 border-0" style="width: 24rem; height: 50vh">
+			<div class="modal-dialog modal-dialog-centered rounded-3 border-0 mx-auto" style="max-width: 24rem; height: 50vh">
 				<div class="modal-content p-4">
 					<div class="modal-header border-0 pb-0">
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -427,7 +427,7 @@
 		</div>
 		<!-- Signup Modal -->
 		<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered rounded-3 border-0" style="width: 24rem; height: 50vh">
+			<div class="modal-dialog modal-dialog-centered rounded-3 border-0 mx-auto" style="max-width: 24rem; height: 50vh">
 				<div class="modal-content p-4">
 					<div class="modal-header border-0 pb-0">
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -728,7 +728,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 background-image" style="background-image: url('assets/img/appback.png')"></div>
+					<div class="col-md-6 background-image p-0" style="background-image: url('assets/img/appback.png'); min-height: 300px"></div>
 				</div>
 			</div>
 		</section>
@@ -760,7 +760,7 @@
 						</a>
 					</div>
 					<div class="col-lg-4">
-						<div class="row row-cols-1 gy-4">
+						<div class="row row-cols-1 gy-4 mb-3">
 							<div class="col">
 								<a href="single.html" class="card news border-0 px-0 flex-row border border-bottom pb-3 h-100">
 									<div class="card-body d-flex flex-column justify-content-between py-0">
@@ -869,7 +869,7 @@
 		</section>
 		<footer class="bg-primary">
 			<div class="container pt-5 px-lg-5">
-				<div class="row g-5">
+				<div class="row">
 					<div class="col-lg-6 col-md-6 d-flex flex-column justify-content-between">
 						<p class="text-white fw-normal fs-1 mb-5">Get the most out of <br />myStocks by signing up</p>
 						<div class="row mt-5 align-items-center gy-3">
