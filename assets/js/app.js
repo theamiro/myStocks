@@ -251,3 +251,11 @@ function configureCollapsibles() {
 		})
 	}
 }
+
+$.extend(true, $.fn.dataTable.defaults, {
+	searching: false,
+	ordering: false,
+	bPaginate: false,
+	bInfo: false,
+	paging: false,
+})

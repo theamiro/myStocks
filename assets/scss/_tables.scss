@@ -107,6 +107,11 @@ table {
                     --bs-table-accent-bg: $light;
                     color: var(--bs-table-hover-color);
                     box-shadow: 0px 0px 15px 2px transparentize($color: #000000, $amount: .9);
+                    .dtfc-fixed-left {
+                        --bs-table-accent-bg: $light;
+                        color: var(--bs-table-hover-color);
+                        box-shadow: 0px 0px 15px 2px transparentize($color: #000000, $amount: .9);
+                    }
                 }
                 td {
                     vertical-align: middle;
@@ -117,4 +122,22 @@ table {
 }
 .table > :not(:last-child) > :last-child > * {
     border-bottom-color: transparentize($color: $dark, $amount: .90);
+}
+#performance-scorecard {
+    tbody {
+        tr {
+            td:first-child {
+                background-color: $light;
+            }
+        }
+    }
+}
+th.sorting_disabled.dtfc-fixed-left {
+    background-color: $light !important;
+}
+.dataTable.no-footer {
+    margin-bottom: 0;
+}
+.dtfc-fixed-left {
+    box-shadow: 0px 0px 15px 2px transparentize($color: #000000, $amount: .9);
 }

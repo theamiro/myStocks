@@ -18,7 +18,18 @@ gulp.task("clean", function () {
 
 // Copy third party libraries from node_modules into /vendor
 gulp.task("vendor:js", function () {
-	return gulp.src(["./node_modules/bootstrap/dist/js/*", "./node_modules/@popperjs/core/dist/umd/popper.*", "./node_modules/chart.js/dist/*.js", "./node_modules/jquery/dist/*", "./node_modules/moment/dist/*.js", "./node_modules/moment/min/moment.min.js.map"]).pipe(gulp.dest("./assets/js/vendor"))
+	return gulp
+		.src([
+			"./node_modules/bootstrap/dist/js/*",
+			"./node_modules/@popperjs/core/dist/umd/popper.*",
+			"./node_modules/chart.js/dist/*.js",
+			"./node_modules/jquery/dist/*",
+			"./node_modules/moment/dist/*.js",
+			"./node_modules/moment/min/moment.min.js.map",
+			"./node_modules/datatables.net/js/jquery.dataTables.min.js",
+			"./node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.min.js",
+		])
+		.pipe(gulp.dest("./assets/js/vendor"))
 })
 
 // vendor task
@@ -26,7 +37,18 @@ gulp.task("vendor", gulp.parallel("vendor:js"))
 
 // Copy vendor's js to /dist
 gulp.task("vendor:build", function () {
-	var jsStream = gulp.src(["./assets/js/vendor/bootstrap.bundle.min.js", "./assets/js/vendor/popper.min.js", "./assets/js/vendor/jquery.min.js", "./assets/js/vendor/moment.js", "./assets/js/vendor/moment.min.js.map", "./assets/js/vendor/chart.min.js"]).pipe(gulp.dest("./dist/assets/js/vendor"))
+	var jsStream = gulp
+		.src([
+			"./assets/js/vendor/bootstrap.bundle.min.js",
+			"./assets/js/vendor/popper.min.js",
+			"./assets/js/vendor/jquery.min.js",
+			"./assets/js/vendor/moment.js",
+			"./assets/js/vendor/moment.min.js.map",
+			"./assets/js/vendor/chart.min.js",
+			"assets/js/vendor/jquery.dataTables.min.js",
+			"./assets/js/vendor/dataTables.fixedColumns.min.js",
+		])
+		.pipe(gulp.dest("./dist/assets/js/vendor"))
 	return merge(jsStream)
 })
 
@@ -93,7 +115,17 @@ gulp.task("replaceHtmlBlock", function () {
 		.src(["*.html"])
 		.pipe(
 			htmlreplace({
-				js: ["assets/js/vendor/jquery.min.js", "assets/js/vendor/bootstrap.bundle.min.js", "assets/js/vendor/popper.min.js", "assets/js/vendor/moment.min.js", "assets/js/jquery.daterangepicker.js", "assets/js/vendor/chart.min.js", "assets/js/app.min.js"],
+				js: [
+					"assets/js/vendor/jquery.min.js",
+					"assets/js/vendor/bootstrap.bundle.min.js",
+					"assets/js/vendor/popper.min.js",
+					"assets/js/vendor/jquery.dataTables.min.js",
+					"assets/js/vendor/dataTables.fixedColumns.min.js",
+					"assets/js/vendor/moment.min.js",
+					"assets/js/jquery.daterangepicker.js",
+					"assets/js/vendor/chart.min.js",
+					"assets/js/app.min.js",
+				],
 				css: ["assets/css/app.min.css"],
 			})
 		)
