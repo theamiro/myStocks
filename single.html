@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<title>myStocks</title>
+		<!-- build:css -->
+		<link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+		<!-- endbuild -->
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
+				<div class="container px-lg-5">
+					<a class="navbar-brand" href="index.html">
+						<span class="fw-normal fs-3">myStocks</span>
+					</a>
+					<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbar">
+						<ul class="navbar-nav ms-xl-5 me-lg-auto mb-2 mb-md-0 navbar-nav-scroll">
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link active" aria-current="page" href="index.html">News</a>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="indices.html" data-bs-toggle="dropdown">Indices</a>
+								<div class="dropdown-menu w-100 border-0 mt-0 megamenu" id="indices-dropdown">
+									<div class="container px-lg-5 pt-3">
+										<div class="row mb-4 gy-4 justify-content-center">
+											<div class="col-lg-8">
+												<div class="row gy-3">
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">FTSE NSE Kenya 15 Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">FTSE NSE Kenya 25 Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE 20-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE 25-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">NSE All-Share Index</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">Zamara Kenya Equite Index (KES)</a>
+													</div>
+													<div class="col-lg-3">
+														<a href="indices.html" class="nav-link">Zamara Kenya Equite Index (USD)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" data-bs-toggle="dropdown" href="#">Quotes</a>
+								<div class="dropdown-menu w-100 min-vh-100 border-0 mt-0 megamenu" id="quotes-dropdown">
+									<div class="container px-lg-5 pt-3">
+										<div class="row mb-4 gy-4">
+											<div class="col-lg-2">
+												<p class="mb-2">Agricultural</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eegads Ltd.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Limuru Tea</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kakuzi Tea.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kapchorua Tea Kenya Plc.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sasini Tea</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Automobile & Accessor...</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Car & General(K) Ltd.</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Banking</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ABSA Bank Kenya Ltd Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">BK Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Co-operative Bank of Kenya</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Diamond Trust Bank</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Equity Group Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">HF Group Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">I & M Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KCB Group Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Commercial & Services</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eveready East Africa Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Express Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Homeboyz Entertainment…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Airways Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Longhorn Publishers Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nairobi Business Ventures…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nation Media Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sameer Africa Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Standard Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">TPS Eastern Africa (Seren..</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Uchumi Supermarket Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Construction & Allied</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ARM Cement Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Bamburi Cement Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Crown Paints Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">East African Portland Ce...</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Energy & Petroleum</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KenolKobil Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Electricity Generat...</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Total Kenya Ltd</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Agricultural</p>
+												<ul class="navbar-nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eegads Ltd.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Limuru Tea</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kakuzi Tea.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kapchorua Tea Kenya Plc.</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sasini Tea</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Automobile & Accessor...</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Car & General(K) Ltd.</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Banking</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ABSA Bank Kenya Ltd Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">BK Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Co-operative Bank of Kenya</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Diamond Trust Bank</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Equity Group Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">HF Group Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">I & M Holdings Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KCB Group Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Commercial & Services</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Eveready East Africa Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Express Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Homeboyz Entertainment…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Airways Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Longhorn Publishers Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nairobi Business Ventures…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Nation Media Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Sameer Africa Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Standard Group Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">TPS Eastern Africa (Seren..</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Uchumi Supermarket Plc</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Construction & Allied</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">ARM Cement Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Deacons (East Africa) Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Bamburi Cement Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Crown Paints Kenya Plc</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">East African Portland Ce...</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-lg-2">
+												<p class="mb-2">Energy & Petroleum</p>
+												<ul class="nav flex-column flex-nowrap">
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">KenolKobil Ltd</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Electricity Generat...</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Kenya Power and Lighting…</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link p-0 py-1" href="quotes.html">Total Kenya Ltd</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="daily-price-list.html">Daily Price List</a>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="performance-scorecard.html">Performance Scorecard</a>
+							</li>
+							<li class="nav-item mx-xl-2 mx-1">
+								<a class="nav-link" href="portfolio.html">Portfolio</a>
+							</li>
+						</ul>
+						<div class="d-flex me-lg-3 gap-3 d-grid mb-3 mb-lg-0">
+							<a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
+							<a href="#" class="btn btn-primary rounded-3 px-3" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a>
+						</div>
+						<form class="d-flex d-none d-sm-block d-md-none d-xxl-block">
+							<div class="input-group input-group-dark flex-nowrap">
+								<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
+								<button type="submit" class="btn">
+									<i class="font font-search"></i>
+								</button>
+							</div>
+						</form>
+						<ul class="navbar-nav d-none d-xl-block d-xxl-none">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link lh-base" data-bs-toggle="dropdown"><i class="font font-search"></i></a>
+								<div class="dropdown-menu dropdown-menu-end" id="searchDropdown" style="width: 300px">
+									<div class="container">
+										<div class="row">
+											<div class="col-12">
+												<input class="form-control input-dark" type="search" placeholder="Search" aria-label="Search" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Login Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered rounded-3 border-0" style="width: 24rem; height: 50vh">
+				<div class="modal-content p-4">
+					<div class="modal-header border-0 pb-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body py-0">
+						<p class="fs-2 fw-bold">Log in</p>
+						<form class="mb-3 needs-validation" novalidate>
+							<div class="mb-3">
+								<label for="loginEmail" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Check on your email again!</div>
+							</div>
+							<div class="mb-3">
+								<label for="loginPassword" class="form-label">Password</label>
+								<input type="password" class="form-control" id="loginPassword" placeholder="Password" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Passwords must have 6 characters or more!</div>
+							</div>
+							<div class="form-check mb-3">
+								<input class="form-check-input" type="checkbox" value="" id="rememberMeCheckbox" />
+								<label class="form-check-label" for="rememberMeCheckbox">Remember me</label>
+							</div>
+							<div class="d-grid mb-3">
+								<!-- Change this to a submit button  -->
+								<a href="profile.html" class="btn btn-primary btn-lg">Log in</a>
+							</div>
+							<div class="d-flex flex-row justify-content-center gap-4 align-items-center mb-3">
+								<hr class="m-0 bg-secondary w-25" />
+								<p class="mb-0">or</p>
+								<hr class="m-0 bg-secondary w-25" />
+							</div>
+							<p class="text-center text-muted">Don't have an account? <a href="#" class="text-decoration-none text-dark fw-normal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Signup Modal -->
+		<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered rounded-3 border-0" style="width: 24rem; height: 50vh">
+				<div class="modal-content p-4">
+					<div class="modal-header border-0 pb-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body py-0">
+						<p class="fs-2 fw-bold">Sign up</p>
+						<form class="mb-3 needs-validation" novalidate>
+							<div class="mb-3">
+								<label for="username" class="form-label">Full Name</label>
+								<input type="name" class="form-control" id="signupUsername" placeholder="John Doe" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Please enter your full name!</div>
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required />
+								<div class="valid-feedback">Looks good!</div>
+								<div class="invalid-feedback">Check on your email again!</div>
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Password</label>
+								<input type="password" class="form-control" id="signupPassword" placeholder="Password" required />
+								<div class="valid-feedback">Password is perfect!</div>
+								<div class="invalid-feedback">Password must contain a capital letter!</div>
+							</div>
+							<div class="mb-3">
+								<label for="confirmPassword" class="form-label">Confirm Password</label>
+								<input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm Password" required />
+								<div class="valid-feedback">Passwords match!</div>
+								<div class="invalid-feedback">Passwords do not match!</div>
+							</div>
+							<div class="d-grid mb-3">
+								<button type="submit" class="btn btn-primary btn-lg">Sign up</button>
+							</div>
+							<div class="d-flex flex-row justify-content-center gap-4 align-items-center mb-3">
+								<hr class="m-0 bg-secondary w-25" />
+								<p class="mb-0">or</p>
+								<hr class="m-0 bg-secondary w-25" />
+							</div>
+							<p class="text-center text-muted">Already have an account? <a href="#" class="text-decoration-none text-dark fw-normal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="mb-4">
+			<div class="container px-lg-5">
+				<div class="row pt-4">
+					<div class="col-md-12">
+						<p class="display-5">ABC of Soil Sampling for capiscum planting</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis semper urna, vel blandit mauris. Etiam quis dolor fringilla, rhoncus ex vel, iaculis ligula. Cras id magna tempus, dapibus risus aliquam, convallis libero. Aenean aliquet, nisi nec accumsan scelerisque,
+							lectus turpis fermentum nunc, vel mattis mi lectus et odio. Morbi rutrum tempus nulla at iaculis. Nunc congue dapibus tincidunt. Aliquam cursus nisi in diam dapibus, non semper mi efficitur. Ut id nibh lorem. Aliquam ut maximus odio. Proin vehicula, justo sit amet
+							consectetur eleifend, sapien nisl rutrum ipsum, et pulvinar sapien metus quis erat. Maecenas sed pellentesque quam. Mauris quis blandit purus.
+						</p>
+						<p>
+							Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras porttitor, dolor ut cursus vestibulum, elit quam convallis enim, non molestie massa risus in erat. Sed cursus tincidunt ullamcorper. Etiam mollis libero ipsum, vitae
+							bibendum sapien vestibulum non. Sed sed venenatis turpis. Donec in dolor viverra, aliquet lectus quis, condimentum turpis. Sed ut tempus orci, eu gravida lectus. Duis dapibus velit felis, eu porta eros dapibus sit amet. Maecenas quis posuere erat. Etiam ac nulla ac mauris
+							fringilla maximus gravida quis massa. Vivamus a pulvinar lacus, at tristique nibh. Mauris ac rutrum lectus. Duis quis ipsum varius, eleifend ex id, vestibulum felis. Vestibulum in iaculis tellus. Sed posuere rhoncus gravida. Pellentesque sodales lorem vitae tempus dictum.
+						</p>
+						<p>
+							Proin vitae lectus sem. Donec nisl nunc, bibendum vitae consequat eu, maximus at orci. Quisque in massa augue. Suspendisse id blandit purus. Mauris condimentum, est eu venenatis commodo, tellus felis rutrum dolor, sit amet rhoncus augue diam ut metus. Cras pretium viverra
+							purus, at aliquet ligula maximus sit amet. Pellentesque vel urna tortor. Sed arcu mauris, pellentesque nec venenatis id, ultrices at tellus. Suspendisse eget blandit nulla. In at mi eu sapien efficitur pulvinar. Morbi auctor dolor nec neque facilisis viverra. Vestibulum
+							ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam odio leo, egestas in ex quis, placerat porttitor ex. Nullam finibus suscipit mi, id consectetur elit fringilla ut. Praesent efficitur dui in tempor luctus.
+						</p>
+						<p>
+							Fusce imperdiet dui et turpis consectetur, a eleifend lacus tempus. Morbi at lobortis erat, eget rhoncus dui. Donec eget tortor quis nibh iaculis mattis. Maecenas elementum accumsan eros, nec porta nulla pretium et. Pellentesque habitant morbi tristique senectus et netus
+							et malesuada fames ac turpis egestas. Vivamus molestie placerat nisl, non dapibus odio congue non. Curabitur nunc libero, commodo id ultrices a, vestibulum et dolor. Proin porta convallis turpis a luctus. Quisque vehicula odio congue placerat euismod.
+						</p>
+						<p>
+							Integer venenatis tincidunt euismod. In tempor eu justo eget aliquam. Nam volutpat erat enim, et porta ipsum aliquam sit amet. Donec fermentum aliquet est eu aliquet. Aliquam imperdiet rutrum tellus, id ultrices sapien eleifend sit amet. Vivamus quam lacus, mattis non
+							pharetra at, ultricies sed nulla. Aliquam imperdiet mollis mi eu scelerisque. Sed vitae eros euismod, malesuada augue non, vestibulum arcu. Phasellus tempus condimentum nulla, in venenatis mi mollis nec. Aenean eget leo a tellus viverra cursus ut et urna. Suspendisse
+							potenti.
+						</p>
+						<p>
+							Maecenas et ultrices lacus. Duis mattis dignissim enim, vel eleifend eros ultrices et. Nulla tincidunt ac mauris vel congue. Sed condimentum aliquet turpis ut condimentum. Integer feugiat sodales ultrices. Cras eget volutpat metus. Sed sed magna sodales, feugiat ex ac,
+							fringilla odio. Pellentesque in enim enim. Phasellus a accumsan dolor, ac facilisis magna. Quisque rhoncus posuere pharetra. Vestibulum vel elit risus. Cras efficitur erat id mauris imperdiet, sit amet dignissim nisi venenatis. Fusce ex metus, mattis sit amet turpis quis,
+							tempus cursus dui. Fusce mauris ipsum, dignissim a hendrerit nec, molestie ut tellus. Fusce at congue mauris.
+						</p>
+						<p>
+							Donec efficitur pulvinar justo, elementum efficitur odio consectetur ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut at convallis risus. Integer eget posuere erat. Donec tristique dignissim felis a imperdiet. Vivamus egestas
+							maximus dolor facilisis lacinia. In non tempor erat.
+						</p>
+						<p>
+							Sed maximus lectus in suscipit pretium. Nullam auctor, velit at dignissim tincidunt, ipsum lorem eleifend orci, at convallis enim diam ac neque. Integer tincidunt eget justo in vehicula. Maecenas pulvinar, orci quis elementum vulputate, tellus mauris mattis mauris, nec
+							dapibus sapien ligula eu dui. Proin non mauris magna. Proin eros nisl, ornare in aliquam sed, convallis at risus. Mauris pretium ornare libero eget feugiat. Vestibulum id ornare ante. Maecenas dignissim pretium nisl. Sed vitae facilisis nunc. Vivamus aliquam quis diam vel
+							gravida.
+						</p>
+						<p>
+							Maecenas congue massa cursus mollis fringilla. Nullam suscipit dictum libero id fringilla. Vivamus sit amet magna a nunc tristique pretium. Donec porttitor orci non magna malesuada fermentum. Ut eu eleifend quam, vitae porttitor neque. Nunc quis libero elementum,
+							dignissim libero ac, facilisis sem. Cras id consectetur diam. Curabitur odio erat, tincidunt quis varius ac, mattis in ante. Sed iaculis erat ut nisl tempor condimentum. Quisque sed suscipit dui. Integer egestas, orci sed placerat maximus, sem nisl volutpat lacus, sed
+							congue tortor tellus nec nisi. Suspendisse blandit augue pulvinar est eleifend, et fermentum metus vehicula. Nunc semper, dui ac efficitur tempor, massa est ullamcorper orci, non congue massa erat at massa. Sed hendrerit ante eget nunc egestas, eget interdum felis varius.
+							Ut convallis enim at mi venenatis rutrum.
+						</p>
+						<p>
+							Aliquam augue risus, gravida vel ex at, ultricies tincidunt velit. Donec sed eleifend ligula. Integer viverra nulla eu massa molestie, id tristique arcu scelerisque. Pellentesque porta diam in nulla aliquam, eleifend luctus mauris luctus. In consectetur justo vel bibendum
+							maximus. Curabitur mattis erat vitae eros tempus ullamcorper. Vivamus vitae orci sed purus ultrices volutpat ac malesuada dolor. Fusce sit amet auctor dui. Donec lectus elit, aliquam et sem et, euismod luctus orci. Praesent semper tempus enim nec porttitor. Vestibulum vel
+							velit laoreet, rhoncus arcu sed, vulputate ligula. Aliquam nisi augue, sagittis et orci id, molestie rutrum nulla.
+						</p>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-primary">
+			<div class="container pt-5 px-lg-5">
+				<div class="row g-5">
+					<div class="col-lg-6 col-md-6 d-flex flex-column justify-content-between">
+						<p class="text-white fw-normal fs-1 mb-5">Get the most out of <br />myStocks by signing up</p>
+						<div class="row mt-5 align-items-center gy-3">
+							<div class="col-md-8 col-lg-6 col-md-12">
+								<input type="email" class="form-control input-light form-control-lg" placeholder="Enter your email address" />
+							</div>
+							<div class="col-md-4 col-lg-3 col-md-12 d-grid">
+								<button type="submit" class="btn btn-light btn-lg text-primary">Sign up Now!</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2">
+						<p class="text-white fs-5">MyStocks</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">About</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2">
+						<p class="text-white fs-5">Policies</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Terms of Service</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Privacy Policy</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Cookies Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2">
+						<p class="text-white fs-5">Help</p>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Video Tutorials</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Account Settings</a></li>
+							<li class="nav-item"><a href="#" class="nav-link px-0 opacity-50 text-white">Make Payments</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container px-lg-5 pt-3 pb-2">
+				<hr class="bg-light border border-1" />
+				<div class="row align-items-center g-3">
+					<div class="col-md-6 d-flex flex-wrap gap-4 align-items-center">
+						<p class="text-white mb-0 fs-3">myStocks</p>
+						<p class="text-white mb-0 opacity-50">&copy; 2007-21 Synergy Systems Ltd</p>
+					</div>
+					<div class="col-md-6 d-flex flex-nowrap justify-content-sm-center justify-content-md-end">
+						<div class="d-flex flex-wrap justify-center gap-3 pb-3">
+							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="assets/img/googleplay.svg" /></a>
+							<a href="#contact" class="border border-1 border-radius border-secondary"><img src="assets/img/appstore.svg" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- build:js -->
+		<script src="assets/js/vendor/jquery.js" type="text/javascript"></script>
+		<script src="assets/js/vendor/bootstrap.bundle.js"></script>
+		<script src="assets/js/vendor/popper.js" type="text/javascript"></script>
+		<script src="assets/js/vendor/chart.js"></script>
+		<script src="assets/js/app.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>
