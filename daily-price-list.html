@@ -483,7 +483,7 @@
 				<div class="row gx-lg-5">
 					<div class="col-lg-12 pb-5">
 						<div class="table-responsive">
-							<table class="table" id="daily-price-list-table">
+							<table class="table w-100" id="daily-price-list-table">
 								<thead class="bordered">
 									<tr>
 										<th scope="col" colspan="2" class="text-uppercase text-muted fw-normal border-bottom-0"></th>
@@ -540,7 +540,17 @@
 								</thead>
 								<tbody>
 									<tr class="category-title">
-										<td class="text-muted text-uppercase border-bottom-0 pt-3 pb-0" colspan="2">Agricultural</td>
+										<td class="text-muted text-uppercase border-bottom-0 pt-3 pb-0">Agricultural</td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
 									</tr>
 									<tr>
 										<td>EGAD</td>
@@ -621,7 +631,17 @@
 										<td>-</td>
 									</tr>
 									<tr class="category-title">
-										<td class="text-muted text-uppercase border-bottom-0 pt-5 pb-0" colspan="2">Banking</td>
+										<td class="text-muted text-uppercase border-bottom-0 pt-5 pb-0">Banking</td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
 									</tr>
 									<tr>
 										<td>EGAD</td>
@@ -637,7 +657,17 @@
 										<td>-</td>
 									</tr>
 									<tr class="category-title">
-										<td class="text-muted text-uppercase border-bottom-0 pt-5 pb-0" colspan="2">Commercial & Services</td>
+										<td class="text-muted text-uppercase border-bottom-0 pt-5 pb-0">Commercial & Services</td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
 									</tr>
 									<tr>
 										<td>EGAD</td>
@@ -729,9 +759,29 @@
 												</div>
 											</div>
 										</td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
 									</tr>
 									<tr class="category-title">
-										<td class="text-muted text-uppercase border-bottom-0 pt-5 pb-0" colspan="2">Construction and Allied</td>
+										<td class="text-muted text-uppercase border-bottom-0 pt-5 pb-0">Construction and Allied</td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
+										<td class="d-none"></td>
 									</tr>
 									<tr>
 										<td>EGAD</td>
@@ -859,7 +909,14 @@
 			$(function () {
 				$("#daily-price-list-table").DataTable({
 					scrollY: "70vh",
+					scrollX: true,
 					scrollCollapse: true,
+					fixedColumns: true,
+					searching: false,
+					ordering: false,
+					bPaginate: false,
+					bInfo: false,
+					paging: false,
 				})
 			})
 		</script>
