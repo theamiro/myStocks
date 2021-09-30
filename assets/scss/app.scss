@@ -134,9 +134,10 @@ nav {
     cursor: pointer;
 }
 header {
-    height: 68px;
-    max-height: 68px;
+    height: 68px; 
     nav {
+        height: 68px;
+        max-height: 68px;
         .nav-item {
             .nav-link {
                 @extend .small;
@@ -153,7 +154,7 @@ div.tab-pane {
 }
 
 .dropdown-toggle::after {
-    vertical-align: 0.156em;
+    vertical-align: -0.844em;
     margin-left: 0.3em;
 }
 .text-muted {
